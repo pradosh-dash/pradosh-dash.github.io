@@ -34,17 +34,19 @@ redirect_from:
     font-size: 1.2em;
     font-weight: 600;
     color: #343a40;
-    background-color: #f8f9fa;
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 1px solid #dee2e6;
 }
 
 .about-content {
-    font-size: 1em;
-    color: #555;
+    font-size: 1.0em;
+    color: #333;
     background-color: #f8f9fa;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #343a40;
 
 }
 
@@ -232,11 +234,8 @@ redirect_from:
             <strong>Let's Connect</strong>
         </div>
         <div>
-            <a href="mailto:ppdash@gatech.edu">ppdash@gatech.edu</a> | 
+            <a href="mailto:ppdash@gatech.edu">Email</a> | 
             <a href="https://linkedin.com/in/ppdash" target="_blank">LinkedIn</a>
-            {% if site.author.googlescholar %}
-             | <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
-            {% endif %}
         </div>
     </div>
     </div>
