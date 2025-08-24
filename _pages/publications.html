@@ -11,26 +11,202 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<style>
+.publications-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
+.pub-section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c5282;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin: 30px 0 20px 0;
+}
 
+.pub-section-title:first-child {
+    margin-top: 0;
+}
 
+.pub-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #2c5282;
+}
+
+.pub-item:hover {
+    background-color: #f1f3f4;
+    transition: background-color 0.3s ease;
+}
+
+.pub-title {
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.pub-authors {
+    color: #666;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.pub-venue {
+    color: #2c5282;
+    font-weight: 500;
+}
+
+.pub-year {
+    color: #718096;
+    font-size: 0.9em;
+}
+
+.pub-status {
+    background-color: #ffd700;
+    color: #8b6914;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.pub-patent {
+    background-color: #e6f3ff;
+    border-left-color: #0066cc;
+}
+
+.pub-journal {
+    background-color: #f0f8f0;
+    border-left-color: #228b22;
+}
+
+.pub-conference {
+    background-color: #fff5f5;
+    border-left-color: #dc2626;
+}
+
+@media (max-width: 768px) {
+    .pub-item {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .pub-section-title {
+        font-size: 1.3em;
+    }
+}
+</style>
+
+<div class="publications-container">
+    
+    <h2 class="pub-section-title">Patent</h2>
+    
+    <div class="pub-item pub-patent">
+        <div class="pub-title">Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration</div>
+        <div class="pub-authors">Arvanitis, C. and <strong>Dash, P.P.</strong></div>
+        <div class="pub-venue">U.S. Patent Application 18/638,465, Georgia Tech Research Corp</div>
+        <div class="pub-year">2024</div>
+    </div>
+
+    <h2 class="pub-section-title">Journal Articles</h2>
+    
+    <div class="pub-item pub-journal">
+        <div class="pub-title">Aberration-Free Trans-skull Acoustic Holography Using Nonlinear Acoustic Neuro-navigation</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
+        <div class="pub-venue">Journal Article <span class="pub-status">Under Review</span></div>
+        <div class="pub-year">2025</div>
+    </div>
+    
+    <div class="pub-item pub-journal">
+        <div class="pub-title">Breaking the Skull Barrier: Parametric Array Enable Non-Invasive Monitoring of Transcranial Focused Ultrasound</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
+        <div class="pub-venue">Journal Article <span class="pub-status">In Preparation</span></div>
+        <div class="pub-year">2025</div>
+    </div>
+    
+    <div class="pub-item pub-journal">
+        <div class="pub-title">In-vitro modulation of DRG Neurons with contrast-enhanced Acoustic Radiation Force</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong>, Yeseul N., Han L. & Arvanitis, C. D.</div>
+        <div class="pub-venue">Journal Article <span class="pub-status">In Preparation</span></div>
+        <div class="pub-year">2025</div>
+    </div>
+    
+    <div class="pub-item pub-journal">
+        <div class="pub-title">Experimental demonstration of trans-skull volumetric passive acoustic mapping</div>
+        <div class="pub-authors">Schoen, S., <strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
+        <div class="pub-venue">IEEE Transactions on Ultrasonics</div>
+        <div class="pub-year">2021</div>
+    </div>
+
+    <h2 class="pub-section-title">Conference Presentations</h2>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Leveraging the Parametric Array Effect for Transcranial Focused Ultrasound Interventions</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
+        <div class="pub-venue">The Journal of the Acoustical Society of America, 157(4)</div>
+        <div class="pub-year">2025</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Acoustic Hologram Assisted Fast Aberration Correction in Transcranial FUS Therapy</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
+        <div class="pub-venue">2024 IEEE International Ultrasonics Symposium</div>
+        <div class="pub-year">2024</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Efficient Design and Registration of Hologram-Assisted Transcranial FUS Therapy</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
+        <div class="pub-venue">23rd Annual Symposium on Therapeutic Ultrasound, Taiwan</div>
+        <div class="pub-year">2024</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Heterogeneous Angular Spectrum Approach-based Holograms for Trans-skull Focused Ultrasound Therapy</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
+        <div class="pub-venue">Journal of the Acoustical Society of America (JASA)</div>
+        <div class="pub-year">2023</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Ultrasound mediated control of neurons and immune cells</div>
+        <div class="pub-authors">Arvanitis, C., <strong>Dash, P. P.</strong> & Kim, C.</div>
+        <div class="pub-venue">The Journal of the Acoustical Society of America, 153(3 supplement), A31-A31</div>
+        <div class="pub-year">2023</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Non-linearities under highly focused high-intensity ultrasound fields</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
+        <div class="pub-venue">The Journal of the Acoustical Society of America, 150(4), A125-A125</div>
+        <div class="pub-year">2021</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">3D Transcranial Passive Acoustic Mapping with the Heterogeneous Angular Spectrum Approach</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong>, Schoen, S. & Arvanitis, C. D.</div>
+        <div class="pub-venue">2021 IEEE International Ultrasonics Symposium</div>
+        <div class="pub-year">2021</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles</div>
+        <div class="pub-authors">Jing, B., Lee, H., <strong>Dash, P.P.</strong>, Arvanitis, C. D. & Lindsey, B. D.</div>
+        <div class="pub-venue">2021 IEEE International Ultrasonics Symposium (pp. 1-4)</div>
+        <div class="pub-year">2021</div>
+    </div>
+    
+    <div class="pub-item pub-conference">
+        <div class="pub-title">Biomechanical stress analysis of human femur bone</div>
+        <div class="pub-authors"><strong>Dash, P. P.</strong>, Kishor, K. & Panda, S. K.</div>
+        <div class="pub-venue">International Conference on CAD/CAE, IIT Madras</div>
+        <div class="pub-year">2013</div>
+    </div>
+
+</div>
