@@ -21,7 +21,6 @@ redirect_from:
     color: #333;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #f8f9fa;
     border-radius: 8px;
     border-left: 4px solid #343a40;
 }
@@ -43,7 +42,9 @@ redirect_from:
 .about-content {
     font-size: 1em;
     color: #555;
+    background-color: #f8f9fa;
     margin-bottom: 15px;
+    border-bottom: 1px solid #dee2e6
 }
 
 .research-areas {
