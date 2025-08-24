@@ -204,10 +204,23 @@ redirect_from:
 </div>
 
 <div class="cv-container">
+    <div class="cv-header">
+        <div class="cv-name">Pradosh P. Dash</div>
+        <div class="cv-contact-info">
+            +1-(510)-364-7743 | <a href="mailto:ppdash@gatech.edu">ppdash@gatech.edu</a> | <a href="https://linkedin.com/in/ppdash" target="_blank">linkedin.com/in/ppdash</a>
+        </div>
+    </div>
 
-
+    <div class="cv-section-title">Professional & Academic Summary</div>
+    <ul>
+        <li><strong>Ph.D. candidate</strong> specializing in acoustics with expertise in transcranial ultrasound system design for aberration correction, image reconstruction, and vibroacoustic and multiphysics modeling of ultrasound neuromodulation.</li>
+        <li><strong>Advanced researcher</strong> with expertise in vibroacoustic modeling, numerical acoustics, structural acoustics, and psychoacoustics. Skilled in acoustic transducer characterization, parallelized wave simulation models for acoustic propagation analysis, and transducer optimization. Currently advancing next-generation wearable acoustic-based sensors at Meta Reality Lab Research.</li>
+        <li><strong>3+ years of industry experience</strong> in hardware design, product validation, and noise, vibration, and harshness (NVH) troubleshooting for high-performance automotive products, with proven track record in cross-functional collaboration and innovative problem-solving.</li>
+    </ul>
 
     <div class="cv-section-title">Experience</div>
+    
+    <div class="cv-experience-item">
         <div class="cv-experience-header">Research Scientist Intern, Meta Platform Inc., Pasadena, CA</div>
         <div class="cv-experience-meta">Reality Lab Research | May 2025 – Present</div>
         <div class="cv-experience-details">
