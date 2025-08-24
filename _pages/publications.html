@@ -67,6 +67,43 @@ author_profile: true
     font-size: 0.9em;
 }
 
+.pub-links {
+    margin-top: 8px;
+}
+
+.pub-link {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 4px 8px;
+    background-color: #e2e8f0;
+    color: #2c5282;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.pub-link:hover {
+    background-color: #cbd5e0;
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.pub-link.doi {
+    background-color: #bee3f8;
+}
+
+.pub-link.pdf {
+    background-color: #fed7d7;
+}
+
+.pub-link.disabled {
+    background-color: #f7fafc;
+    color: #a0aec0;
+    cursor: not-allowed;
+}
+
 .pub-status {
     background-color: #ffd700;
     color: #8b6914;
@@ -112,12 +149,15 @@ author_profile: true
         <div class="pub-authors">Arvanitis, C. and <strong>Dash, P.P.</strong></div>
         <div class="pub-venue">U.S. Patent Application 18/638,465, Georgia Tech Research Corp</div>
         <div class="pub-year">2024</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2024_patent_application.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
 
     <h2 class="pub-section-title">Journal Articles</h2>
     
     <div class="pub-item pub-journal">
-        <div class="pub-title">Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback</div>
+        <div class="pub-title">Aberration-Free Trans-skull Acoustic Holography Using Nonlinear Acoustic Neuro-navigation</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">Journal Article <span class="pub-status">Under Review</span></div>
         <div class="pub-year">2025</div>
@@ -140,8 +180,12 @@ author_profile: true
     <div class="pub-item pub-journal">
         <div class="pub-title">Experimental demonstration of trans-skull volumetric passive acoustic mapping</div>
         <div class="pub-authors">Schoen, S., <strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-        <div class="pub-venue">IEEE Transactions on Ultrasonics</div>
-        <div class="pub-year">2021</div>
+        <div class="pub-venue">IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control</div>
+        <div class="pub-year">2022</div>
+        <div class="pub-links">
+            <a href="https://doi.org/10.1109/TUFFC.2021.3125670" class="pub-link doi" target="_blank">DOI</a>
+            <a href="{{ base_path }}/files/schoen2022_experimental_demonstration.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
 
     <h2 class="pub-section-title">Conference Presentations</h2>
@@ -151,6 +195,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
         <div class="pub-venue">The Journal of the Acoustical Society of America, 157(4)</div>
         <div class="pub-year">2025</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2025_parametric_array.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -158,6 +205,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">2024 IEEE International Ultrasonics Symposium</div>
         <div class="pub-year">2024</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2024_hologram_aberration.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -165,6 +215,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">23rd Annual Symposium on Therapeutic Ultrasound, Taiwan</div>
         <div class="pub-year">2024</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2024_efficient_design.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -172,6 +225,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
         <div class="pub-venue">Journal of the Acoustical Society of America (JASA)</div>
         <div class="pub-year">2023</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2023_heterogeneous_angular.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -179,6 +235,9 @@ author_profile: true
         <div class="pub-authors">Arvanitis, C., <strong>Dash, P. P.</strong> & Kim, C.</div>
         <div class="pub-venue">The Journal of the Acoustical Society of America, 153(3 supplement), A31-A31</div>
         <div class="pub-year">2023</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/arvanitis2023_ultrasound_control.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -186,6 +245,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
         <div class="pub-venue">The Journal of the Acoustical Society of America, 150(4), A125-A125</div>
         <div class="pub-year">2021</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2021_nonlinearities.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -193,6 +255,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong>, Schoen, S. & Arvanitis, C. D.</div>
         <div class="pub-venue">2021 IEEE International Ultrasonics Symposium</div>
         <div class="pub-year">2021</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2021_3d_transcranial.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -200,6 +265,9 @@ author_profile: true
         <div class="pub-authors">Jing, B., Lee, H., <strong>Dash, P.P.</strong>, Arvanitis, C. D. & Lindsey, B. D.</div>
         <div class="pub-venue">2021 IEEE International Ultrasonics Symposium (pp. 1-4)</div>
         <div class="pub-year">2021</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/jing2021_high_contrast.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
@@ -207,6 +275,9 @@ author_profile: true
         <div class="pub-authors"><strong>Dash, P. P.</strong>, Kishor, K. & Panda, S. K.</div>
         <div class="pub-venue">International Conference on CAD/CAE, IIT Madras</div>
         <div class="pub-year">2013</div>
+        <div class="pub-links">
+            <a href="{{ base_path }}/files/dash2013_biomechanical.pdf" class="pub-link pdf">PDF</a>
+        </div>
     </div>
 
 </div>
