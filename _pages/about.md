@@ -213,76 +213,9 @@ redirect_from:
 <div class="about-container">
     
     <div class="about-intro">
-        I am a <span class="highlight">Research Scientist Intern at Meta Reality Labs Research</span> and a <span class="highlight">Ph.D. candidate in Mechanical Engineering</span> at the Georgia Institute of Technology. My work spans soft wearable technologies, acoustic sensing for AR/VR and robotics, and transcranial focused ultrasound for imaging and neuromodulation using nonlinear acoustics. Combining rigorous experimentation with high-fidelity simulations, I investigate skull–brain dynamics and develop acoustic-hologram systems with fast, parallelized models for skull aberration correction.
+        I am a <span class="highlight">Research Scientist Intern at Meta Reality Labs Research</span> and a <span class="highlight">Ph.D. candidate in Mechanical Engineering</span> at the Georgia Institute of Technology. My work spans soft wearable technologies, acoustic sensing for AR/VR and robotics, and transcranial focused ultrasound for imaging and neuromodulation using nonlinear acoustics. Specifically, I investigate skull–brain dynamics and develop acoustic-hologram systems with fast, parallelized models for skull aberration correction.
     </div>
 
-    <div class="about-section">
-        <div class="about-section-title">Research Focus</div>
-        <div class="research-areas">
-            <div class="research-card">
-                <div class="research-card-title">Wearable Acoustic Technologies</div>
-                <div class="research-card-content">
-                    Developing next-generation soft wearable technologies and high-performance acoustic-based sensors for AR/VR integration and applied robotics at Meta Reality Labs Research.
-                </div>
-            </div>
-            
-            <div class="research-card">
-                <div class="research-card-title">Transcranial Focused Ultrasound</div>
-                <div class="research-card-content">
-                    Advancing imaging and neuromodulation techniques using nonlinear acoustics, with focus on skull-brain dynamics and acoustic-hologram systems for therapeutic applications.
-                </div>
-            </div>
-            
-            <div class="research-card">
-                <div class="research-card-title">Computational Acoustics</div>
-                <div class="research-card-content">
-                    Creating fast, parallelized acoustic propagation models for skull aberration correction, combining high-fidelity simulations with experimental validation.
-                </div>
-            </div>
-            
-            <div class="research-card">
-                <div class="research-card-title">Vibroacoustics & NVH</div>
-                <div class="research-card-content">
-                    Expertise in structural acoustics, vibration analysis, and noise control from automotive industry experience and academic research on tire dynamics.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-
-    <div class="about-section">
-        <div class="about-section-title">Technical Expertise</div>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-category-title">Computational Methods</div>
-                <div class="skill-list">
-                    Wave simulation, acoustic modeling, finite element analysis (COMSOL, Ansys), numerical acoustics, parallelized algorithms, MATLAB, Python
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <div class="skill-category-title">Experimental Techniques</div>
-                <div class="skill-list">
-                    Acoustic transducer characterization, modal testing, laser vibrometry, digital signal processing, hardware prototyping, data acquisition systems
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <div class="skill-category-title">Design & Development</div>
-                <div class="skill-list">
-                    CAD modeling (SolidWorks, Siemens NX), mechanical design, sensor development, wearable technologies, acoustic system design
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <div class="skill-category-title">Specialized Applications</div>
-                <div class="skill-list">
-                    Transcranial ultrasound, AR/VR sensing, neuromodulation, automotive NVH, psychoacoustics, medical device development
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="about-section">
         <div class="about-section-title">Research Philosophy</div>
@@ -291,17 +224,4 @@ redirect_from:
         </div>
     </div>
 
-    <div class="contact-info">
-        <div style="font-size: 1.1em; margin-bottom: 10px;">
-            <strong>Let's Connect</strong>
-        </div>
-        <div>
-            <a href="mailto:ppdash@gatech.edu">ppdash@gatech.edu</a> | 
-            <a href="https://linkedin.com/in/ppdash" target="_blank">LinkedIn</a>
-            {% if site.author.googlescholar %}
-             | <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
-            {% endif %}
-        </div>
-    </div>
-
-</div>
+   
