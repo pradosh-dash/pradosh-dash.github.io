@@ -1,16 +1,9 @@
-<!-- ---
+---
 layout: archive
 title: "About"
 permalink: /about/
 author_profile: true
---- -->
-
----
-permalink: /
-title: "About"
-author_profile: true
-redirect_from: 
-  - /about/
+redirect_from:
   - /about.html
 ---
 
@@ -356,8 +349,10 @@ redirect_from:
         </div>
         <div>
             <a href="mailto:ppdash@gatech.edu">ppdash@gatech.edu</a> | 
-            <a href="https://linkedin.com/in/ppdash" target="_blank">LinkedIn</a> | 
-            <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
+            <a href="https://linkedin.com/in/ppdash" target="_blank">LinkedIn</a>
+            {% if site.author.googlescholar %}
+             | <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
+            {% endif %}
         </div>
     </div>
 
