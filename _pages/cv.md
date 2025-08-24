@@ -204,12 +204,7 @@ redirect_from:
 </div>
 
 <div class="cv-container">
-    <div class="cv-header">
-        <div class="cv-name">Pradosh P. Dash</div>
-        <div class="cv-contact-info">
-            +1-(510)-364-7743 | <a href="mailto:ppdash@gatech.edu">ppdash@gatech.edu</a> | <a href="https://linkedin.com/in/ppdash" target="_blank">linkedin.com/in/ppdash</a>
-        </div>
-    </div>
+   
 
     <div class="cv-section-title">Professional & Academic Summary</div>
     <ul>
