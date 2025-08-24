@@ -24,7 +24,7 @@ redirect_from:
     padding: 25px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 10px;
-    border-left: 5px solid #2c5282;
+    border-left: 5px solid #343a40;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -35,10 +35,10 @@ redirect_from:
 .about-section-title {
     font-size: 1.4em;
     font-weight: bold;
-    color: #2c5282;
+    color: #343a40;
     margin-bottom: 15px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid #dee2e6;
 }
 
 .about-content {
@@ -58,7 +58,7 @@ redirect_from:
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #2c5282;
+    border-left: 4px solid #6c757d;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -66,11 +66,12 @@ redirect_from:
 .research-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-left-color: #343a40;
 }
 
 .research-card-title {
     font-weight: bold;
-    color: #2c5282;
+    color: #343a40;
     font-size: 1.1em;
     margin-bottom: 8px;
 }
@@ -94,7 +95,7 @@ redirect_from:
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, #2c5282, #e2e8f0);
+    background: linear-gradient(to bottom, #343a40, #dee2e6);
 }
 
 .timeline-item {
@@ -114,15 +115,15 @@ redirect_from:
     top: 20px;
     width: 12px;
     height: 12px;
-    background-color: #2c5282;
+    background-color: #343a40;
     border-radius: 50%;
     border: 3px solid #fff;
-    box-shadow: 0 0 0 3px #2c5282;
+    box-shadow: 0 0 0 3px #343a40;
 }
 
 .timeline-title {
     font-weight: bold;
-    color: #2c5282;
+    color: #343a40;
     margin-bottom: 5px;
 }
 
@@ -150,12 +151,12 @@ redirect_from:
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #2c5282;
+    border-left: 4px solid #6c757d;
 }
 
 .skill-category-title {
     font-weight: bold;
-    color: #2c5282;
+    color: #343a40;
     margin-bottom: 8px;
     font-size: 1.05em;
 }
@@ -167,12 +168,12 @@ redirect_from:
 }
 
 .highlight {
-    color: #2c5282;
+    color: #343a40;
     font-weight: 600;
 }
 
 .contact-info {
-    background: linear-gradient(135deg, #2c5282 0%, #3d5a9c 100%);
+    background: linear-gradient(135deg, #343a40 0%, #495057 100%);
     color: white;
     padding: 25px;
     border-radius: 10px;
@@ -181,7 +182,7 @@ redirect_from:
 }
 
 .contact-info a {
-    color: #bee3f8;
+    color: #e9ecef;
     text-decoration: none;
     font-weight: 500;
 }
