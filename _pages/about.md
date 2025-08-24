@@ -42,7 +42,7 @@ redirect_from:
 }
 
 .about-content {
-    font-size: 1.05em;
+    font-size: 0.95em;
     color: #4a5568;
     margin-bottom: 20px;
 }
