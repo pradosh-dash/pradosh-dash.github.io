@@ -6,13 +6,19 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+{% include base_path %}
 
-<div align="center">
-  <a href="/files/Pradosh_P_Dash_v08242025.pdf" download class="btn btn--primary">Download PDF</a>
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="{{ base_path }}/files/Pradosh_P_Dash_v08242025.pdf" class="btn btn--primary" target="_blank">
+    <i class="fa fa-download"></i> Download PDF
+  </a>
 </div>
 
-<iframe src="/files/Pradosh_P_Dash_v08242025.pdf" width="100%" height="800px">
+<iframe src="{{ base_path }}/files/Pradosh_P_Dash_v08242025.pdf" 
+        width="100%" 
+        height="800px" 
+        style="border: none;">
   <p>Your browser does not support PDFs. 
-     <a href="/files/Pradosh_P_Dash_v08242025.pdf">Download the PDF</a>.
+     <a href="{{ base_path }}/files/Pradosh_P_Dash_v08242025.pdf">Download the PDF</a>.
   </p>
 </iframe>
