@@ -249,50 +249,7 @@ redirect_from:
         </div>
     </div>
 
-    <div class="about-section">
-        <div class="about-section-title">Academic & Professional Journey</div>
-        <div class="journey-timeline">
-            <div class="timeline-item">
-                <div class="timeline-title">Research Scientist Intern - Meta Reality Labs Research</div>
-                <div class="timeline-period">May 2025 - Present</div>
-                <div class="timeline-content">
-                    Developing soft wearable technologies and acoustic-based sensors for AR/VR integration, collaborating with interdisciplinary teams on next-generation sensing solutions.
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-title">Ph.D. Candidate - Georgia Institute of Technology</div>
-                <div class="timeline-period">2020 - Present</div>
-                <div class="timeline-content">
-                    Research focus on transcranial focused ultrasound therapy and neuromodulation using nonlinear acoustics. Developing acoustic hologram systems and parallelized models for skull aberration correction.
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-title">M.S. in Mechanical Engineering - Virginia Tech</div>
-                <div class="timeline-period">2018 - 2020</div>
-                <div class="timeline-content">
-                    Specialized in tire vibroacoustics and structure-borne noise prediction. Developed experimental modal analysis procedures for rolling tire conditions and designed tuned absorbers for medical applications.
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-title">Senior Design Engineer - Bajaj Auto Ltd.</div>
-                <div class="timeline-period">2015 - 2018</div>
-                <div class="timeline-content">
-                    Led engine design and noise, vibration, and harshness (NVH) engineering projects. Optimized powertrain systems, conducted durability testing, and developed advanced vibration analysis methodologies for automotive applications.
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-title">B.Tech. in Mechanical Engineering - NIT Rourkela</div>
-                <div class="timeline-period">2011 - 2015</div>
-                <div class="timeline-content">
-                    University Gold Medalist with research in MEMS accelerometer design. Recognized by the President of India for academic excellence and research innovation.
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="about-section">
         <div class="about-section-title">Technical Expertise</div>
