@@ -17,7 +17,7 @@ redirect_from:
 }
 
 .about-intro {
-    font-size: 1.1em;
+    font-size: 1.0em;
     color: #333;
     margin-bottom: 30px;
     padding: 20px;
@@ -224,4 +224,17 @@ redirect_from:
         </div>
     </div>
 
+    <div class="contact-info">
+        <div style="font-size: 1.0em; margin-bottom: 10px;">
+            <strong>Let's Connect</strong>
+        </div>
+        <div>
+            <a href="mailto:ppdash@gatech.edu">ppdash@gatech.edu</a> | 
+            <a href="https://linkedin.com/in/ppdash" target="_blank">LinkedIn</a>
+            {% if site.author.googlescholar %}
+             | <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
+            {% endif %}
+        </div>
+    </div>
+    </div>
    
