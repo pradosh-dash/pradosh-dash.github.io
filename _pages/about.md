@@ -34,6 +34,7 @@ redirect_from:
     font-size: 1.2em;
     font-weight: 600;
     color: #343a40;
+    background-color: #f8f9fa;
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 1px solid #dee2e6;
