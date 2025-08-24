@@ -203,6 +203,20 @@ redirect_from:
     </a>
 </div>
 
+<div class="cv-container">
+
+
+
+    <div class="cv-section-title">Experience</div>
+        <div class="cv-experience-header">Research Scientist Intern, Meta Platform Inc., Pasadena, CA</div>
+        <div class="cv-experience-meta">Reality Lab Research | May 2025 – Present</div>
+        <div class="cv-experience-details">
+            <ul>
+                <li>Researched and developed next-generation soft wearable technologies while designing, prototyping, and characterizing high-performance wearable acoustic-based sensors for AR/VR integration and applied robotics.</li>
+                <li><strong>Cross-Functional Collaboration & Problem Solving:</strong> Collaborated with interdisciplinary Reality Labs team to provide creative solutions to complex challenges in soft wearables and sensing technologies.</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="cv-experience-item">
         <div class="cv-experience-header">Graduate Research Assistant, Georgia Institute of Technology, Atlanta, GA</div>
