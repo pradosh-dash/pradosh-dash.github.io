@@ -19,6 +19,7 @@ redirect_from:
 .about-intro {
     font-size: 1.0em;
     color: #333;
+    background-color: #f8f9fa;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 8px;
@@ -44,7 +45,7 @@ redirect_from:
     color: #555;
     background-color: #f8f9fa;
     margin-bottom: 15px;
-    border-bottom: 1px solid #dee2e6
+
 }
 
 .research-areas {
