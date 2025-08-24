@@ -7,6 +7,169 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+.teaching-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.teaching-section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c5282;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin: 30px 0 20px 0;
+}
+
+.teaching-section-title:first-child {
+    margin-top: 0;
+}
+
+.teaching-institution {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2d3748;
+    margin: 25px 0 15px 0;
+    border-left: 4px solid #2c5282;
+    padding-left: 15px;
+}
+
+.teaching-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 3px solid #2c5282;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.teaching-item:hover {
+    background-color: #f1f3f4;
+    transition: background-color 0.3s ease;
+}
+
+.teaching-course-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.teaching-course-number {
+    font-weight: bold;
+    color: #2c5282;
+    font-size: 1.05em;
+}
+
+.teaching-course-name {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.teaching-role {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.teaching-semester {
+    color: #718096;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.teaching-description {
+    margin-top: 8px;
+    color: #4a5568;
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    .teaching-item {
+        flex-direction: column;
+        padding: 12px;
+    }
+    
+    .teaching-semester {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+    .teaching-institution {
+        font-size: 1.2em;
+    }
+}
+</style>
+
+<div class="teaching-container">
+    
+    <div class="teaching-section-title">Graduate Teaching Experience</div>
+    
+    <div class="teaching-institution">Georgia Institute of Technology</div>
+    
+    <div class="teaching-item">
+        <div class="teaching-course-info">
+            <div class="teaching-course-number">ME 6452</div>
+            <div class="teaching-course-name">Wave Propagation in Solids</div>
+            <div class="teaching-role">Graduate Teaching Assistant</div>
+            <div class="teaching-description">
+                Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. 
+                Assisted with lectures, graded assignments, and provided guidance on complex mathematical derivations and simulation projects.
+            </div>
+        </div>
+        <div class="teaching-semester">Spring 2024</div>
+    </div>
+    
+    <div class="teaching-item">
+        <div class="teaching-course-info">
+            <div class="teaching-course-number">ME 6760</div>
+            <div class="teaching-course-name">Acoustics I</div>
+            <div class="teaching-role">Graduate Teaching Assistant</div>
+            <div class="teaching-description">
+                Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. 
+                Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.
+            </div>
+        </div>
+        <div class="teaching-semester">Fall 2022 & Fall 2024</div>
+    </div>
+    
+    <div class="teaching-institution">Virginia Tech</div>
+    
+    <div class="teaching-item">
+        <div class="teaching-course-info">
+            <div class="teaching-course-number">ME 4006</div>
+            <div class="teaching-course-name">Mechanical Engineering Laboratory</div>
+            <div class="teaching-role">Graduate Teaching Assistant</div>
+            <div class="teaching-description">
+                Hands-on laboratory course covering experimental methods in mechanical engineering including vibration analysis, 
+                heat transfer experiments, and fluid mechanics measurements. Supervised lab sessions and guided students through 
+                experimental procedures and data analysis.
+            </div>
+        </div>
+        <div class="teaching-semester">Fall 2018</div>
+    </div>
+    
+    <div class="teaching-item">
+        <div class="teaching-course-info">
+            <div class="teaching-course-number">PHY 2216</div>
+            <div class="teaching-course-name">Physics Laboratory</div>
+            <div class="teaching-role">Graduate Teaching Assistant</div>
+            <div class="teaching-description">
+                Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. 
+                Mentored undergraduate students in experimental design, data collection, and scientific report writing.
+            </div>
+        </div>
+        <div class="teaching-semester">Spring 2019</div>
+    </div>
+
+</div>
+
+<!-- Jekyll collection integration -->
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
