@@ -13,129 +13,192 @@ author_profile: true
 
 <style>
 .publications-container {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    max-width: 900px;
 }
 
 .pub-section-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2c5282;
-    border-bottom: 2px solid #e2e8f0;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #1a1a1a;
+    border-bottom: 2px solid #e5e5e5;
     padding-bottom: 8px;
-    margin: 30px 0 20px 0;
+    margin: 35px 0 20px 0;
+    letter-spacing: -0.3px;
 }
 
 .pub-section-title:first-child {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .pub-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    border-left: 4px solid #2c5282;
+    margin-bottom: 18px;
+    padding: 16px 18px;
+    background: #ffffff;
+    border-radius: 6px;
+    border-left: 3px solid;
+    border: 1px solid #e8e8e8;
+    border-left: 3px solid #d0d0d0;
+    transition: all 0.2s ease;
 }
 
 .pub-item:hover {
-    background-color: #f1f3f4;
-    transition: background-color 0.3s ease;
+    border-left-width: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 .pub-title {
-    font-weight: bold;
-    color: #2d3748;
-    margin-bottom: 5px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 6px;
     font-size: 1.05em;
+    line-height: 1.4;
 }
 
 .pub-authors {
-    color: #666;
+    color: #606060;
     margin-bottom: 5px;
-    font-style: italic;
+    font-size: 0.95em;
+}
+
+.pub-authors strong {
+    color: #1a1a1a;
+    font-weight: 600;
 }
 
 .pub-venue {
-    color: #2c5282;
+    color: #404040;
     font-weight: 500;
+    font-size: 0.95em;
+    display: inline;
+}
+
+.pub-meta-line {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .pub-year {
-    color: #718096;
+    color: #707070;
     font-size: 0.9em;
-}
-
-.pub-links {
-    margin-top: 8px;
-}
-
-.pub-link {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    padding: 4px 8px;
-    background-color: #e2e8f0;
-    color: #2c5282;
-    text-decoration: none;
-    border-radius: 3px;
-    font-size: 0.85em;
     font-weight: 500;
 }
 
+.pub-link {
+    padding: 3px 10px;
+    background: #f5f5f5;
+    color: #404040;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 500;
+    transition: all 0.15s ease;
+    border: 1px solid #e0e0e0;
+}
+
 .pub-link:hover {
-    background-color: #cbd5e0;
-    color: #2c5282;
+    background: #2a2a2a;
+    color: white;
+    border-color: #2a2a2a;
     text-decoration: none;
 }
 
 .pub-link.doi {
-    background-color: #bee3f8;
+    background: #f0f0f0;
 }
 
 .pub-link.pdf {
-    background-color: #fed7d7;
-}
-
-.pub-link.disabled {
-    background-color: #f7fafc;
-    color: #a0aec0;
-    cursor: not-allowed;
+    background: #f8f8f8;
 }
 
 .pub-status {
-    background-color: #ffd700;
-    color: #8b6914;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 0.85em;
-    font-weight: 500;
+    background: #ffd700;
+    color: #6b5d00;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    display: inline-block;
 }
 
 .pub-patent {
-    background-color: #e6f3ff;
-    border-left-color: #0066cc;
+    border-left-color: #4a4a4a;
 }
 
 .pub-journal {
-    background-color: #f0f8f0;
-    border-left-color: #228b22;
+    border-left-color: #5a5a5a;
 }
 
 .pub-conference {
-    background-color: #fff5f5;
-    border-left-color: #dc2626;
+    border-left-color: #6a6a6a;
 }
 
+/* Subtle animation */
+.pub-item {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typography refinements */
+.pub-item {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
     .pub-item {
-        padding: 10px;
+        padding: 14px;
         margin-bottom: 15px;
     }
     
     .pub-section-title {
-        font-size: 1.3em;
+        font-size: 1.4em;
+        margin: 25px 0 15px 0;
+    }
+    
+    .pub-title {
+        font-size: 1em;
+    }
+    
+    .pub-meta-line {
+        gap: 8px;
+    }
+    
+    .pub-link {
+        padding: 3px 8px;
+        font-size: 0.82em;
+    }
+}
+
+/* Print styles */
+@media print {
+    .pub-item {
+        box-shadow: none;
+        border: 1px solid #d0d0d0;
+        border-left: 2px solid #606060;
+        page-break-inside: avoid;
+    }
+    
+    .pub-link {
+        border: 1px solid #d0d0d0;
+        background: white;
     }
 }
 </style>
@@ -148,8 +211,8 @@ author_profile: true
         <div class="pub-title">Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration</div>
         <div class="pub-authors">Arvanitis, C. and <strong>Dash, P.P.</strong></div>
         <div class="pub-venue">U.S. Patent Application 18/638,465, Georgia Tech Research Corp</div>
-        <div class="pub-year">2024</div>
-        <div class="pub-links">
+        <div class="pub-meta-line">
+            <span class="pub-year">2024</span>
             <a href="https://patents.google.com/patent/US20240342511A1/en" class="pub-link doi" target="_blank">DOI</a>
             <a href="https://patentimages.storage.googleapis.com/bb/c5/20/6d5d962bd389b4/US20240342511A1.pdf" class="pub-link pdf">PDF</a>
         </div>
@@ -161,8 +224,8 @@ author_profile: true
         <div class="pub-title">Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">Journal Article <span class="pub-status">Under Review</span></div>
-        <div class="pub-year">2025</div>
-        <div class="pub-links">
+        <div class="pub-meta-line">
+            <span class="pub-year">2025</span>
             <a href="https://doi.org/10.48550/arXiv.2508.07103" class="pub-link doi" target="_blank">DOI</a>
             <a href="https://arxiv.org/pdf/2508.07103" class="pub-link pdf">PDF</a>
         </div>
@@ -172,14 +235,18 @@ author_profile: true
         <div class="pub-title">Breaking the Skull Barrier: Parametric Array Enable Non-Invasive Monitoring of Transcranial Focused Ultrasound</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">Journal Article <span class="pub-status">In Preparation</span></div>
-        <div class="pub-year">2025</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2025</span>
+        </div>
     </div>
     <!--
     <div class="pub-item pub-journal">
         <div class="pub-title">In-vitro modulation of DRG Neurons with contrast-enhanced Acoustic Radiation Force</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong>, Yeseul N., Han L. & Arvanitis, C. D.</div>
         <div class="pub-venue">Journal Article <span class="pub-status">In Preparation</span></div>
-        <div class="pub-year">2025</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2025</span>
+        </div>
     </div>
     -->
     
@@ -187,8 +254,8 @@ author_profile: true
         <div class="pub-title">Experimental demonstration of trans-skull volumetric passive acoustic mapping</div>
         <div class="pub-authors">Schoen, S., <strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control</div>
-        <div class="pub-year">2022</div>
-        <div class="pub-links">
+        <div class="pub-meta-line">
+            <span class="pub-year">2022</span>
             <a href="https://doi.org/10.1109/TUFFC.2021.3125670" class="pub-link doi" target="_blank">DOI</a>
             <a href="{{ base_path }}/files/schoen2022_experimental_demonstration.pdf" class="pub-link pdf">PDF</a>
         </div>
@@ -200,15 +267,17 @@ author_profile: true
         <div class="pub-title">Leveraging the Parametric Array Effect for Transcranial Focused Ultrasound Interventions</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
         <div class="pub-venue">The Journal of the Acoustical Society of America, 157(4)</div>
-        <div class="pub-year">2025</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2025</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">Acoustic Hologram Assisted Fast Aberration Correction in Transcranial FUS Therapy</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">2024 IEEE International Ultrasonics Symposium</div>
-        <div class="pub-year">2024</div>
-        <div class="pub-links">
+        <div class="pub-meta-line">
+            <span class="pub-year">2024</span>
             <a href="{{ base_path }}/files/dash2024_hologram_aberration.pdf" class="pub-link pdf">PDF</a>
         </div>
     </div>
@@ -217,49 +286,63 @@ author_profile: true
         <div class="pub-title">Efficient Design and Registration of Hologram-Assisted Transcranial FUS Therapy</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
         <div class="pub-venue">23rd Annual Symposium on Therapeutic Ultrasound, Taiwan</div>
-        <div class="pub-year">2024</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2024</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">Heterogeneous Angular Spectrum Approach-based Holograms for Trans-skull Focused Ultrasound Therapy</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
         <div class="pub-venue">Journal of the Acoustical Society of America (JASA)</div>
-        <div class="pub-year">2023</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2023</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">Ultrasound mediated control of neurons and immune cells</div>
         <div class="pub-authors">Arvanitis, C., <strong>Dash, P. P.</strong> & Kim, C.</div>
         <div class="pub-venue">The Journal of the Acoustical Society of America, 153(3 supplement), A31-A31</div>
-        <div class="pub-year">2023</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2023</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">Non-linearities under highly focused high-intensity ultrasound fields</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C.</div>
         <div class="pub-venue">The Journal of the Acoustical Society of America, 150(4), A125-A125</div>
-        <div class="pub-year">2021</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2021</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">3D Transcranial Passive Acoustic Mapping with the Heterogeneous Angular Spectrum Approach</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong>, Schoen, S. & Arvanitis, C. D.</div>
         <div class="pub-venue">2021 IEEE International Ultrasonics Symposium</div>
-        <div class="pub-year">2021</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2021</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles</div>
         <div class="pub-authors">Jing, B., Lee, H., <strong>Dash, P.P.</strong>, Arvanitis, C. D. & Lindsey, B. D.</div>
         <div class="pub-venue">2021 IEEE International Ultrasonics Symposium (pp. 1-4)</div>
-        <div class="pub-year">2021</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2021</span>
+        </div>
     </div>
     
     <div class="pub-item pub-conference">
         <div class="pub-title">Biomechanical stress analysis of human femur bone</div>
         <div class="pub-authors"><strong>Dash, P. P.</strong>, Kishor, K. & Panda, S. K.</div>
         <div class="pub-venue">International Conference on CAD/CAE, IIT Madras</div>
-        <div class="pub-year">2013</div>
+        <div class="pub-meta-line">
+            <span class="pub-year">2013</span>
+        </div>
     </div>
 
 </div>
