@@ -10,17 +10,17 @@ author_profile: true
 <style>
 .teaching-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
 }
 
 .teaching-section-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #2c5282;
-    border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 8px;
-    margin: 30px 0 20px 0;
+    border-bottom: 1.5px solid #e2e8f0;
+    padding-bottom: 4px;
+    margin: 20px 0 12px 0;
 }
 
 .teaching-section-title:first-child {
@@ -28,20 +28,20 @@ author_profile: true
 }
 
 .teaching-institution {
-    font-size: 1.3em;
+    font-size: 1.15em;
     font-weight: bold;
     color: #2d3748;
-    margin: 25px 0 15px 0;
-    border-left: 4px solid #2c5282;
-    padding-left: 15px;
+    margin: 18px 0 10px 0;
+    border-left: 3px solid #2c5282;
+    padding-left: 12px;
 }
 
 .teaching-item {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
     background-color: #f8f9fa;
-    border-radius: 5px;
-    border-left: 3px solid #2c5282;
+    border-radius: 4px;
+    border-left: 2.5px solid #2c5282;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -50,7 +50,7 @@ author_profile: true
 
 .teaching-item:hover {
     background-color: #f1f3f4;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .teaching-course-info {
@@ -61,19 +61,24 @@ author_profile: true
 .teaching-course-number {
     font-weight: bold;
     color: #2c5282;
-    font-size: 1.05em;
+    font-size: 0.95em;
+    display: inline;
 }
 
 .teaching-course-name {
     font-weight: 600;
     color: #2d3748;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    font-size: 0.95em;
+    display: inline;
+    margin-left: 8px;
 }
 
 .teaching-role {
     color: #666;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.85em;
+    margin-top: 2px;
 }
 
 .teaching-semester {
@@ -81,27 +86,54 @@ author_profile: true
     font-weight: 500;
     white-space: nowrap;
     margin-left: 10px;
+    font-size: 0.9em;
 }
 
 .teaching-description {
-    margin-top: 8px;
+    margin-top: 5px;
     color: #4a5568;
-    font-size: 0.95em;
+    font-size: 0.87em;
+    line-height: 1.35;
 }
 
 @media (max-width: 768px) {
     .teaching-item {
         flex-direction: column;
-        padding: 12px;
+        padding: 8px 10px;
+        margin-bottom: 8px;
     }
     
     .teaching-semester {
         margin-left: 0;
-        margin-top: 5px;
+        margin-top: 4px;
+        font-size: 0.85em;
     }
     
     .teaching-institution {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin: 15px 0 8px 0;
+    }
+    
+    .teaching-course-number,
+    .teaching-course-name {
+        font-size: 0.9em;
+    }
+    
+    .teaching-description {
+        font-size: 0.85em;
+    }
+}
+
+/* Print styles */
+@media print {
+    .teaching-item {
+        margin-bottom: 8px;
+        padding: 8px 10px;
+        page-break-inside: avoid;
+    }
+    
+    .teaching-institution {
+        margin: 15px 0 8px 0;
     }
 }
 </style>
@@ -116,7 +148,7 @@ author_profile: true
         <div class="teaching-course-info">
             <div class="teaching-course-number">ME 6452</div>
             <div class="teaching-course-name">Wave Propagation in Solids</div>
-            <div class="teaching-role"> Teaching Practicum, Georgia Tech</div>
+            <div class="teaching-role">Teaching Practicum, Georgia Tech</div>
             <div class="teaching-description">
                 Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. 
                 Assisted with lectures and guided complex mathematical derivations and simulations.
