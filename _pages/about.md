@@ -304,7 +304,7 @@ redirect_from:
 
 
     <div class="about-section">
-        <div class="about-section-title">Research Philosophy</div>
+        <div class="about-section-title">Research Overview</div>
         <div class="about-content">
             My research approach combines <strong>rigorous experimentation</strong> with <strong>high-fidelity computational modeling</strong> to tackle complex challenges in acoustics and mechanical engineering. I believe in bridging fundamental scientific understanding with practical engineering solutions, whether developing breakthrough medical technologies or advancing consumer electronics. My interdisciplinary background—spanning academic research, industry experience, and cutting-edge technology development—enables me to approach problems from multiple perspectives and create innovative solutions that have real-world impact.
         </div>
