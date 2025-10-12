@@ -72,7 +72,7 @@ redirect_from:
 .about-content {
     font-size: 1.05em;
     color: #4a5568;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
     margin-bottom: 25px;
     padding: 28px;
     border-radius: 16px;
@@ -100,7 +100,7 @@ redirect_from:
 }
 
 .research-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
     padding: 28px;
     border-radius: 16px;
     border: 1px solid #e2e8f0;
@@ -166,7 +166,7 @@ redirect_from:
 .timeline-item {
     position: relative;
     margin-bottom: 35px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
     padding: 24px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -188,7 +188,7 @@ redirect_from:
     height: 12px;
     background: #1e3a8a;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #ffffff, 0 0 0 6px rgba(30, 58, 138, 0.2);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.7), 0 0 0 6px rgba(30, 58, 138, 0.2);
     z-index: 1;
 }
 
@@ -240,7 +240,7 @@ redirect_from:
 }
 
 .skill-category {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
     padding: 24px;
     border-radius: 16px;
     border: 1px solid #e2e8f0;
