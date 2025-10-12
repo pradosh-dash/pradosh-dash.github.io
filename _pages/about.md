@@ -461,7 +461,7 @@ redirect_from:
             </div>
             <div class="timeline-item">
                 <div class="timeline-title">Graduate Research Assistant - Georgia Tech</div>
-                <div class="timeline-period">2020 - Present</div>
+                <div class="timeline-period">2020 - 2025</div>
                 <div class="timeline-content">
                     Pioneering research in transcranial ultrasound therapy and neuromodulation. Key achievements include:
                     <ul>
