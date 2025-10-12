@@ -401,7 +401,7 @@ redirect_from:
 <div class="about-container">
     
     <div class="about-intro">
-        I am a <span class="highlight">Research Scientist Intern at Meta Reality Labs Research</span> and a <span class="highlight">Ph.D. candidate in Mechanical Engineering</span> at Georgia Institute of Technology. With over 10 years of experience spanning academia and industry, I specialize in mechanical design, hardware development, and sensor integration for advanced applications in robotics, AR/VR, and medical ultrasound therapy. My unique background combines deep expertise in acoustics, vibration analysis, and multi-physics simulation with hands-on experience in translating research prototypes into manufacturable products.
+        I am a <span class="highlight">Research Scientist Intern</span> at <span class="highlight">Meta Reality Labs Research</span> and a <span class="highlight">Ph.D. candidate in Mechanical Engineering</span> at Georgia Institute of Technology. With over 10 years of experience spanning academia and industry, I specialize in mechanical design, hardware development, and sensor integration for advanced applications in robotics, AR/VR, and medical ultrasound therapy. My unique background combines deep expertise in acoustics, vibration analysis, and multi-physics simulation with hands-on experience in translating research prototypes into manufacturable products.
     </div>
 
     <div class="about-section">
