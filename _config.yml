@@ -26,8 +26,8 @@ author:
   name             : "Pradosh P. Dash"
   pronouns         :  "he/him"  
   bio              : #"Research Scientist Intern (Meta Reality Labs Research) & Ph.D. candidate (Georgia Tech) advancing soft wearables, acoustic sensing, and ultrasound neuromodulation."
-  location         : "Pasadena, CA"
-  employer         : "Meta Platform Inc."
+  location         : "Atlanta, GA"
+  # employer         : "Meta Platform Inc."
   uri              : # URL
   email            : "ppdash@gatech.edu" 
 
