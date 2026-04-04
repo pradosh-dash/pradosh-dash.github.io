@@ -456,9 +456,9 @@ redirect_from:
                 <div class="timeline-title">Research Scientist Intern,  Meta Reality Labs Research</div>
                 <div class="timeline-period">May 2025 – Nov 2025</div>
                 <div class="timeline-content">
-                    Designed and prototyped wearable ultrasound transducer arrays and signal processing algorithms for AR/VR platforms. Key contributions include:
+                    Developed and ehanced ultrasonic sensing modalitties for robotic and AR/VR platforms. Key contributions include:
                     <ul>
-                        <li>Beamforming parameter tuning and multi-channel system performance benchmarking</li>
+                        <li>Beamforming parameter tuning and multi-channel ultrasound imaging system performance benchmarking</li>
                         <li>Doppler-based motion rejection algorithms for robust wearable sensing</li>
                         <li>SVD-based signal filtering for clutter suppression and SNR enhancement</li>
                         <li>Cross-functional collaboration with hardware, firmware, and algorithm teams</li>
