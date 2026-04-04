@@ -401,7 +401,7 @@ redirect_from:
 <div class="about-container">
     
     <div class="about-intro">
-        I am a <span class="highlight">Ph.D. in Mechanical Engineering</span> from Georgia Institute of Technology and recently a <span class="highlight">Research Scientist Intern</span> at <span class="highlight">Meta Reality Labs Research</span>. With over 10 years of experience spanning academia and industry, I specialize in ultrasound system development — from multi-channel transducer array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. My work bridges nonlinear acoustics in heterogeneous media with practical wearable sensing and medical ultrasound therapy applications, combining rigorous computational modeling with hands-on hardware prototyping and embedded DSP.
+        I am a <span class="highlight">Ph.D. in Mechanical Engineering</span> from Georgia Institute of Technology and recently a <span class="highlight">Research Scientist Intern</span> at <span class="highlight">Meta Reality Labs Research</span>. With over 10 years of experience spanning academia and industry, I specialize in ultrasound system development, from multi-channel transducer array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. My work bridges nonlinear acoustics in heterogeneous media with practical wearable sensing and medical ultrasound therapy applications, combining rigorous computational modeling with hands-on hardware prototyping and embedded DSP.
     </div>
 
     <div class="about-section">
@@ -453,7 +453,7 @@ redirect_from:
         <div class="about-section-title">Professional Journey</div>
         <div class="journey-timeline">
             <div class="timeline-item">
-                <div class="timeline-title">Research Scientist Intern — Meta Reality Labs</div>
+                <div class="timeline-title">Research Scientist Intern,  Meta Reality Labs Research</div>
                 <div class="timeline-period">May 2025 – Nov 2025</div>
                 <div class="timeline-content">
                     Designed and prototyped wearable ultrasound transducer arrays and signal processing algorithms for AR/VR platforms. Key contributions include:
@@ -466,7 +466,7 @@ redirect_from:
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-title">Graduate Research Assistant — Georgia Tech</div>
+                <div class="timeline-title">Graduate Research Assistant,  Georgia Tech</div>
                 <div class="timeline-period">2020 – 2025</div>
                 <div class="timeline-content">
                     Ph.D. research in transcranial focused ultrasound therapy and neuromodulation biophysics. Key achievements:
@@ -479,7 +479,7 @@ redirect_from:
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-title">Graduate Research Assistant — Virginia Tech</div>
+                <div class="timeline-title">Graduate Research Assistant,  Virginia Tech</div>
                 <div class="timeline-period">2018 – 2020</div>
                 <div class="timeline-content">
                     M.S. research in vibroacoustic modeling and structural dynamics in the Vibration and Acoustics Laboratory. Key contributions:
@@ -491,7 +491,7 @@ redirect_from:
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-title">Senior Design Engineer — Bajaj Auto Ltd.</div>
+                <div class="timeline-title">Senior Design Engineer,  Bajaj Auto Ltd.</div>
                 <div class="timeline-period">2015 – 2018</div>
                 <div class="timeline-content">
                     Led powertrain NVH optimization and active noise control system development with 3+ years of industry experience:
