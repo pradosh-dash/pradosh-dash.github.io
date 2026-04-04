@@ -401,13 +401,13 @@ redirect_from:
 <div class="about-container">
     
     <div class="about-intro">
-        I am a <span class="highlight">Research Scientist Intern</span> at <span class="highlight">Meta Reality Labs Research</span> and a <span class="highlight">Ph.D. candidate in Mechanical Engineering</span> at Georgia Institute of Technology. With over 10 years of experience spanning academia and industry, I specialize in mechanical design, hardware development, and sensor integration for advanced applications in robotics, AR/VR, and medical ultrasound therapy. My unique background combines deep expertise in acoustics, vibration analysis, and multi-physics simulation with hands-on experience in translating research prototypes into manufacturable products.
+        I am a <span class="highlight">Ph.D. in Mechanical Engineering</span> from Georgia Institute of Technology and recently a <span class="highlight">Research Scientist Intern</span> at <span class="highlight">Meta Reality Labs Research</span>. With over 10 years of experience spanning academia and industry, I specialize in ultrasound system development — from multi-channel transducer array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. My work bridges nonlinear acoustics in heterogeneous media with practical wearable sensing and medical ultrasound therapy applications, combining rigorous computational modeling with hands-on hardware prototyping and embedded DSP.
     </div>
 
     <div class="about-section">
         <div class="about-section-title">Current Research</div>
         <div class="about-content">
-            At <strong>Meta Reality Labs Research</strong>, I'm developing next-generation ultrasound-based sensing technologies for AR/VR wearable systems, focusing on high-performance sensor design and real-time signal processing algorithms. My doctoral research at Georgia Tech investigates <strong>transcranial focused ultrasound therapy</strong> and <strong>ultrasound system design</strong>, where I've developed novel acoustic hologram systems and fast parallelized models for skull aberration correction and neuro-navigation based on nonlinear acoustics
+            At <strong>Meta Reality Labs Research</strong>, I developed next-generation wearable ultrasound sensing technologies for AR/VR systems, designing compact transducer arrays, building real-time signal processing pipelines, and implementing <strong>Doppler-based motion rejection</strong> algorithms for robust sensing in dynamic environments. My doctoral research at Georgia Tech investigated <strong>transcranial focused ultrasound therapy</strong> using <strong>multi-channel ultrasound systems (Verasonics)</strong>, where I developed GPU-accelerated aberration correction algorithms, optimized acoustic hologram topologies through heterogeneous skull bone, and applied <strong>SVD-based spatiotemporal filtering</strong> for volumetric passive acoustic mapping and image reconstruction.
         </div>
     </div>
 
@@ -416,10 +416,10 @@ redirect_from:
         <div class="research-areas">
             <div class="research-card">
                 <div class="research-card-title">
-                    Advanced Sensing Systems
+                    Wearable Ultrasound Sensing
                 </div>
                 <div class="research-card-content">
-                    Designing and prototyping ultrasound-based sensors for AR/VR applications, developing tactile and force sensing technologies for robotics and wearables, with expertise in sensor characterization and performance optimization.
+                    Designing and prototyping wearable ultrasound transducer arrays for AR/VR platforms. Expertise in multi-channel system optimization, beamforming parameter tuning, Doppler-based motion rejection, and SVD-based clutter filtering for high-sensitivity physiological monitoring.
                 </div>
             </div>
             <div class="research-card">
@@ -427,23 +427,23 @@ redirect_from:
                     Transcranial Ultrasound Therapy
                 </div>
                 <div class="research-card-content">
-                    Developing acoustic hologram-based systems for non-invasive brain therapy, implementing heterogeneous angular spectrum approaches for skull aberration correction, and advancing parametric array techniques for trans-skull monitoring.
+                    Developing acoustic hologram-based systems for non-invasive brain therapy using Verasonics multi-channel platforms. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.
                 </div>
             </div>
             <div class="research-card">
                 <div class="research-card-title">
-                    Vibroacoustic Modeling
+                    Signal & Image Processing
                 </div>
                 <div class="research-card-content">
-                    Applying wave simulation and structural acoustics to complex systems, from tire NVH analysis to neuromodulation biophysics. Expertise in modal testing, transducer characterization, and multi-physics simulation.
+                    SVD-based spatiotemporal filtering, strain imaging and elastography, Doppler flow processing, advanced beamforming (delay-and-sum, angular spectrum), and ultrafast high-frame-rate acquisition for transient event capture and volumetric image reconstruction.
                 </div>
             </div>
             <div class="research-card">
                 <div class="research-card-title">
-                    Scientific Machine Learning
+                    Vibroacoustic Modeling & NVH
                 </div>
                 <div class="research-card-content">
-                    Integrating AI/ML techniques with acoustic modeling for intelligent electromechanical design, implementing data-driven approaches for signal processing and system optimization in sensing applications.
+                    Experimental modal analysis, structural noise transfer path quantification, and active noise control with embedded DSP. Industry experience in powertrain NVH optimization, psychoacoustic tuning, and real-time adaptive filtering (FxLMS) on TMS320 platforms.
                 </div>
             </div>
         </div>
@@ -453,34 +453,53 @@ redirect_from:
         <div class="about-section-title">Professional Journey</div>
         <div class="journey-timeline">
             <div class="timeline-item">
-                <div class="timeline-title">Research Scientist Intern - Meta Reality Labs</div>
-                <div class="timeline-period">May 2025 - Present</div>
+                <div class="timeline-title">Research Scientist Intern — Meta Reality Labs</div>
+                <div class="timeline-period">May 2025 – Nov 2025</div>
                 <div class="timeline-content">
-                    Leading development of cutting-edge ultrasound sensing technologies for next-generation AR/VR systems. Collaborating with cross-functional teams to solve complex technical challenges in sensor physics and real-time signal processing.
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-title">Graduate Research Assistant - Georgia Tech</div>
-                <div class="timeline-period">2020 - 2025</div>
-                <div class="timeline-content">
-                    Pioneering research in transcranial ultrasound therapy and neuromodulation. Key achievements include:
+                    Designed and prototyped wearable ultrasound transducer arrays and signal processing algorithms for AR/VR platforms. Key contributions include:
                     <ul>
-                        <li>Developed fast parallelized acoustic propagation models for skull aberration correction</li>
-                        <li>Designed acoustic hologram systems accounting for skull heterogeneity</li>
-                        <li>Investigated mechanical and acoustic interactions with neuronal circuits</li>
+                        <li>Beamforming parameter tuning and multi-channel system performance benchmarking</li>
+                        <li>Doppler-based motion rejection algorithms for robust wearable sensing</li>
+                        <li>SVD-based signal filtering for clutter suppression and SNR enhancement</li>
+                        <li>Cross-functional collaboration with hardware, firmware, and algorithm teams</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-title">Senior Design Engineer - Bajaj Auto Ltd.</div>
-                <div class="timeline-period">2015 - 2018</div>
+                <div class="timeline-title">Graduate Research Assistant — Georgia Tech</div>
+                <div class="timeline-period">2020 – 2025</div>
                 <div class="timeline-content">
-                    Led powertrain integration and NVH optimization for automotive systems with 3+ years of industry experience in:
+                    Ph.D. research in transcranial focused ultrasound therapy and neuromodulation biophysics. Key achievements:
                     <ul>
-                        <li>Hardware design (DFM/DFA) and product validation</li>
-                        <li>Psychoacoustic tuning of exhaust systems</li>
-                        <li>Vibration modeling and predictive analytics</li>
-                        <li>Design failure analysis and reliability enhancement</li>
+                        <li>GPU-accelerated nonlinear wave propagation simulations for heterogeneous skull bone</li>
+                        <li>Fast aberration correction algorithms using differentiable acoustic propagators and Verasonics arrays</li>
+                        <li>Acoustic hologram topology optimization for improved spatial targeting and image reconstruction</li>
+                        <li>Ultrafast acquisition for capturing transient neural responses in neuromodulation studies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-title">Graduate Research Assistant — Virginia Tech</div>
+                <div class="timeline-period">2018 – 2020</div>
+                <div class="timeline-content">
+                    M.S. research in vibroacoustic modeling and structural dynamics in the Vibration and Acoustics Laboratory. Key contributions:
+                    <ul>
+                        <li>Experimental modal analysis of rolling tires using laser vibrometry and accelerometer arrays for structure-borne noise prediction</li>
+                        <li>Quantified structural noise and vibration transfer paths under realistic operating conditions</li>
+                        <li>Designed a semi-active tuned absorber to reduce rest tremors in Parkinson's patients</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-title">Senior Design Engineer — Bajaj Auto Ltd.</div>
+                <div class="timeline-period">2015 – 2018</div>
+                <div class="timeline-content">
+                    Led powertrain NVH optimization and active noise control system development with 3+ years of industry experience:
+                    <ul>
+                        <li>Embedded DSP implementation (TMS320) for real-time active noise cancellation</li>
+                        <li>FxLMS adaptive filtering achieving 10 dB attenuation in engine intake noise</li>
+                        <li>End-to-end hardware prototyping, testing, and product validation</li>
+                        <li>Psychoacoustic tuning and pass-by-noise regulatory compliance</li>
                     </ul>
                 </div>
             </div>
@@ -491,39 +510,48 @@ redirect_from:
         <div class="about-section-title">Technical Expertise</div>
         <div class="skills-grid">
             <div class="skill-category">
-                <div class="skill-category-title">Core Competencies</div>
+                <div class="skill-category-title">Ultrasound Systems</div>
                 <div class="skill-list">
-                    Wave simulation & acoustic modeling • Hardware prototyping • Digital signal processing • Modal testing • Sensor integration • Noise & vibration analysis • AI/ML applications in acoustics
+                    Multi-channel array systems (Verasonics) • Beamforming & sequence optimization • Transducer characterization • Aberration correction • Passive acoustic mapping • Ultrafast imaging
                 </div>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Design & CAD</div>
+                <div class="skill-category-title">Signal & Image Processing</div>
                 <div class="skill-list">
-                    SolidWorks • Siemens NX • AutoCAD • GD&T • Design for Manufacturing (DFM/DFA) • Rapid prototyping • Product validation
+                    SVD-based spatiotemporal filtering • Strain imaging / elastography • Doppler processing & motion rejection • Digital Image Correlation (DIC) • Adaptive filtering (FxLMS)
                 </div>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Analysis & Simulation</div>
+                <div class="skill-category-title">Simulation & Analysis</div>
                 <div class="skill-list">
-                    COMSOL • HyperMesh • ANSYS • Adams • ME'Scope • Finite Element Modeling (FEM) • Multi-physics simulation
+                    GPU-accelerated nonlinear wave propagation • FEM (COMSOL, Ansys, HyperMesh) • Multiphysics modeling • MATLAB/Simulink
                 </div>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Programming</div>
+                <div class="skill-category-title">Programming & Hardware</div>
                 <div class="skill-list">
-                    Python • MATLAB • Simulink • Scientific computing • Data processing • Real-time signal analysis • Algorithm development
+                    Python • MATLAB • C/C++ (embedded DSP & hardware) • Simulink • Sensor prototyping • Signal acquisition (ADC/DAC) • CAD (SolidWorks, Siemens NX)
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Vibroacoustic Modeling</div>
+                <div class="skill-list">
+                    Experimental modal analysis • Laser vibrometry • Structure-borne noise prediction • Noise transfer path analysis • Active Noise Control (ANC) • Psychoacoustic tuning • NVH optimization
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Scientific Machine Learning</div>
+                <div class="skill-list">
+                    Data-driven acoustic modeling • Differentiable physics simulators • Machine vision • Imaging with learned models • Optimization techniques • Model order reduction
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
     <div class="about-section">
         <div class="about-section-title">Research Philosophy</div>
         <div class="about-content">
-            My research philosophy centers on bridging fundamental scientific understanding with practical engineering solutions. Whether developing breakthrough medical technologies or advancing consumer electronics, I combine <strong>rigorous experimentation</strong> with <strong>high-fidelity computational modeling</strong> to tackle complex challenges. My interdisciplinary background enables me to approach problems from multiple perspectives, creating innovative solutions that transition from laboratory prototypes to real-world applications. I believe the most impactful research occurs at the intersection of disciplines, where insights from acoustics, mechanics, materials science, and data science converge to solve society's most pressing challenges.
+            My research philosophy centers on bridging fundamental wave physics with practical engineering solutions. Whether developing wearable ultrasound sensors or advancing non-invasive brain therapies, I combine <strong>rigorous experimentation</strong> with <strong>high-fidelity computational modeling</strong> to tackle complex challenges. My interdisciplinary background — spanning nonlinear acoustics, multi-channel array systems, embedded DSP, and signal processing — enables me to approach problems end-to-end, from transducer design through algorithm development to system validation. I believe the most impactful research emerges at the intersection of disciplines, and I thrive in collaborative environments that bring together academic researchers and industry partners.
         </div>
     </div>
 
