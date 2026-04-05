@@ -1,14 +1,97 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Research Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  .portfolio-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    background: #fff;
+  }
+  .portfolio-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+  }
+  .portfolio-card-body {
+    padding: 1.5rem;
+  }
+  .portfolio-card-body h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+  }
+  .portfolio-card-body h3 a {
+    color: #2a4365;
+    text-decoration: none;
+  }
+  .portfolio-card-body h3 a:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+  }
+  .portfolio-tag {
+    display: inline-block;
+    background: #edf2f7;
+    color: #4a5568;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+  .portfolio-tag.journal   { background: #ebf8ff; color: #2b6cb0; }
+  .portfolio-tag.patent    { background: #fefcbf; color: #975a16; }
+  .portfolio-tag.in-prep   { background: #fff5f5; color: #c53030; }
+  .portfolio-excerpt {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+  }
+  .portfolio-meta {
+    font-size: 0.82rem;
+    color: #718096;
+    margin-top: 0.5rem;
+  }
+</style>
 
+<p style="font-size:1.05rem; color:#4a5568; line-height:1.7; margin-bottom:1.5rem;">
+  My research sits at the intersection of <strong>ultrasonics</strong>, <strong>acoustic wave propagation</strong>, and <strong>biomedical engineering</strong>.
+  Below is a curated portfolio of my key research contributions — spanning transcranial ultrasound therapy and monitoring,
+  acoustic holography, wearable sensing, and vibroacoustic modeling.
+</p>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+<div class="portfolio-grid">
+{% assign sorted = site.portfolio | sort: 'order' %}
+{% for post in sorted %}
+  <div class="portfolio-card">
+    {% if post.header and post.header.teaser %}
+      <a href="{{ post.url }}"><img src="{{ post.header.teaser }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;"></a>
+    {% endif %}
+    <div class="portfolio-card-body">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <div>
+        {% if post.tags %}
+          {% for tag in post.tags %}
+            <span class="portfolio-tag {% if tag == 'Journal' %}journal{% elsif tag == 'Patent' %}patent{% elsif tag == 'In Prep' %}in-prep{% endif %}">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+      {% if post.venue %}
+        <div class="portfolio-meta">{{ post.venue }}</div>
+      {% endif %}
+      <div class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</div>
+    </div>
+  </div>
 {% endfor %}
-
+</div>
