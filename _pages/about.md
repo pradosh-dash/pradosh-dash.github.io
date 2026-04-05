@@ -407,7 +407,7 @@ redirect_from:
     <div class="about-section">
         <div class="about-section-title">Current Research</div>
         <div class="about-content">
-            At Meta Reality Labs Research, I developed next-generation wearable ultrasound sensing technologies for AR/VR systems, working on compact transducer arrays for strain imaging, building real-time signal processing pipelines, and implementing Doppler-based motion rejection algorithms for robust sensing in dynamic environments. My doctoral research at Georgia Tech investigated transcranial focused ultrasound therapy using lensed as phased array based ultrasound systems, where I developed GPU-accelerated aberration correction algorithms, optimized acoustic hologram topologies through heterogeneous skull bone, and volumetric trasn-skull passive acoustic mapping and image reconstruction.
+            At Meta Reality Labs Research, I developed next-generation wearable ultrasound sensing technologies for AR/VR systems, working on compact transducer arrays for strain imaging, building real-time signal processing pipelines, and implementing Doppler-based motion rejection algorithms for robust sensing in dynamic environments. My doctoral research at Georgia Tech investigated transcranial focused ultrasound therapy using lensed as well as phased array based ultrasound systems, where I developed GPU-accelerated aberration correction algorithms, optimized acoustic hologram topologies through heterogeneous skull bone, and volumetric trasn-skull passive acoustic mapping and image reconstruction.
         </div>
     </div>
 
