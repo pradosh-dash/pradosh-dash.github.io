@@ -427,7 +427,7 @@ redirect_from:
                     Transcranial Ultrasound Therapy
                 </div>
                 <div class="research-card-content">
-                    Developing acoustic hologram-based systems for non-invasive brain therapy using Verasonics multi-channel platforms. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.
+                    Developing acoustic hologram-based systems for non-invasive brain therapy. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.
                 </div>
             </div>
             <div class="research-card">
