@@ -1,186 +1,374 @@
----
-layout: single
-permalink: /
-title: " "
-author_profile: true
-redirect_from:
-  - /about/
-  - /about.html
----
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Pradosh Dash</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-.about-page {
-  font-family: 'DM Sans', sans-serif;
-  color: #2d3748;
-  line-height: 1.7;
-}
-.about-page h1, .about-page h2 {
-  font-family: 'Source Serif 4', serif;
-  color: #0f2a4a;
-}
-.about-page h1 {
-  font-size: 1.75rem;
-  border-bottom: 1.5px solid #c4cdd8;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1.2rem;
-  margin-top: 2.4rem;
-}
-.about-page p, .about-page li {
-  font-size: 0.95rem;
-}
-.about-page a {
-  color: #1b3a5c;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
-}
-.about-page a:hover {
-  border-bottom-color: #1b3a5c;
-}
-.about-intro {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-}
-.ra-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.25rem;
-  margin: 1rem 0 2rem;
-}
-.ra-card {
-  background: #f4f6f9;
-  border: 1px solid #dce1e8;
-  border-radius: 6px;
-  padding: 1.2rem 1.3rem;
-  transition: box-shadow 0.25s, transform 0.2s;
-}
-.ra-card:hover {
-  box-shadow: 0 4px 16px rgba(15,42,74,0.10);
-  transform: translateY(-2px);
-}
-.ra-card h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #1b3a5c;
-  margin: 0 0 0.5rem;
-}
-.ra-card p {
-  font-size: 0.88rem;
-  color: #4a5568;
-  margin: 0;
-  line-height: 1.6;
-}
-.te-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0 2rem;
-}
-.te-card {
-  background: #f4f6f9;
-  border: 1px solid #dce1e8;
-  border-radius: 6px;
-  padding: 1rem 1.2rem;
-}
-.te-card h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #1b3a5c;
-  margin: 0 0 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-.te-card p {
-  font-size: 0.85rem;
-  color: #4a5568;
-  margin: 0;
-  line-height: 1.55;
-}
-.philosophy-box {
-  background: linear-gradient(135deg, #f4f6f9 0%, #eaeff5 100%);
-  border-left: 3px solid #1b3a5c;
-  border-radius: 0 6px 6px 0;
-  padding: 1.25rem 1.5rem;
-  margin: 1rem 0 2rem;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: #4a5568;
-}
-.connect-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1rem 0;
-}
-.connect-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0.5rem 1.1rem;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #1b3a5c;
-  background: #f4f6f9;
-  border: 1px solid #c4cdd8;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
-}
-.connect-btn:hover {
-  background: #e8edf4;
-  border-color: #1b3a5c;
-  box-shadow: 0 2px 8px rgba(15,42,74,0.10);
-  color: #0f2a4a;
-}
-@media (max-width: 600px) {
-  .ra-grid, .te-grid { grid-template-columns: 1fr; }
-}
+  :root {
+    --navy: #0f2a4a;
+    --navy-mid: #1b3a5c;
+    --navy-light: #2d5278;
+    --text-body: #2d3748;
+    --text-muted: #4a5568;
+    --text-subtle: #718096;
+    --border: #dce1e8;
+    --border-light: #c4cdd8;
+    --bg-card: #f4f6f9;
+    --bg-page: #ffffff;
+    --gold-bg: #fdf3d8;
+    --gold-text: #7a5a0a;
+    --gold-border: #e0c97a;
+    --accent: #1b3a5c;
+    --link-color: #1b3a5c;
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-body);
+    background: var(--bg-page);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  /* ── Section headings ── */
+  .section-heading {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: var(--navy);
+    border-bottom: 1.5px solid var(--border-light);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.4rem;
+    margin-top: 2.8rem;
+  }
+  .section-heading:first-child { margin-top: 0; }
+
+  /* ── Intro ── */
+  .about-intro {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--text-body);
+    margin-bottom: 0.5rem;
+  }
+
+  /* ── Philosophy box ── */
+  .philosophy-box {
+    background: linear-gradient(135deg, #f4f6f9 0%, #eaeff5 100%);
+    border-left: 3px solid var(--navy-mid);
+    border-radius: 0 6px 6px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+  }
+  .philosophy-box strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  /* ── Research Areas grid ── */
+  .ra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .ra-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.2rem 1.3rem 1rem;
+    transition: box-shadow 0.25s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .ra-card:hover {
+    box-shadow: 0 5px 20px rgba(15,42,74,0.10);
+    transform: translateY(-2px);
+  }
+
+  .ra-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: var(--navy-mid);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .ra-card p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 0.8rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--gold-bg);
+    color: var(--gold-text);
+    border: 1px solid var(--gold-border);
+    letter-spacing: 0.015em;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+
+  /* ── Technical Expertise grid ── */
+  .te-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .te-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+  }
+
+  .te-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--navy-mid);
+    margin-bottom: 0.45rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .te-card p {
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ── Connect bar ── */
+  .connect-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .connect-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.5rem 1.1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--navy-mid);
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+  .connect-btn:hover {
+    background: #e8edf4;
+    border-color: var(--navy-mid);
+    box-shadow: 0 2px 8px rgba(15,42,74,0.10);
+    color: var(--navy);
+  }
+  .connect-btn svg { flex-shrink: 0; }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    .page-wrap { padding: 2rem 1.25rem 4rem; }
+    .ra-grid, .te-grid { grid-template-columns: 1fr; }
+    .section-heading { font-size: 1.4rem; }
+  }
 </style>
+</head>
+<body>
+<div class="page-wrap">
 
-<div class="about-page">
+  <!-- ── About ── -->
+  <h2 class="section-heading" style="margin-top:0;">About</h2>
+  <p class="about-intro">
+    I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on ultrasound system development — from multi-element phased array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for AR/VR platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
+  </p>
 
-<h1 style="margin-top: 0;">About</h1>
-<p class="about-intro">
-I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on ultrasound system development — from multi-element phased array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for AR/VR platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
-</p>
+  <!-- ── Research Philosophy ── -->
+  <h2 class="section-heading">Research Philosophy</h2>
+  <div class="philosophy-box">
+    My research philosophy centers on bridging fundamental wave physics with practical engineering solutions. Whether developing wearable ultrasound sensors or advancing non-invasive brain therapies, I combine <strong>rigorous experimentation</strong> with <strong>high-fidelity computational modeling</strong> to tackle complex challenges. My interdisciplinary background — spanning nonlinear acoustics, multi-element array systems, embedded DSP, and signal processing — enables me to approach problems end-to-end, from transducer design through algorithm development to system validation. I believe the most impactful research emerges at the intersection of disciplines, and I thrive in collaborative environments that bring together academic researchers and industry partners.
+  </div>
 
-<h1>Research Philosophy</h1>
-<div class="philosophy-box">
-My research philosophy centers on bridging fundamental wave physics with practical engineering solutions. Whether developing wearable ultrasound sensors or advancing non-invasive brain therapies, I combine <strong>rigorous experimentation</strong> with <strong>high-fidelity computational modeling</strong> to tackle complex challenges. My interdisciplinary background — spanning nonlinear acoustics, multi-element array systems, embedded DSP, and signal processing — enables me to approach problems end-to-end, from transducer design through algorithm development to system validation. I believe the most impactful research emerges at the intersection of disciplines, and I thrive in collaborative environments that bring together academic researchers and industry partners.
+  <!-- ── Research Areas ── -->
+  <h2 class="section-heading">Research Areas</h2>
+  <div class="ra-grid">
+
+    <div class="ra-card">
+      <h3>Wearable Ultrasound Sensing</h3>
+      <p>Engineering wearable ultrasound transducer sensing for AR/VR platforms. Expertise in multi-element system optimization, beamforming parameter tuning, Doppler-based motion rejection, and SVD-based clutter filtering for high-sensitivity physiological monitoring.</p>
+      <div class="tag-row">
+        <span class="tag">Multi-element arrays</span>
+        <span class="tag">Beamforming</span>
+        <span class="tag">Doppler processing</span>
+        <span class="tag">SVD filtering</span>
+        <span class="tag">Verasonics</span>
+      </div>
+    </div>
+
+    <div class="ra-card">
+      <h3>Transcranial Ultrasound Therapy</h3>
+      <p>Developing acoustic hologram-based systems for non-invasive brain therapy. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.</p>
+      <div class="tag-row">
+        <span class="tag">Acoustic holograms</span>
+        <span class="tag">Aberration correction</span>
+        <span class="tag">Angular spectrum</span>
+        <span class="tag">Passive acoustic mapping</span>
+        <span class="tag">tFUS</span>
+      </div>
+    </div>
+
+    <div class="ra-card">
+      <h3>Signal &amp; Image Processing</h3>
+      <p>SVD-based spatiotemporal filtering, strain imaging and elastography, Doppler flow processing, advanced beamforming (delay-and-sum, angular spectrum), and ultrafast high-frame-rate acquisition for transient event capture and volumetric image reconstruction.</p>
+      <div class="tag-row">
+        <span class="tag">Delay-and-sum</span>
+        <span class="tag">Elastography</span>
+        <span class="tag">Ultrafast imaging</span>
+        <span class="tag">DIC</span>
+        <span class="tag">Volumetric recon</span>
+      </div>
+    </div>
+
+    <div class="ra-card">
+      <h3>Vibroacoustic Modeling &amp; NVH</h3>
+      <p>Experimental modal analysis, structural noise transfer path quantification, and active noise control with embedded DSP. Industry experience in powertrain NVH optimization, psychoacoustic tuning, and real-time adaptive filtering (FxLMS) on TMS320 platforms.</p>
+      <div class="tag-row">
+        <span class="tag">Modal analysis</span>
+        <span class="tag">FxLMS</span>
+        <span class="tag">TMS320 DSP</span>
+        <span class="tag">Laser vibrometry</span>
+        <span class="tag">ANC</span>
+        <span class="tag">NVH</span>
+      </div>
+    </div>
+
+    <div class="ra-card">
+      <h3>Neuromodulation Biophysics</h3>
+      <p>Exploring biophysical mechanisms of ultrasound neuromodulation using high-frame-rate (ultrafast) acquisition to capture transient neural responses. Developing novel tools to control neuronal circuits, advancing non-invasive brain modulation.</p>
+      <div class="tag-row">
+        <span class="tag">Ultrafast acquisition</span>
+        <span class="tag">Neural circuits</span>
+        <span class="tag">tFUS</span>
+        <span class="tag">Transient response</span>
+        <span class="tag">High-frame-rate</span>
+      </div>
+    </div>
+
+    <div class="ra-card">
+      <h3>Scientific Machine Learning</h3>
+      <p>Data-driven acoustic modeling, differentiable physics simulators, machine vision, imaging with learned models, optimization techniques, and model order reduction for accelerating complex wave-propagation simulations.</p>
+      <div class="tag-row">
+        <span class="tag">Physics-informed ML</span>
+        <span class="tag">Differentiable sim</span>
+        <span class="tag">Model order reduction</span>
+        <span class="tag">Machine vision</span>
+        <span class="tag">GPU acceleration</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Technical Expertise ── -->
+  <h2 class="section-heading">Technical Expertise</h2>
+  <div class="te-grid">
+
+    <div class="te-card">
+      <h3>Ultrasound Systems</h3>
+      <p>Multi-channel array systems (Verasonics) · Beamforming &amp; sequence optimization · Transducer characterization · Aberration correction · Passive acoustic mapping · Ultrafast imaging</p>
+    </div>
+
+    <div class="te-card">
+      <h3>Signal &amp; Image Processing</h3>
+      <p>SVD-based spatiotemporal filtering · Strain imaging / elastography · Doppler processing &amp; motion rejection · Digital Image Correlation (DIC) · Adaptive filtering (FxLMS)</p>
+    </div>
+
+    <div class="te-card">
+      <h3>Simulation &amp; Analysis</h3>
+      <p>GPU-accelerated nonlinear wave propagation · FEM (COMSOL, Ansys, HyperMesh) · Multiphysics modeling · MATLAB/Simulink</p>
+    </div>
+
+    <div class="te-card">
+      <h3>Programming &amp; Hardware</h3>
+      <p>Python · MATLAB · C/C++ (embedded DSP &amp; hardware) · Simulink · Sensor prototyping · Signal acquisition (ADC/DAC) · CAD (SolidWorks, Siemens NX)</p>
+    </div>
+
+    <div class="te-card">
+      <h3>Vibroacoustic Modeling</h3>
+      <p>Experimental modal analysis · Laser vibrometry · Structure-borne noise prediction · Noise transfer path analysis · Active Noise Control (ANC) · Psychoacoustic tuning · NVH optimization</p>
+    </div>
+
+    <div class="te-card">
+      <h3>Scientific Machine Learning</h3>
+      <p>Data-driven acoustic modeling · Differentiable physics simulators · Machine vision · Imaging with learned models · Optimization techniques · Model order reduction</p>
+    </div>
+
+  </div>
+
+  <!-- ── Let's Connect ── -->
+  <h2 class="section-heading">Let's Connect</h2>
+  <div class="connect-bar">
+
+    <a class="connect-btn" href="mailto:ppdash@gatech.edu">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+      Email
+    </a>
+
+    <a class="connect-btn" href="https://linkedin.com/in/ppdash" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+
+    <a class="connect-btn" href="https://github.com/pradosh-dash" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      GitHub
+    </a>
+
+    <a class="connect-btn" href="https://scholar.google.com/citations?user=us9GO_wAAAAJ" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+      Google Scholar
+    </a>
+
+  </div>
+
 </div>
-
-<h1>Research Areas</h1>
-<div class="ra-grid">
-  <div class="ra-card"><h3>Wearable Ultrasound Sensing</h3><p>Engineering wearable ultrasound transducer sensing for AR/VR platforms. Expertise in multi-element system optimization, beamforming parameter tuning, Doppler-based motion rejection, and SVD-based clutter filtering for high-sensitivity physiological monitoring.</p></div>
-  <div class="ra-card"><h3>Transcranial Ultrasound Therapy</h3><p>Developing acoustic hologram-based systems for non-invasive brain therapy. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.</p></div>
-  <div class="ra-card"><h3>Signal &amp; Image Processing</h3><p>SVD-based spatiotemporal filtering, strain imaging and elastography, Doppler flow processing, advanced beamforming (delay-and-sum, angular spectrum), and ultrafast high-frame-rate acquisition for transient event capture and volumetric image reconstruction.</p></div>
-  <div class="ra-card"><h3>Vibroacoustic Modeling &amp; NVH</h3><p>Experimental modal analysis, structural noise transfer path quantification, and active noise control with embedded DSP. Industry experience in powertrain NVH optimization, psychoacoustic tuning, and real-time adaptive filtering (FxLMS) on TMS320 platforms.</p></div>
-  <div class="ra-card"><h3>Neuromodulation Biophysics</h3><p>Exploring biophysical mechanisms of ultrasound neuromodulation using high-frame-rate (ultrafast) acquisition to capture transient neural responses. Developing novel tools to control neuronal circuits, advancing non-invasive brain modulation.</p></div>
-  <div class="ra-card"><h3>Scientific Machine Learning</h3><p>Data-driven acoustic modeling, differentiable physics simulators, machine vision, imaging with learned models, optimization techniques, and model order reduction for accelerating complex wave-propagation simulations.</p></div>
-</div>
-
-<h1>Technical Expertise</h1>
-<div class="te-grid">
-  <div class="te-card"><h3>Ultrasound Systems</h3><p>Multi-channel array systems (Verasonics) · Beamforming &amp; sequence optimization · Transducer characterization · Aberration correction · Passive acoustic mapping · Ultrafast imaging</p></div>
-  <div class="te-card"><h3>Signal &amp; Image Processing</h3><p>SVD-based spatiotemporal filtering · Strain imaging / elastography · Doppler processing &amp; motion rejection · Digital Image Correlation (DIC) · Adaptive filtering (FxLMS)</p></div>
-  <div class="te-card"><h3>Simulation &amp; Analysis</h3><p>GPU-accelerated nonlinear wave propagation · FEM (COMSOL, Ansys, HyperMesh) · Multiphysics modeling · MATLAB/Simulink</p></div>
-  <div class="te-card"><h3>Programming &amp; Hardware</h3><p>Python · MATLAB · C/C++ (embedded DSP &amp; hardware) · Simulink · Sensor prototyping · Signal acquisition (ADC/DAC) · CAD (SolidWorks, Siemens NX)</p></div>
-  <div class="te-card"><h3>Vibroacoustic Modeling</h3><p>Experimental modal analysis · Laser vibrometry · Structure-borne noise prediction · Noise transfer path analysis · Active Noise Control (ANC) · Psychoacoustic tuning · NVH optimization</p></div>
-  <div class="te-card"><h3>Scientific Machine Learning</h3><p>Data-driven acoustic modeling · Differentiable physics simulators · Machine vision · Imaging with learned models · Optimization techniques · Model order reduction</p></div>
-</div>
-
-<h1>Let's Connect</h1>
-<div class="connect-bar">
-  <a class="connect-btn" href="mailto:ppdash@gatech.edu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg> Email</a>
-  <a class="connect-btn" href="https://linkedin.com/in/ppdash" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
-  <a class="connect-btn" href="https://github.com/pradosh-dash" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
-  <a class="connect-btn" href="https://scholar.google.com/citations?user=us9GO_wAAAAJ" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Google Scholar</a>
-</div>
-
-</div>
+</body>
+</html>
