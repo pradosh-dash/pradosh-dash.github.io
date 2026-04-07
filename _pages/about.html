@@ -9,7 +9,6 @@ redirect_from:
 ---
 
 <style>
-/* ── Typography ── */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 .about-page {
@@ -40,15 +39,11 @@ redirect_from:
 .about-page a:hover {
   border-bottom-color: #1b3a5c;
 }
-
-/* ── Intro ── */
 .about-intro {
   font-size: 1.05rem;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
-
-/* ── Research Areas Grid ── */
 .ra-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -79,171 +74,6 @@ redirect_from:
   margin: 0;
   line-height: 1.6;
 }
-
-/* ══════════════════════════════════════════
-   Experience Timeline  (LinkedIn-style)
-   ══════════════════════════════════════════ */
-.exp-section {
-  margin: 1rem 0 2.5rem;
-}
-
-/* ── Single entry ── */
-.exp-entry {
-  display: flex;
-  gap: 1rem;
-  position: relative;
-  padding-bottom: 2rem;
-}
-.exp-entry:last-child { padding-bottom: 0; }
-
-/* Logo column + connector */
-.exp-logo-col {
-  flex-shrink: 0;
-  width: 52px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.exp-logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 6px;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid #dce1e8;
-  padding: 4px;
-  position: relative;
-  z-index: 2;
-}
-.exp-logo-col::after {
-  content: '';
-  flex: 1;
-  width: 2px;
-  background: #c4cdd8;
-  margin-top: 6px;
-}
-.exp-entry:last-child .exp-logo-col::after { display: none; }
-
-/* Content column */
-.exp-body {
-  flex: 1;
-  min-width: 0;
-}
-.exp-body h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #0f2a4a;
-  margin: 0 0 1px;
-  line-height: 1.3;
-}
-.exp-body .exp-company {
-  font-size: 0.92rem;
-  color: #4a5568;
-  margin: 0 0 2px;
-}
-.exp-body .exp-meta {
-  font-size: 0.82rem;
-  color: #8a94a2;
-  margin: 0 0 0.5rem;
-}
-.exp-body .exp-meta span + span::before { content: ' · '; }
-.exp-body .exp-desc {
-  font-size: 0.9rem;
-  color: #4a5568;
-  margin: 0.3rem 0 0;
-  line-height: 1.6;
-  font-style: italic;
-}
-.exp-body ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-}
-.exp-body ul li {
-  font-size: 0.88rem;
-  color: #4a5568;
-  line-height: 1.55;
-  margin-bottom: 0.25rem;
-}
-
-/* ── Skill Tags (transparent golden yellow) ── */
-.exp-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0.5rem;
-}
-.exp-skill-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: #8b6914;
-  background: rgba(202, 163, 45, 0.12);
-  border: 1px solid rgba(202, 163, 45, 0.35);
-  border-radius: 14px;
-  padding: 2px 10px;
-  letter-spacing: 0.01em;
-}
-
-/* ── Grouped entries (multiple roles at same company) ── */
-.exp-group {
-  position: relative;
-  padding-bottom: 2rem;
-}
-.exp-group:last-child { padding-bottom: 0; }
-
-.exp-group-header {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-bottom: 0.2rem;
-}
-
-.exp-group-body {
-  padding-left: calc(52px + 1rem);
-  border-left: 2px solid #c4cdd8;
-  margin-left: 25px;
-}
-.exp-group-body .exp-sub {
-  padding: 0.75rem 0 0.75rem 1rem;
-  position: relative;
-}
-.exp-group-body .exp-sub::before {
-  content: '';
-  position: absolute;
-  left: -7px;
-  top: 1.15rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #1b3a5c;
-  border: 2px solid #fff;
-}
-.exp-group-body .exp-sub:last-child { padding-bottom: 0; }
-.exp-sub h4 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.93rem;
-  font-weight: 600;
-  color: #0f2a4a;
-  margin: 0 0 1px;
-}
-.exp-sub .exp-meta {
-  font-size: 0.82rem;
-  color: #8a94a2;
-  margin: 0 0 0.35rem;
-}
-.exp-sub ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-}
-.exp-sub ul li {
-  font-size: 0.88rem;
-  color: #4a5568;
-  line-height: 1.55;
-  margin-bottom: 0.25rem;
-}
-
-/* ── Tech Expertise Grid ── */
 .te-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -271,8 +101,6 @@ redirect_from:
   margin: 0;
   line-height: 1.55;
 }
-
-/* ── Philosophy ── */
 .philosophy-box {
   background: linear-gradient(135deg, #f4f6f9 0%, #eaeff5 100%);
   border-left: 3px solid #1b3a5c;
@@ -283,8 +111,6 @@ redirect_from:
   line-height: 1.75;
   color: #4a5568;
 }
-
-/* ── Connect Bar (light outline style) ── */
 .connect-bar {
   display: flex;
   flex-wrap: wrap;
@@ -312,306 +138,49 @@ redirect_from:
   box-shadow: 0 2px 8px rgba(15,42,74,0.10);
   color: #0f2a4a;
 }
-
-/* ── Responsive ── */
 @media (max-width: 600px) {
   .ra-grid, .te-grid { grid-template-columns: 1fr; }
-  .exp-logo { width: 40px; height: 40px; }
-  .exp-logo-col { width: 44px; }
-  .exp-group-body { margin-left: 21px; padding-left: calc(44px + 0.5rem); }
 }
 </style>
 
 <div class="about-page">
 
-<!-- ═══ ABOUT ═══ -->
 <h1 style="margin-top: 0;">About</h1>
 <p class="about-intro">
 I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on ultrasound system development — from multi-element phased array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for AR/VR platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
 </p>
 
-<!-- ═══ RESEARCH AREAS ═══ -->
 <h1>Research Areas</h1>
 <div class="ra-grid">
-  <div class="ra-card">
-    <h3>Wearable Ultrasound Sensing</h3>
-    <p>Engineering wearable ultrasound transducer sensing for AR/VR platforms. Expertise in multi-element system optimization, beamforming parameter tuning, Doppler-based motion rejection, and SVD-based clutter filtering for high-sensitivity physiological monitoring.</p>
-  </div>
-  <div class="ra-card">
-    <h3>Transcranial Ultrasound Therapy</h3>
-    <p>Developing acoustic hologram-based systems for non-invasive brain therapy. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.</p>
-  </div>
-  <div class="ra-card">
-    <h3>Signal &amp; Image Processing</h3>
-    <p>SVD-based spatiotemporal filtering, strain imaging and elastography, Doppler flow processing, advanced beamforming (delay-and-sum, angular spectrum), and ultrafast high-frame-rate acquisition for transient event capture and volumetric image reconstruction.</p>
-  </div>
-  <div class="ra-card">
-    <h3>Vibroacoustic Modeling &amp; NVH</h3>
-    <p>Experimental modal analysis, structural noise transfer path quantification, and active noise control with embedded DSP. Industry experience in powertrain NVH optimization, psychoacoustic tuning, and real-time adaptive filtering (FxLMS) on TMS320 platforms.</p>
-  </div>
-  <div class="ra-card">
-    <h3>Neuromodulation Biophysics</h3>
-    <p>Exploring biophysical mechanisms of ultrasound neuromodulation using high-frame-rate (ultrafast) acquisition to capture transient neural responses. Developing novel tools to control neuronal circuits, advancing non-invasive brain modulation.</p>
-  </div>
-  <div class="ra-card">
-    <h3>Scientific Machine Learning</h3>
-    <p>Data-driven acoustic modeling, differentiable physics simulators, machine vision, imaging with learned models, optimization techniques, and model order reduction for accelerating complex wave-propagation simulations.</p>
-  </div>
+  <div class="ra-card"><h3>Wearable Ultrasound Sensing</h3><p>Engineering wearable ultrasound transducer sensing for AR/VR platforms. Expertise in multi-element system optimization, beamforming parameter tuning, Doppler-based motion rejection, and SVD-based clutter filtering for high-sensitivity physiological monitoring.</p></div>
+  <div class="ra-card"><h3>Transcranial Ultrasound Therapy</h3><p>Developing acoustic hologram-based systems for non-invasive brain therapy. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.</p></div>
+  <div class="ra-card"><h3>Signal &amp; Image Processing</h3><p>SVD-based spatiotemporal filtering, strain imaging and elastography, Doppler flow processing, advanced beamforming (delay-and-sum, angular spectrum), and ultrafast high-frame-rate acquisition for transient event capture and volumetric image reconstruction.</p></div>
+  <div class="ra-card"><h3>Vibroacoustic Modeling &amp; NVH</h3><p>Experimental modal analysis, structural noise transfer path quantification, and active noise control with embedded DSP. Industry experience in powertrain NVH optimization, psychoacoustic tuning, and real-time adaptive filtering (FxLMS) on TMS320 platforms.</p></div>
+  <div class="ra-card"><h3>Neuromodulation Biophysics</h3><p>Exploring biophysical mechanisms of ultrasound neuromodulation using high-frame-rate (ultrafast) acquisition to capture transient neural responses. Developing novel tools to control neuronal circuits, advancing non-invasive brain modulation.</p></div>
+  <div class="ra-card"><h3>Scientific Machine Learning</h3><p>Data-driven acoustic modeling, differentiable physics simulators, machine vision, imaging with learned models, optimization techniques, and model order reduction for accelerating complex wave-propagation simulations.</p></div>
 </div>
 
-
-<!-- ═══ PROFESSIONAL JOURNEY ═══ -->
-<h1>Professional Journey</h1>
-
-<div class="exp-section">
-
-  <!-- ── Meta ── -->
-  <div class="exp-entry">
-    <div class="exp-logo-col">
-      <img class="exp-logo" src="/images/logos/meta-logo.jpeg" alt="Meta">
-    </div>
-    <div class="exp-body">
-      <h3>Research Scientist Intern</h3>
-      <p class="exp-company">Meta Platform Inc. · Reality Labs Research</p>
-      <p class="exp-meta"><span>May 2025 – Nov 2025</span><span>Pasadena, CA</span><span>Internship</span></p>
-      <p class="exp-desc">Confidential R&amp;D Project (Details under NDA)</p>
-      <ul>
-        <li>Engineered high-performance ultrasonic sensors and signal processing algorithms for wearables and robotic sensing, leveraging expertise in acoustics, sensor physics, system optimization, and real-time analysis.</li>
-        <li>Led sensor characterization and algorithm development, driving performance gains through rapid iteration and creating custom imaging tools for system validation.</li>
-        <li>Developed Doppler-based motion rejection algorithms to suppress motion artifacts in dynamic wearable environments.</li>
-        <li>Collaborated with cross-functional teams in an agile environment to solve complex sensing challenges, advancing projects from initial concept to validated prototype.</li>
-      </ul>
-      <div class="exp-skills">
-        <span class="exp-skill-tag">Ultrasound Arrays</span>
-        <span class="exp-skill-tag">Beamforming</span>
-        <span class="exp-skill-tag">Doppler Processing</span>
-        <span class="exp-skill-tag">SVD Filtering</span>
-        <span class="exp-skill-tag">MATLAB</span>
-        <span class="exp-skill-tag">Python</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Georgia Tech ── -->
-  <div class="exp-entry">
-    <div class="exp-logo-col">
-      <img class="exp-logo" src="/images/logos/gatech-logo.png" alt="Georgia Tech">
-    </div>
-    <div class="exp-body">
-      <h3>Graduate Research Assistant</h3>
-      <p class="exp-company">Georgia Institute of Technology · Ultrasound Biophysics &amp; Bioengineering Lab</p>
-      <p class="exp-meta"><span>Aug 2020 – May 2025</span><span>Atlanta, GA</span><span>4 yrs 10 mos</span></p>
-      <ul>
-        <li><strong>Transcranial Ultrasound Imaging &amp; Therapy:</strong> Developed and experimentally validated fast aberration correction algorithms using differentiable acoustic propagators and multi-channel transducer arrays (Verasonics). Implemented GPU-accelerated nonlinear wave propagation simulations for heterogeneous skull bone. Designed beamforming sequences and optimized acoustic hologram topologies for trans-skull focused ultrasound.</li>
-        <li><strong>Signal &amp; Image Processing:</strong> Applied SVD-based spatiotemporal filtering, strain imaging techniques, and advanced beamforming (delay-and-sum, angular spectrum) for transcranial passive acoustic mapping and volumetric image reconstruction.</li>
-        <li><strong>Neuromodulation Biophysics:</strong> Explored biophysical mechanisms of ultrasound neuromodulation using ultrafast acquisition to capture transient neural responses. Developed novel tools to control neuronal circuits.</li>
-      </ul>
-      <div class="exp-skills">
-        <span class="exp-skill-tag">Verasonics</span>
-        <span class="exp-skill-tag">GPU Simulation</span>
-        <span class="exp-skill-tag">Acoustic Holography</span>
-        <span class="exp-skill-tag">Nonlinear Acoustics</span>
-        <span class="exp-skill-tag">Neuromodulation</span>
-        <span class="exp-skill-tag">Real-time Data</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Virginia Tech (GRA) ── -->
-  <div class="exp-entry">
-    <div class="exp-logo-col">
-      <img class="exp-logo" src="/images/logos/vt-logo.png" alt="Virginia Tech">
-    </div>
-    <div class="exp-body">
-      <h3>Graduate Research Assistant</h3>
-      <p class="exp-company">Virginia Tech · Center for Tire Research (CenTiRe) / Vibration &amp; Acoustics Lab</p>
-      <p class="exp-meta"><span>Aug 2019 – Jul 2020</span><span>Blacksburg, VA</span><span>1 yr</span></p>
-      <ul>
-        <li>Developed experimental and numerical procedures for vibro-acoustic measurement of rolling tires and data-driven modeling for structure-borne noise prediction.</li>
-        <li>Experimental modal analysis using laser vibrometry and tire cavity accelerometer arrays under realistic speeds, loads, and excitations.</li>
-        <li>Designed a semi-active tuned absorber to reduce rest tremors in Parkinson's patients.</li>
-      </ul>
-      <div class="exp-skills">
-        <span class="exp-skill-tag">Modal Analysis</span>
-        <span class="exp-skill-tag">Laser Vibrometry</span>
-        <span class="exp-skill-tag">NVH</span>
-        <span class="exp-skill-tag">Audio Recording</span>
-        <span class="exp-skill-tag">Real-time Data</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Maxxis ── -->
-  <div class="exp-entry">
-    <div class="exp-logo-col">
-      <img class="exp-logo" src="/images/logos/maxxis-logo.jpeg" alt="Maxxis">
-    </div>
-    <div class="exp-body">
-      <h3>Summer Intern</h3>
-      <p class="exp-company">Maxxis International-US · Tire NVH/Dynamics Group</p>
-      <p class="exp-meta"><span>May 2019 – Aug 2019</span><span>Suwanee, GA</span><span>4 mos</span></p>
-      <ul>
-        <li>Improved Maxxis Modal Analysis Procedure and validation; conducted repeatability trials with different boundary conditions.</li>
-        <li>Identification of complex, coupled tire mode shapes and modal parameter characterization for structure-borne noise identification.</li>
-      </ul>
-      <div class="exp-skills">
-        <span class="exp-skill-tag">Real-time Data</span>
-        <span class="exp-skill-tag">Problem Solving</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Bajaj Auto (grouped: three roles) ── -->
-  <div class="exp-group">
-    <div class="exp-group-header">
-      <div class="exp-logo-col">
-        <img class="exp-logo" src="/images/logos/bajaj-logo.jpeg" alt="Bajaj Auto">
-      </div>
-      <div class="exp-body">
-        <h3>Bajaj Auto Ltd.</h3>
-        <p class="exp-meta"><span>3 yrs 1 mo</span><span>Pune, India</span></p>
-      </div>
-    </div>
-    <div class="exp-group-body">
-
-      <!-- Role 1 -->
-      <div class="exp-sub">
-        <h4>Assistant Manager (R&amp;D) — Noise &amp; Vibration</h4>
-        <p class="exp-meta"><span>Jan 2018 – Jul 2018</span><span>Full-time · 7 mos</span></p>
-        <ul>
-          <li>Designed engine–chassis layouts ensuring NVH compliance and seamless powertrain integration for commuter bikes.</li>
-          <li>Conducted end-to-end testing and validation from prototype to production; authored SOPs and validation protocols.</li>
-          <li>Tuned exhaust psychoacoustic parameters to balance sound quality, performance, and Pass-by-Noise (PBN) regulations.</li>
-          <li>Applied DRBFM failure-mode analysis to resolve field issues and enhance product reliability.</li>
-        </ul>
-        <div class="exp-skills">
-          <span class="exp-skill-tag">Audio Recording</span>
-          <span class="exp-skill-tag">Problem Solving</span>
-          <span class="exp-skill-tag">NVH</span>
-        </div>
-      </div>
-
-      <!-- Role 2 -->
-      <div class="exp-sub">
-        <h4>Senior Design Engineer — Powertrain NVH</h4>
-        <p class="exp-meta"><span>Jul 2016 – Dec 2017</span><span>Full-time · 1 yr 6 mos</span></p>
-        <ul>
-          <li>Led NVH optimization of powertrain subsystems to improve acoustic performance, durability, and regulatory compliance.</li>
-          <li>Developed vibration modeling libraries and applied predictive analytics to refine NVH designs with cross-functional teams.</li>
-          <li>Performance and durability testing and validation for the prototype to production batches.</li>
-          <li>Design related field failures and Design Review Based on Failure Mode (DRBFM) Analysis.</li>
-          <li>Cost Cutting in design, manufacturing, and assembly &amp; Value addition and Value Engineering (VAVE) Proposals.</li>
-        </ul>
-        <div class="exp-skills">
-          <span class="exp-skill-tag">NVH Optimization</span>
-          <span class="exp-skill-tag">Vibration Modeling</span>
-          <span class="exp-skill-tag">Prototyping</span>
-        </div>
-      </div>
-
-      <!-- Role 3 -->
-      <div class="exp-sub">
-        <h4>Graduate Trainee — Active Noise Control &amp; NVH</h4>
-        <p class="exp-meta"><span>Jul 2015 – Jun 2016</span><span>Full-time · 1 yr</span></p>
-        <ul>
-          <li>Designed and implemented a feed-forward Active Noise Cancellation (ANC) system on a TMS320 DSP platform to abate intake roar in the 0–200 Hz range.</li>
-          <li>Developed FxLMS adaptive filtering algorithms achieving 10 dB attenuation in 2nd order noise during steady-state and transient conditions.</li>
-          <li>Conducted end-to-end ANC prototype testing, managing signal acquisition (ADC/DAC) and optimizing loop performance for vehicle integration.</li>
-          <li>Identified critical structural modes and implemented design modifications to reduce structure-borne noise from combustion and transmission loads.</li>
-        </ul>
-        <div class="exp-skills">
-          <span class="exp-skill-tag">Embedded DSP</span>
-          <span class="exp-skill-tag">C/C++</span>
-          <span class="exp-skill-tag">FxLMS</span>
-          <span class="exp-skill-tag">ANC</span>
-          <span class="exp-skill-tag">Audio Recording</span>
-          <span class="exp-skill-tag">Problem Solving</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ── DAAD / OvGU ── -->
-  <div class="exp-entry">
-    <div class="exp-logo-col">
-      <img class="exp-logo" src="/images/logos/ovgu-logo.jpeg" alt="OvGU Magdeburg">
-    </div>
-    <div class="exp-body">
-      <h3>Summer Research Assistant</h3>
-      <p class="exp-company">Otto-von-Guericke University Magdeburg · DAAD WISE Fellowship</p>
-      <p class="exp-meta"><span>May 2014 – Jul 2014</span><span>Magdeburg, Germany</span><span>3 mos</span></p>
-      <ul>
-        <li>Involved in development and validation of the International Standard IEC 62714 "Engineering data exchange format for use in industrial automation systems engineering" — AutomationML.</li>
-        <li>Working competencies in Modularization methodologies for production systems and Behavior modelling of production system components.</li>
-        <li>XML-based system description and component-based library design.</li>
-      </ul>
-      <div class="exp-skills">
-        <span class="exp-skill-tag">Problem Solving</span>
-        <span class="exp-skill-tag">Communication</span>
-      </div>
-    </div>
-  </div>
-
-</div><!-- end exp-section -->
-
-
-<!-- ═══ TECHNICAL EXPERTISE ═══ -->
 <h1>Technical Expertise</h1>
 <div class="te-grid">
-  <div class="te-card">
-    <h3>Ultrasound Systems</h3>
-    <p>Multi-channel array systems (Verasonics) · Beamforming &amp; sequence optimization · Transducer characterization · Aberration correction · Passive acoustic mapping · Ultrafast imaging</p>
-  </div>
-  <div class="te-card">
-    <h3>Signal &amp; Image Processing</h3>
-    <p>SVD-based spatiotemporal filtering · Strain imaging / elastography · Doppler processing &amp; motion rejection · Digital Image Correlation (DIC) · Adaptive filtering (FxLMS)</p>
-  </div>
-  <div class="te-card">
-    <h3>Simulation &amp; Analysis</h3>
-    <p>GPU-accelerated nonlinear wave propagation · FEM (COMSOL, Ansys, HyperMesh) · Multiphysics modeling · MATLAB/Simulink</p>
-  </div>
-  <div class="te-card">
-    <h3>Programming &amp; Hardware</h3>
-    <p>Python · MATLAB · C/C++ (embedded DSP &amp; hardware) · Simulink · Sensor prototyping · Signal acquisition (ADC/DAC) · CAD (SolidWorks, Siemens NX)</p>
-  </div>
-  <div class="te-card">
-    <h3>Vibroacoustic Modeling</h3>
-    <p>Experimental modal analysis · Laser vibrometry · Structure-borne noise prediction · Noise transfer path analysis · Active Noise Control (ANC) · Psychoacoustic tuning · NVH optimization</p>
-  </div>
-  <div class="te-card">
-    <h3>Scientific Machine Learning</h3>
-    <p>Data-driven acoustic modeling · Differentiable physics simulators · Machine vision · Imaging with learned models · Optimization techniques · Model order reduction</p>
-  </div>
+  <div class="te-card"><h3>Ultrasound Systems</h3><p>Multi-channel array systems (Verasonics) · Beamforming &amp; sequence optimization · Transducer characterization · Aberration correction · Passive acoustic mapping · Ultrafast imaging</p></div>
+  <div class="te-card"><h3>Signal &amp; Image Processing</h3><p>SVD-based spatiotemporal filtering · Strain imaging / elastography · Doppler processing &amp; motion rejection · Digital Image Correlation (DIC) · Adaptive filtering (FxLMS)</p></div>
+  <div class="te-card"><h3>Simulation &amp; Analysis</h3><p>GPU-accelerated nonlinear wave propagation · FEM (COMSOL, Ansys, HyperMesh) · Multiphysics modeling · MATLAB/Simulink</p></div>
+  <div class="te-card"><h3>Programming &amp; Hardware</h3><p>Python · MATLAB · C/C++ (embedded DSP &amp; hardware) · Simulink · Sensor prototyping · Signal acquisition (ADC/DAC) · CAD (SolidWorks, Siemens NX)</p></div>
+  <div class="te-card"><h3>Vibroacoustic Modeling</h3><p>Experimental modal analysis · Laser vibrometry · Structure-borne noise prediction · Noise transfer path analysis · Active Noise Control (ANC) · Psychoacoustic tuning · NVH optimization</p></div>
+  <div class="te-card"><h3>Scientific Machine Learning</h3><p>Data-driven acoustic modeling · Differentiable physics simulators · Machine vision · Imaging with learned models · Optimization techniques · Model order reduction</p></div>
 </div>
 
-
-<!-- ═══ RESEARCH PHILOSOPHY ═══ -->
 <h1>Research Philosophy</h1>
 <div class="philosophy-box">
 My research philosophy centers on bridging fundamental wave physics with practical engineering solutions. Whether developing wearable ultrasound sensors or advancing non-invasive brain therapies, I combine <strong>rigorous experimentation</strong> with <strong>high-fidelity computational modeling</strong> to tackle complex challenges. My interdisciplinary background — spanning nonlinear acoustics, multi-channel array systems, embedded DSP, and signal processing — enables me to approach problems end-to-end, from transducer design through algorithm development to system validation. I believe the most impactful research emerges at the intersection of disciplines, and I thrive in collaborative environments that bring together academic researchers and industry partners.
 </div>
 
-
-<!-- ═══ CONNECT ═══ -->
 <h1>Let's Connect</h1>
 <div class="connect-bar">
-  <a class="connect-btn" href="mailto:ppdash@gatech.edu">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-    Email
-  </a>
-  <a class="connect-btn" href="https://linkedin.com/in/ppdash" target="_blank">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-    LinkedIn
-  </a>
-  <a class="connect-btn" href="https://github.com/pradosh-dash" target="_blank">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    GitHub
-  </a>
-  <a class="connect-btn" href="https://scholar.google.com/citations?user=us9GO_wAAAAJ" target="_blank">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-    Google Scholar
-  </a>
+  <a class="connect-btn" href="mailto:ppdash@gatech.edu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg> Email</a>
+  <a class="connect-btn" href="https://linkedin.com/in/ppdash" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+  <a class="connect-btn" href="https://github.com/pradosh-dash" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
+  <a class="connect-btn" href="https://scholar.google.com/citations?user=us9GO_wAAAAJ" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Google Scholar</a>
 </div>
 
-</div><!-- end about-page -->
+</div>
