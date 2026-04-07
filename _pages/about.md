@@ -401,7 +401,7 @@ redirect_from:
 <div class="about-container">
     
     <div class="about-intro">
-I hold a Ph.D. in Mechanical Engineering from the Georgia Institute of Technology and recently worked as a Research Scientist Intern at Meta Reality Labs Research. With over a decade of experience across academia and industry, I specialize in ultrasound system development—spanning multi-elemenat phased array design, beamforming optimization, GPU-accelerated wave propagation simulation, and real-time signal processing. My work bridges nonlinear acoustics in heterogeneous media with practical applications in wearable sensing and medical ultrasound therapy, combining rigorous computational modeling with hands-on hardware prototyping.
+I hold a Ph.D. in Mechanical Engineering from the Georgia Institute of Technology and recently worked as a Research Scientist Intern at Meta Reality Labs Research. With over a decade of experience across academia and industry, I specialize in ultrasound system development—spanning multi-element phased array design, beamforming optimization, GPU-accelerated wave propagation simulation, and real-time signal processing. My work bridges nonlinear acoustics in heterogeneous media with practical applications in wearable sensing and medical ultrasound therapy, combining rigorous computational modeling with hands-on hardware prototyping.
     </div>
 
     <div class="about-section">
