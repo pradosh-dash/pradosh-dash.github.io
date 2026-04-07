@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Pradosh P. Dash"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Pradosh P. Dash"
 description              : &description "personal description"
