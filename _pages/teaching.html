@@ -1,209 +1,240 @@
 ---
-layout: archive
-title: "Graduate Teaching Experience"
+layout: single
+title: " "
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
-
 <style>
-.teaching-container {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
-    color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.teach-page {
+  font-family: 'DM Sans', sans-serif;
+  color: #2d3748;
+  line-height: 1.7;
+}
+.teach-page h1 {
+  font-family: 'Source Serif 4', serif;
+  color: #0f2a4a;
+  font-size: 1.75rem;
+  border-bottom: 1.5px solid #c4cdd8;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+  margin-top: 2.4rem;
+}
+.teach-page p {
+  font-size: 0.95rem;
 }
 
-.teaching-section-title {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #2c5282;
-    border-bottom: 1.5px solid #e2e8f0;
-    padding-bottom: 4px;
-    margin: 20px 0 12px 0;
+/* ── Institution Group ── */
+.teach-inst {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0 1rem;
+}
+.teach-inst:first-of-type {
+  margin-top: 1rem;
+}
+.teach-inst-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #dce1e8;
+  padding: 3px;
+}
+.teach-inst-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f2a4a;
+  margin: 0;
 }
 
-.teaching-section-title:first-child {
-    margin-top: 0;
+/* ── Course Card ── */
+.teach-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #f4f6f9;
+  border: 1px solid #dce1e8;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.85rem;
+  transition: box-shadow 0.25s, transform 0.2s;
+}
+.teach-card:hover {
+  box-shadow: 0 4px 14px rgba(15,42,74,0.08);
+  transform: translateY(-1px);
 }
 
-.teaching-institution {
-    font-size: 1.15em;
-    font-weight: bold;
-    color: #2d3748;
-    margin: 18px 0 10px 0;
-    border-left: 3px solid #2c5282;
-    padding-left: 12px;
+/* Left accent bar via border */
+.teach-card-accent {
+  flex-shrink: 0;
+  width: 4px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #1b3a5c;
 }
 
-.teaching-item {
-    margin-bottom: 10px;
-    padding: 10px 12px;
-    background-color: #f8f9fa;
-    border-radius: 4px;
-    border-left: 2.5px solid #2c5282;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.teach-card-body {
+  flex: 1;
+  min-width: 0;
+}
+.teach-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.teach-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f2a4a;
+  margin: 0;
+}
+.teach-card-title .teach-code {
+  color: #1b3a5c;
+  font-weight: 700;
+}
+.teach-card-title .teach-name {
+  color: #2d3748;
+  font-weight: 600;
+  margin-left: 0.4rem;
+}
+.teach-semester-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7a5c10;
+  background: rgba(202, 163, 45, 0.13);
+  border: 1px solid rgba(186, 150, 40, 0.30);
+  border-radius: 12px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+.teach-role {
+  font-size: 0.82rem;
+  color: #8a94a2;
+  font-style: italic;
+  margin: 0.15rem 0 0.4rem;
+}
+.teach-desc {
+  font-size: 0.87rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
 }
 
-.teaching-item:hover {
-    background-color: #f1f3f4;
-    transition: background-color 0.2s ease;
-}
-
-.teaching-course-info {
-    flex: 1;
-    min-width: 200px;
-}
-
-.teaching-course-number {
-    font-weight: bold;
-    color: #2c5282;
-    font-size: 0.95em;
-    display: inline;
-}
-
-.teaching-course-name {
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 3px;
-    font-size: 0.95em;
-    display: inline;
-    margin-left: 8px;
-}
-
-.teaching-role {
-    color: #666;
-    font-style: italic;
-    font-size: 0.85em;
-    margin-top: 2px;
-}
-
-.teaching-semester {
-    color: #718096;
-    font-weight: 500;
-    white-space: nowrap;
-    margin-left: 10px;
-    font-size: 0.9em;
-}
-
-.teaching-description {
-    margin-top: 5px;
-    color: #4a5568;
-    font-size: 0.87em;
-    line-height: 1.35;
-}
-
-@media (max-width: 768px) {
-    .teaching-item {
-        flex-direction: column;
-        padding: 8px 10px;
-        margin-bottom: 8px;
-    }
-    
-    .teaching-semester {
-        margin-left: 0;
-        margin-top: 4px;
-        font-size: 0.85em;
-    }
-    
-    .teaching-institution {
-        font-size: 1.1em;
-        margin: 15px 0 8px 0;
-    }
-    
-    .teaching-course-number,
-    .teaching-course-name {
-        font-size: 0.9em;
-    }
-    
-    .teaching-description {
-        font-size: 0.85em;
-    }
-}
-
-/* Print styles */
-@media print {
-    .teaching-item {
-        margin-bottom: 8px;
-        padding: 8px 10px;
-        page-break-inside: avoid;
-    }
-    
-    .teaching-institution {
-        margin: 15px 0 8px 0;
-    }
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .teach-card { flex-direction: column; gap: 0; }
+  .teach-card-accent { width: 100%; height: 3px; align-self: auto; margin-bottom: 0.6rem; }
+  .teach-card-header { flex-direction: column; }
 }
 </style>
 
-<div class="teaching-container">
-    <!--
-    <div class="teaching-section-title">Graduate Teaching Experience</div>
-    
-    <div class="teaching-institution">Georgia Institute of Technology</div>
-    -->
-    <div class="teaching-item">
-        <div class="teaching-course-info">
-            <div class="teaching-course-number">ME 6452</div>
-            <div class="teaching-course-name">Wave Propagation in Solids</div>
-            <div class="teaching-role">Teaching Practicum, Georgia Tech</div>
-            <div class="teaching-description">
-                Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. 
-                Assisted with lectures and guided complex mathematical derivations and simulations.
-            </div>
-        </div>
-        <div class="teaching-semester">Spring 2024</div>
-    </div>
-    
-    <div class="teaching-item">
-        <div class="teaching-course-info">
-            <div class="teaching-course-number">ME 6760</div>
-            <div class="teaching-course-name">Acoustics I</div>
-            <div class="teaching-role">Graduate Teaching Assistant, Georgia Tech</div>
-            <div class="teaching-description">
-                Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. 
-                Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.
-            </div>
-        </div>
-        <div class="teaching-semester">Fall 2022 & Fall 2024</div>
-    </div>
-    <!--
-    <div class="teaching-institution">Virginia Tech</div>
-    -->
-        <div class="teaching-item">
-        <div class="teaching-course-info">
-            <div class="teaching-course-number">PHY 2216</div>
-            <div class="teaching-course-name">Physics Laboratory</div>
-            <div class="teaching-role">Graduate Teaching Assistant, Virginia Tech</div>
-            <div class="teaching-description">
-                Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. 
-                Mentored undergraduate students in experimental design, data collection, and scientific report writing.
-            </div>
-        </div>
-        <div class="teaching-semester">Spring 2019</div>
-    </div>
-    
-    <div class="teaching-item">
-        <div class="teaching-course-info">
-            <div class="teaching-course-number">ME 4006</div>
-            <div class="teaching-course-name">Mechanical Engineering Laboratory</div>
-            <div class="teaching-role">Graduate Teaching Assistant, Virginia Tech</div>
-            <div class="teaching-description">
-                Hands-on laboratory course covering experimental methods in mechanical engineering including vibration analysis, 
-                heat transfer experiments, and fluid mechanics measurements. Supervised lab sessions and guided students through 
-                experimental procedures and data analysis.
-            </div>
-        </div>
-        <div class="teaching-semester">Fall 2018</div>
-    </div>
-    
+<div class="teach-page">
+
+<h1 style="margin-top: 0;">Graduate Teaching Experience</h1>
+<p>
+I have served as a Teaching Assistant and Teaching Practicum across graduate and undergraduate courses in acoustics, wave mechanics, vibrations, and experimental physics at Georgia Tech and Virginia Tech.
+</p>
 
 
+<!-- ═══ GEORGIA TECH ═══ -->
+<div class="teach-inst">
+  <img class="teach-inst-logo" src="/images/logos/gatech-logo.png" alt="Georgia Tech">
+  <h2 class="teach-inst-name">Georgia Institute of Technology</h2>
 </div>
 
-<!-- Jekyll collection integration -->
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="teach-card">
+  <div class="teach-card-accent"></div>
+  <div class="teach-card-body">
+    <div class="teach-card-header">
+      <p class="teach-card-title">
+        <span class="teach-code">ME 6452</span><span class="teach-name">— Wave Propagation in Solids</span>
+      </p>
+      <span class="teach-semester-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Spring 2025
+      </span>
+    </div>
+    <p class="teach-role">Teaching Practicum</p>
+    <p class="teach-desc">
+      Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. Assisted with lectures and guided complex mathematical derivations and simulations.
+    </p>
+  </div>
+</div>
+
+<div class="teach-card">
+  <div class="teach-card-accent"></div>
+  <div class="teach-card-body">
+    <div class="teach-card-header">
+      <p class="teach-card-title">
+        <span class="teach-code">ME 6760</span><span class="teach-name">— Acoustics I</span>
+      </p>
+      <span class="teach-semester-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Fall 2022 &amp; Fall 2024
+      </span>
+    </div>
+    <p class="teach-role">Graduate Teaching Assistant</p>
+    <p class="teach-desc">
+      Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.
+    </p>
+  </div>
+</div>
+
+
+<!-- ═══ VIRGINIA TECH ═══ -->
+<div class="teach-inst">
+  <img class="teach-inst-logo" src="/images/logos/vt-logo.png" alt="Virginia Tech">
+  <h2 class="teach-inst-name">Virginia Tech</h2>
+</div>
+
+<div class="teach-card">
+  <div class="teach-card-accent"></div>
+  <div class="teach-card-body">
+    <div class="teach-card-header">
+      <p class="teach-card-title">
+        <span class="teach-code">ME 4006</span><span class="teach-name">— Mechanical Engineering Laboratory</span>
+      </p>
+      <span class="teach-semester-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Fall 2018
+      </span>
+    </div>
+    <p class="teach-role">Graduate Teaching Assistant</p>
+    <p class="teach-desc">
+      Hands-on laboratory course covering experimental methods in mechanical engineering including vibration analysis, heat transfer experiments, and fluid mechanics measurements. Instructed a batch of 100 seniors on structural health monitoring and wind-induced vibration modeling of tall structures and experimental validation.
+    </p>
+  </div>
+</div>
+
+<div class="teach-card">
+  <div class="teach-card-accent"></div>
+  <div class="teach-card-body">
+    <div class="teach-card-header">
+      <p class="teach-card-title">
+        <span class="teach-code">PHY 2216</span><span class="teach-name">— Physics Laboratory</span>
+      </p>
+      <span class="teach-semester-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Spring 2019
+      </span>
+    </div>
+    <p class="teach-role">Graduate Teaching Assistant</p>
+    <p class="teach-desc">
+      Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. Instructed an undergraduate batch of 90 sophomores in experimental design, data collection, and scientific report writing.
+    </p>
+  </div>
+</div>
+
+</div>
