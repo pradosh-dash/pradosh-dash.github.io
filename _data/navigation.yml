@@ -19,6 +19,8 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
+  - title: "Skillset"
+    url: /skillset/
     
   # - title: " Research Portfolio"
   #   url: /portfolio/
