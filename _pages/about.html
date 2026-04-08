@@ -1,244 +1,409 @@
 ---
 layout: single
+permalink: /
 title: " "
-permalink: /teaching/
 author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 ---
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
 
-.teach-page {
+.about-page {
   font-family: 'DM Sans', sans-serif;
   color: #2d3748;
   line-height: 1.7;
 }
-.teach-page h1 {
+.about-page h1, .about-page h2 {
   font-family: 'Source Serif 4', serif;
   color: #0f2a4a;
+}
+.about-page h1 {
   font-size: 1.75rem;
   border-bottom: 1.5px solid #c4cdd8;
   padding-bottom: 0.4rem;
   margin-bottom: 1.2rem;
   margin-top: 2.4rem;
 }
-.teach-page p {
+.about-page p, .about-page li {
   font-size: 0.95rem;
 }
+.about-page a {
+  color: #1b3a5c;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.about-page a:hover {
+  border-bottom-color: #1b3a5c;
+}
+.about-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
 
-/* ── Institution Group ── */
-.teach-inst {
+/* ── Affiliation Logo Strip ── */
+.affil-strip {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem;
-  margin: 2rem 0 1rem;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 1.5rem 0;
+  margin: 0.5rem 0 1rem;
+  border-top: 1.5px solid #c4cdd8;
 }
-.teach-inst:first-of-type {
-  margin-top: 1rem;
-}
-.teach-inst-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
+.affil-strip img {
+  height: 63px;
+  width: auto;
   object-fit: contain;
-  background: #fff;
-  border: 1px solid #dce1e8;
-  padding: 3px;
+  filter: grayscale(30%);
+  opacity: 0.85;
+  transition: filter 0.3s, opacity 0.3s;
 }
-.teach-inst-name {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0f2a4a;
-  margin: 0;
+.affil-strip img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
-/* ── Course Card ── */
-.teach-card {
-  display: flex;
-  gap: 0.6rem;
-  align-items: flex-start;
+/* ── Research Areas Grid ── */
+.ra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+.ra-card {
   background: #f4f6f9;
   border: 1px solid #dce1e8;
   border-radius: 6px;
-  padding: 0.55rem 0.9rem;
-  margin-bottom: 0.5rem;
+  padding: 1.2rem 1.3rem;
   transition: box-shadow 0.25s, transform 0.2s;
 }
-.teach-card p {
-  margin: 0 !important;
-  padding: 0;
+.ra-card:hover {
+  box-shadow: 0 4px 16px rgba(15,42,74,0.10);
+  transform: translateY(-2px);
 }
-.teach-card:hover {
-  box-shadow: 0 4px 14px rgba(15,42,74,0.08);
-  transform: translateY(-1px);
-}
-
-/* Left accent bar via border */
-.teach-card-accent {
-  flex-shrink: 0;
-  width: 4px;
-  align-self: stretch;
-  border-radius: 4px;
-  background: #1b3a5c;
-}
-
-.teach-card-body {
-  flex: 1;
-  min-width: 0;
-}
-.teach-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-bottom: 0;
-}
-.teach-card-title {
+.ra-card h3 {
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #0f2a4a;
-  margin: 0 !important;
-}
-.teach-card-title .teach-code {
   color: #1b3a5c;
-  font-weight: 700;
+  margin: 0 0 0.5rem;
 }
-.teach-card-title .teach-name {
-  color: #2d3748;
-  font-weight: 600;
-  margin-left: 0.4rem;
+.ra-card p {
+  font-size: 0.88rem;
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.6;
 }
-.teach-semester-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.75rem;
+.ra-card .ra-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #e8e5dc;
+}
+.ra-tool-tag {
+  display: inline-block;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #7a5c10;
   background: rgba(202, 163, 45, 0.13);
   border: 1px solid rgba(186, 150, 40, 0.30);
   border-radius: 12px;
-  padding: 2px 10px;
-  white-space: nowrap;
-}
-.teach-role {
-  font-size: 0.82rem;
-  color: #8a94a2;
-  font-style: italic;
-  margin: 0.1rem 0 0.15rem !important;
-}
-.teach-desc {
-  font-size: 0.85rem;
-  color: #4a5568;
-  line-height: 1.45;
-  margin: 0 !important;
+  padding: 2px 9px;
+  letter-spacing: 0.01em;
 }
 
-/* ── Responsive ── */
+/* ── Professional Competencies ── */
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.1rem;
+  margin: 1rem 0 2rem;
+}
+.pc-card {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  background: #f4f6f9;
+  border: 1px solid #dce1e8;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  transition: box-shadow 0.25s, transform 0.2s;
+}
+.pc-card:hover {
+  box-shadow: 0 4px 16px rgba(15,42,74,0.10);
+  transform: translateY(-2px);
+}
+.pc-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(27, 58, 92, 0.08);
+  border-radius: 8px;
+  color: #1b3a5c;
+  margin-top: 2px;
+}
+.pc-content h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1b3a5c;
+  margin: 0 0 0.3rem;
+}
+.pc-content p {
+  font-size: 0.82rem;
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ── Philosophy ── */
+.philosophy-box {
+  background: linear-gradient(135deg, #f4f6f9 0%, #eaeff5 100%);
+  border-left: 3px solid #1b3a5c;
+  border-radius: 0 6px 6px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #4a5568;
+}
+
+/* ── Connect Bar ── */
+.connect-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.connect-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 1.1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1b3a5c;
+  background: #f4f6f9;
+  border: 1px solid #c4cdd8;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.connect-btn:hover {
+  background: #e8edf4;
+  border-color: #1b3a5c;
+  box-shadow: 0 2px 8px rgba(15,42,74,0.10);
+  color: #0f2a4a;
+}
+
 @media (max-width: 600px) {
-  .teach-card { flex-direction: column; gap: 0; }
-  .teach-card-accent { width: 100%; height: 3px; align-self: auto; margin-bottom: 0.6rem; }
-  .teach-card-header { flex-direction: column; }
+  .ra-grid, .pc-grid { grid-template-columns: 1fr; }
+  .affil-strip { gap: 1.2rem; }
+  .affil-strip img { height: 48px; }
 }
 </style>
 
-<div class="teach-page">
+<div class="about-page">
 
-<h1 style="margin-top: 0;">Graduate Teaching Experience</h1>
-<p>
-I have served as a Teaching Assistant and Teaching Practicum across graduate and undergraduate courses in acoustics, wave mechanics, vibrations, and experimental physics at Georgia Tech and Virginia Tech.
+<!-- ═══ ABOUT ═══ -->
+<h1 style="margin-top: 0;">About Me</h1>
+<p class="about-intro">
+I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on ultrasound system development — from multi-element phased array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for augmented reality and robotics platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
 </p>
 
-
-<!-- ═══ GEORGIA TECH ═══ -->
-<div class="teach-inst">
-  <img class="teach-inst-logo" src="/images/logos/gatech-logo.png" alt="Georgia Tech">
-  <h2 class="teach-inst-name">Georgia Institute of Technology</h2>
+<!-- ═══ AFFILIATION LOGOS ═══ -->
+<div class="affil-strip">
+  <a href="https://about.meta.com/" target="_blank"><img src="/images/logos/meta-logo.jpeg" alt="Meta"></a>
+  <a href="https://www.gatech.edu/" target="_blank"><img src="/images/logos/gatech-logo.png" alt="Georgia Tech"></a>
+  <a href="https://www.vt.edu/" target="_blank"><img src="/images/logos/vt-logo.png" alt="Virginia Tech"></a>
+  <a href="https://www.maxxis.com/" target="_blank"><img src="/images/logos/maxxis-logo.jpeg" alt="Maxxis International"></a>
+  <a href="https://www.bajajauto.com/" target="_blank"><img src="/images/logos/bajaj-logo.png" alt="Bajaj Auto"></a>
+  <a href="https://www.ovgu.de/" target="_blank"><img src="/images/logos/ovgu-logo.jpeg" alt="OvGU Magdeburg"></a>
+  <a href="https://www.nitrkl.ac.in/" target="_blank"><img src="/images/logos/nitr-logo.jpeg" alt="NIT Rourkela"></a>
 </div>
 
-<div class="teach-card">
-  <div class="teach-card-accent"></div>
-  <div class="teach-card-body">
-    <div class="teach-card-header">
-      <p class="teach-card-title">
-        <span class="teach-code">ME 6452</span><span class="teach-name">— Wave Propagation in Solids</span>
-      </p>
-      <span class="teach-semester-badge">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Spring 2025
-      </span>
+
+<!-- ═══ RESEARCH PHILOSOPHY ═══ -->
+<h1>Research Philosophy</h1>
+<div class="philosophy-box">
+My research philosophy centers on bridging fundamental wave physics, solid mechanics and vibroacoustics with practical engineering solutions. Whether developing wearable ultrasound sensors or advancing non-invasive brain therapies, I combine rigorous experimentation with high-fidelity computational modeling to tackle complex challenges. My interdisciplinary background — spanning nonlinear acoustics, multi-channel array systems, embedded DSP, and signal processing — enables me to approach problems end-to-end, from transducer design through algorithm development to system validation. I believe the most impactful research emerges at the intersection of disciplines, and I thrive in collaborative environments that bring together academic researchers and industry partners.
+</div>
+
+
+<!-- ═══ RESEARCH AREAS & EXPERTISE ═══ -->
+<h1>Research Areas &amp; Expertise</h1>
+<div class="ra-grid">
+
+  <div class="ra-card">
+    <h3>Wearable Ultrasound Sensing</h3>
+    <p>Engineering wearable ultrasound transducer sensing for AR/VR platforms. Expertise in multi-element system optimization, beamforming parameter tuning, Doppler-based motion rejection, and SVD-based clutter filtering for high-sensitivity physiological monitoring.</p>
+    <div class="ra-tools">
+      <span class="ra-tool-tag">Transducer Arrays</span>
+      <span class="ra-tool-tag">Beamforming</span>
+      <span class="ra-tool-tag">Doppler Processing</span>
+      <span class="ra-tool-tag">SVD Filtering</span>
+      <span class="ra-tool-tag">Sensor Prototyping</span>
     </div>
-    <p class="teach-role">Teaching Practicum</p>
-    <p class="teach-desc">
-      Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. Assisted with lectures and guided complex mathematical derivations and simulations.
-    </p>
   </div>
-</div>
 
-<div class="teach-card">
-  <div class="teach-card-accent"></div>
-  <div class="teach-card-body">
-    <div class="teach-card-header">
-      <p class="teach-card-title">
-        <span class="teach-code">ME 6760</span><span class="teach-name">— Acoustics I</span>
-      </p>
-      <span class="teach-semester-badge">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Fall 2022 &amp; Fall 2024
-      </span>
+  <div class="ra-card">
+    <h3>Transcranial Ultrasound Therapy</h3>
+    <p>Developing acoustic hologram-based systems for non-invasive brain therapy. Implementing heterogeneous angular spectrum approaches for skull aberration correction, beamforming sequence optimization, and parametric array techniques for trans-skull monitoring.</p>
+    <div class="ra-tools">
+      <span class="ra-tool-tag">Verasonics</span>
+      <span class="ra-tool-tag">Aberration Correction</span>
+      <span class="ra-tool-tag">Acoustic Holography</span>
+      <span class="ra-tool-tag">Passive Acoustic Mapping</span>
+      <span class="ra-tool-tag">Ultrafast Imaging</span>
     </div>
-    <p class="teach-role">Graduate Teaching Assistant</p>
-    <p class="teach-desc">
-      Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.
-    </p>
   </div>
-</div>
 
-
-<!-- ═══ VIRGINIA TECH ═══ -->
-<div class="teach-inst">
-  <img class="teach-inst-logo" src="/images/logos/vt-logo.png" alt="Virginia Tech">
-  <h2 class="teach-inst-name">Virginia Tech</h2>
-</div>
-
-<div class="teach-card">
-  <div class="teach-card-accent"></div>
-  <div class="teach-card-body">
-    <div class="teach-card-header">
-      <p class="teach-card-title">
-        <span class="teach-code">ME 4006</span><span class="teach-name">— Mechanical Engineering Laboratory</span>
-      </p>
-      <span class="teach-semester-badge">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Fall 2018
-      </span>
+  <div class="ra-card">
+    <h3>Signal &amp; Image Processing</h3>
+    <p>SVD-based spatiotemporal filtering, strain imaging and elastography, Doppler flow processing, advanced beamforming (delay-and-sum, angular spectrum), and ultrafast high-frame-rate acquisition for transient event capture and volumetric image reconstruction.</p>
+    <div class="ra-tools">
+      <span class="ra-tool-tag">SVD Filtering</span>
+      <span class="ra-tool-tag">Strain Imaging</span>
+      <span class="ra-tool-tag">Elastography</span>
+      <span class="ra-tool-tag">DIC</span>
+      <span class="ra-tool-tag">FxLMS</span>
+      <span class="ra-tool-tag">ADC/DAC</span>
     </div>
-    <p class="teach-role">Graduate Teaching Assistant</p>
-    <p class="teach-desc">
-      Hands-on laboratory course covering experimental methods in mechanical engineering including vibration analysis, heat transfer experiments, and fluid mechanics measurements. Instructed a batch of 100 seniors on structural health monitoring and wind-induced vibration modeling of tall structures and experimental validation.
-    </p>
   </div>
+
+  <div class="ra-card">
+    <h3>Vibroacoustic Modeling &amp; NVH</h3>
+    <p>Experimental modal analysis, structural noise transfer path quantification, and active noise control with embedded DSP. Industry experience in powertrain NVH optimization, psychoacoustic tuning, and real-time adaptive filtering (FxLMS) on TMS320 platforms.</p>
+    <div class="ra-tools">
+      <span class="ra-tool-tag">Modal Analysis</span>
+      <span class="ra-tool-tag">Laser Vibrometry</span>
+      <span class="ra-tool-tag">ANC</span>
+      <span class="ra-tool-tag">Psychoacoustic Tuning</span>
+      <span class="ra-tool-tag">Embedded DSP</span>
+    </div>
+  </div>
+
+  <div class="ra-card">
+    <h3>Neuromodulation Biophysics</h3>
+    <p>Exploring biophysical mechanisms of ultrasound neuromodulation using high-frame-rate (ultrafast) acquisition to capture transient neural responses. Developing novel tools to control neuronal circuits, advancing non-invasive brain modulation.</p>
+    <div class="ra-tools">
+      <span class="ra-tool-tag">Ultrafast Acquisition</span>
+      <span class="ra-tool-tag">Neural Circuits</span>
+      <span class="ra-tool-tag">Verasonics</span>
+      <span class="ra-tool-tag">Real-time Data</span>
+    </div>
+  </div>
+
+  <div class="ra-card">
+    <h3>Simulation &amp; Scientific Computing</h3>
+    <p>GPU-accelerated nonlinear wave propagation, differentiable physics simulators, data-driven acoustic modeling, machine vision, imaging with learned models, optimization techniques, and model order reduction.</p>
+    <div class="ra-tools">
+      <span class="ra-tool-tag">Python</span>
+      <span class="ra-tool-tag">MATLAB</span>
+      <span class="ra-tool-tag">C/C++</span>
+      <span class="ra-tool-tag">GPU Computing</span>
+      <span class="ra-tool-tag">COMSOL</span>
+      <span class="ra-tool-tag">Ansys</span>
+      <span class="ra-tool-tag">Simulink</span>
+      <span class="ra-tool-tag">SolidWorks</span>
+    </div>
+  </div>
+
 </div>
 
-<div class="teach-card">
-  <div class="teach-card-accent"></div>
-  <div class="teach-card-body">
-    <div class="teach-card-header">
-      <p class="teach-card-title">
-        <span class="teach-code">PHY 2216</span><span class="teach-name">— Physics Laboratory</span>
-      </p>
-      <span class="teach-semester-badge">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Spring 2019
-      </span>
+
+<!-- ═══ PROFESSIONAL COMPETENCIES ═══ -->
+<h1>Professional Competencies</h1>
+<div class="pc-grid">
+
+  <!-- Technical Skills -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
     </div>
-    <p class="teach-role">Graduate Teaching Assistant</p>
-    <p class="teach-desc">
-      Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. Instructed an undergraduate batch of 90 sophomores in experimental design, data collection, and scientific report writing.
-    </p>
+    <div class="pc-content">
+      <h3>Technical Skills</h3>
+      <p>Mechanical noise evaluation, aeroacoustics, fan noise testing, time-series analysis, FFT/spectrogram processing, acoustic modeling, Active Noise Control (ANC), hardware prototyping, DSP, modal testing, signal acquisition.</p>
+    </div>
   </div>
+
+  <!-- Design -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Design</h3>
+      <p>CAD modeling and mechanical design using SolidWorks, Siemens NX, and AutoCAD. Transducer array layout, acoustic hologram topology design, and sensor packaging for wearable form factors.</p>
+    </div>
+  </div>
+
+  <!-- Analysis -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Analysis</h3>
+      <p>Finite element modeling (FEM) and vibroacoustic analysis using COMSOL, HyperMesh, Adams, Ansys, and ME'Scope. GPU-accelerated wave propagation and multiphysics simulation.</p>
+    </div>
+  </div>
+
+  <!-- Programming -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Programming</h3>
+      <p>Python, MATLAB, Simulink, C/C++ (Embedded DSP), and real-time system simulation. Experience with GPU-accelerated computing and data-driven modeling pipelines.</p>
+    </div>
+  </div>
+
+  <!-- Ultrasound Systems -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8.5l3-3 3 3"/><path d="M8.5 5.5v9"/><path d="M18.5 15.5l-3 3-3-3"/><path d="M15.5 18.5v-9"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Ultrasound Systems</h3>
+      <p>Multi-channel array systems (Verasonics Vantage), beamforming sequence design, transducer characterization, aberration correction, passive acoustic mapping, and ultrafast imaging techniques.</p>
+    </div>
+  </div>
+
+  <!-- Hardware & Prototyping -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Hardware &amp; Prototyping</h3>
+      <p>Sensor prototyping, signal acquisition (ADC/DAC), laser vibrometry, accelerometer arrays, embedded TMS320 DSP platforms, and end-to-end system validation from concept to production.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ═══ CONNECT ═══ -->
+<h1>Let's Connect</h1>
+<div class="connect-bar">
+  <a class="connect-btn" href="mailto:ppdash@gatech.edu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg> Email</a>
+  <a class="connect-btn" href="https://linkedin.com/in/ppdash" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+  <a class="connect-btn" href="https://github.com/pradosh-dash" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
+  <a class="connect-btn" href="https://scholar.google.com/citations?user=us9GO_wAAAAJ" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Google Scholar</a>
 </div>
 
 </div>
