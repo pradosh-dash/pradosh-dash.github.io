@@ -44,6 +44,32 @@ redirect_from:
   line-height: 1.8;
   margin-bottom: 2rem;
 }
+
+/* ── Affiliation Logo Strip ── */
+.affil-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 1.5rem 0;
+  margin: 0.5rem 0 1rem;
+  border-top: 1.5px solid #c4cdd8;
+}
+.affil-strip img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  opacity: 0.85;
+  transition: filter 0.3s, opacity 0.3s;
+}
+.affil-strip img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ── Research Areas Grid ── */
 .ra-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -93,6 +119,55 @@ redirect_from:
   padding: 2px 9px;
   letter-spacing: 0.01em;
 }
+
+/* ── Professional Competencies ── */
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.1rem;
+  margin: 1rem 0 2rem;
+}
+.pc-card {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  background: #f4f6f9;
+  border: 1px solid #dce1e8;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  transition: box-shadow 0.25s, transform 0.2s;
+}
+.pc-card:hover {
+  box-shadow: 0 4px 16px rgba(15,42,74,0.10);
+  transform: translateY(-2px);
+}
+.pc-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(27, 58, 92, 0.08);
+  border-radius: 8px;
+  color: #1b3a5c;
+  margin-top: 2px;
+}
+.pc-content h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1b3a5c;
+  margin: 0 0 0.3rem;
+}
+.pc-content p {
+  font-size: 0.82rem;
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ── Philosophy ── */
 .philosophy-box {
   background: linear-gradient(135deg, #f4f6f9 0%, #eaeff5 100%);
   border-left: 3px solid #1b3a5c;
@@ -103,6 +178,8 @@ redirect_from:
   line-height: 1.75;
   color: #4a5568;
 }
+
+/* ── Connect Bar ── */
 .connect-bar {
   display: flex;
   flex-wrap: wrap;
@@ -130,23 +207,42 @@ redirect_from:
   box-shadow: 0 2px 8px rgba(15,42,74,0.10);
   color: #0f2a4a;
 }
+
 @media (max-width: 600px) {
-  .ra-grid { grid-template-columns: 1fr; }
+  .ra-grid, .pc-grid { grid-template-columns: 1fr; }
+  .affil-strip { gap: 1.2rem; }
+  .affil-strip img { height: 32px; }
 }
 </style>
 
 <div class="about-page">
 
+<!-- ═══ ABOUT ═══ -->
 <h1 style="margin-top: 0;">About Me</h1>
 <p class="about-intro">
-I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on vibroacousitcs and transcranial ultrasound for imaging and therapy. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for augmented reality and robotics platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
+I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on ultrasound system development — from multi-element phased array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for augmented reality and robotics platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
 </p>
 
+<!-- ═══ AFFILIATION LOGOS ═══ -->
+<div class="affil-strip">
+  <a href="https://about.meta.com/" target="_blank"><img src="/images/logos/meta-logo.jpeg" alt="Meta"></a>
+  <a href="https://www.gatech.edu/" target="_blank"><img src="/images/logos/gatech-logo.png" alt="Georgia Tech"></a>
+  <a href="https://www.vt.edu/" target="_blank"><img src="/images/logos/vt-logo.png" alt="Virginia Tech"></a>
+  <a href="https://www.maxxis.com/" target="_blank"><img src="/images/logos/maxxis-logo.jpeg" alt="Maxxis International"></a>
+  <a href="https://www.bajajauto.com/" target="_blank"><img src="/images/logos/bajaj-logo.jpeg" alt="Bajaj Auto"></a>
+  <a href="https://www.ovgu.de/" target="_blank"><img src="/images/logos/ovgu-logo.jpeg" alt="OvGU Magdeburg"></a>
+  <a href="https://www.nitrkl.ac.in/" target="_blank"><img src="/images/logos/nitr-logo.png" alt="NIT Rourkela"></a>
+</div>
+
+
+<!-- ═══ RESEARCH PHILOSOPHY ═══ -->
 <h1>Research Philosophy</h1>
 <div class="philosophy-box">
 My research philosophy centers on bridging fundamental wave physics, solid mechanics and vibroacoustics with practical engineering solutions. Whether developing wearable ultrasound sensors or advancing non-invasive brain therapies, I combine rigorous experimentation with high-fidelity computational modeling to tackle complex challenges. My interdisciplinary background — spanning nonlinear acoustics, multi-channel array systems, embedded DSP, and signal processing — enables me to approach problems end-to-end, from transducer design through algorithm development to system validation. I believe the most impactful research emerges at the intersection of disciplines, and I thrive in collaborative environments that bring together academic researchers and industry partners.
 </div>
 
+
+<!-- ═══ RESEARCH AREAS & EXPERTISE ═══ -->
 <h1>Research Areas &amp; Expertise</h1>
 <div class="ra-grid">
 
@@ -227,6 +323,81 @@ My research philosophy centers on bridging fundamental wave physics, solid mecha
 
 </div>
 
+
+<!-- ═══ PROFESSIONAL COMPETENCIES ═══ -->
+<h1>Professional Competencies</h1>
+<div class="pc-grid">
+
+  <!-- Technical Skills -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Technical Skills</h3>
+      <p>Mechanical noise evaluation, aeroacoustics, fan noise testing, time-series analysis, FFT/spectrogram processing, acoustic modeling, Active Noise Control (ANC), hardware prototyping, DSP, modal testing, signal acquisition.</p>
+    </div>
+  </div>
+
+  <!-- Design -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Design</h3>
+      <p>CAD modeling and mechanical design using SolidWorks, Siemens NX, and AutoCAD. Transducer array layout, acoustic hologram topology design, and sensor packaging for wearable form factors.</p>
+    </div>
+  </div>
+
+  <!-- Analysis -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Analysis</h3>
+      <p>Finite element modeling (FEM) and vibroacoustic analysis using COMSOL, HyperMesh, Adams, Ansys, and ME'Scope. GPU-accelerated wave propagation and multiphysics simulation.</p>
+    </div>
+  </div>
+
+  <!-- Programming -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Programming</h3>
+      <p>Python, MATLAB, Simulink, C/C++ (Embedded DSP), and real-time system simulation. Experience with GPU-accelerated computing and data-driven modeling pipelines.</p>
+    </div>
+  </div>
+
+  <!-- Ultrasound Systems -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8.5l3-3 3 3"/><path d="M8.5 5.5v9"/><path d="M18.5 15.5l-3 3-3-3"/><path d="M15.5 18.5v-9"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Ultrasound Systems</h3>
+      <p>Multi-channel array systems (Verasonics Vantage), beamforming sequence design, transducer characterization, aberration correction, passive acoustic mapping, and ultrafast imaging techniques.</p>
+    </div>
+  </div>
+
+  <!-- Hardware & Prototyping -->
+  <div class="pc-card">
+    <div class="pc-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+    </div>
+    <div class="pc-content">
+      <h3>Hardware &amp; Prototyping</h3>
+      <p>Sensor prototyping, signal acquisition (ADC/DAC), laser vibrometry, accelerometer arrays, embedded TMS320 DSP platforms, and end-to-end system validation from concept to production.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ═══ CONNECT ═══ -->
 <h1>Let's Connect</h1>
 <div class="connect-bar">
   <a class="connect-btn" href="mailto:ppdash@gatech.edu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg> Email</a>
