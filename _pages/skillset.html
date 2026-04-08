@@ -1,0 +1,335 @@
+---
+layout: single
+title: " "
+permalink: /skillset/
+author_profile: true
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.skill-page {
+  font-family: 'DM Sans', sans-serif;
+  color: #2d3748;
+  line-height: 1.5;
+}
+.skill-page h1 {
+  font-family: 'Source Serif 4', serif;
+  color: #0f2a4a;
+  font-size: 1.75rem;
+  border-bottom: 1.5px solid #c4cdd8;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.skill-page > p {
+  font-size: 0.93rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ── Competency Grid ── */
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+.pc-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  background: #f4f6f9;
+  border: 1px solid #dce1e8;
+  border-radius: 6px;
+  padding: 0.65rem 1rem;
+  transition: box-shadow 0.25s;
+}
+.pc-card:hover {
+  box-shadow: 0 3px 12px rgba(15,42,74,0.08);
+}
+.pc-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(27, 58, 92, 0.08);
+  border-radius: 7px;
+  color: #1b3a5c;
+  margin-top: 1px;
+}
+.pc-content {
+  flex: 1;
+  min-width: 0;
+}
+.pc-content h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1b3a5c;
+  margin: 0 0 0.35rem;
+}
+.pc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.pc-tool {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #4a5568;
+  background: #edf0f4;
+  border: 1px solid #d8dde5;
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
+/* ── Research Toolkit (gold tags) ── */
+.rt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+.rt-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  background: #f4f6f9;
+  border: 1px solid #dce1e8;
+  border-radius: 6px;
+  padding: 0.65rem 1rem;
+  transition: box-shadow 0.25s;
+}
+.rt-card:hover {
+  box-shadow: 0 3px 12px rgba(15,42,74,0.08);
+}
+.rt-content {
+  flex: 1;
+  min-width: 0;
+}
+.rt-content h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1b3a5c;
+  margin: 0 0 0.35rem;
+}
+.rt-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.rt-tool {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #7a5c10;
+  background: rgba(202, 163, 45, 0.13);
+  border: 1px solid rgba(186, 150, 40, 0.30);
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
+@media (max-width: 600px) {
+  .pc-grid, .rt-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="skill-page">
+
+<h1 style="margin-top: 0;">Skillset</h1>
+<p>A comprehensive overview of my professional competencies and research toolkit — spanning acoustics, ultrasound systems, signal processing, simulation, programming, and hardware.</p>
+
+
+<!-- ═══ PROFESSIONAL COMPETENCIES ═══ -->
+<h1>Professional Competencies</h1>
+<div class="pc-grid">
+
+  <div class="pc-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+    <div class="pc-content">
+      <h3>Technical Skills</h3>
+      <div class="pc-tools">
+        <span class="pc-tool">Aeroacoustics</span>
+        <span class="pc-tool">Fan Noise Testing</span>
+        <span class="pc-tool">FFT / Spectrogram</span>
+        <span class="pc-tool">Time-Series Analysis</span>
+        <span class="pc-tool">Acoustic Modeling</span>
+        <span class="pc-tool">ANC</span>
+        <span class="pc-tool">Modal Testing</span>
+        <span class="pc-tool">Signal Acquisition</span>
+        <span class="pc-tool">DSP</span>
+        <span class="pc-tool">Pass-by-Noise (PBN)</span>
+        <span class="pc-tool">Noise Transfer Path</span>
+        <span class="pc-tool">DRBFM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+    <div class="pc-content">
+      <h3>Design</h3>
+      <div class="pc-tools">
+        <span class="pc-tool">SolidWorks</span>
+        <span class="pc-tool">Siemens NX</span>
+        <span class="pc-tool">AutoCAD</span>
+        <span class="pc-tool">3D Printing</span>
+        <span class="pc-tool">Hologram Topology Design</span>
+        <span class="pc-tool">Transducer Array Layout</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+    <div class="pc-content">
+      <h3>Analysis &amp; Simulation</h3>
+      <div class="pc-tools">
+        <span class="pc-tool">COMSOL</span>
+        <span class="pc-tool">Ansys</span>
+        <span class="pc-tool">HyperMesh</span>
+        <span class="pc-tool">Adams</span>
+        <span class="pc-tool">ME'Scope</span>
+        <span class="pc-tool">k-Wave</span>
+        <span class="pc-tool">FEM</span>
+        <span class="pc-tool">Multiphysics Modeling</span>
+        <span class="pc-tool">GPU-Accelerated Simulation</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+    <div class="pc-content">
+      <h3>Programming</h3>
+      <div class="pc-tools">
+        <span class="pc-tool">Python</span>
+        <span class="pc-tool">MATLAB</span>
+        <span class="pc-tool">C/C++</span>
+        <span class="pc-tool">Simulink</span>
+        <span class="pc-tool">CUDA</span>
+        <span class="pc-tool">Git</span>
+        <span class="pc-tool">LaTeX</span>
+        <span class="pc-tool">NumPy</span>
+        <span class="pc-tool">SciPy</span>
+        <span class="pc-tool">PyTorch</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+    <div class="pc-content">
+      <h3>Hardware &amp; Prototyping</h3>
+      <div class="pc-tools">
+        <span class="pc-tool">ADC/DAC</span>
+        <span class="pc-tool">Laser Vibrometry</span>
+        <span class="pc-tool">Accelerometer Arrays</span>
+        <span class="pc-tool">TMS320 DSP</span>
+        <span class="pc-tool">Hydrophone</span>
+        <span class="pc-tool">Sensor Prototyping</span>
+        <span class="pc-tool">Impedance Analyzer</span>
+        <span class="pc-tool">Oscilloscope</span>
+        <span class="pc-tool">Function Generator</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+    <div class="pc-content">
+      <h3>Scientific ML &amp; Data</h3>
+      <div class="pc-tools">
+        <span class="pc-tool">Differentiable Simulators</span>
+        <span class="pc-tool">Model Order Reduction</span>
+        <span class="pc-tool">Machine Vision</span>
+        <span class="pc-tool">Data-Driven Modeling</span>
+        <span class="pc-tool">Optimization</span>
+        <span class="pc-tool">Autodiff</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ═══ RESEARCH TOOLKIT ═══ -->
+<h1>Research Toolkit</h1>
+<div class="rt-grid">
+
+  <div class="rt-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8.5l3-3 3 3"/><path d="M8.5 5.5v9"/><path d="M18.5 15.5l-3 3-3-3"/><path d="M15.5 18.5v-9"/></svg></div>
+    <div class="rt-content">
+      <h3>Ultrasound Systems</h3>
+      <div class="rt-tools">
+        <span class="rt-tool">Verasonics Vantage</span>
+        <span class="rt-tool">Beamforming</span>
+        <span class="rt-tool">Sequence Design</span>
+        <span class="rt-tool">Transducer Characterization</span>
+        <span class="rt-tool">Aberration Correction</span>
+        <span class="rt-tool">PAM</span>
+        <span class="rt-tool">Ultrafast Imaging</span>
+        <span class="rt-tool">Doppler Processing</span>
+        <span class="rt-tool">SVD Filtering</span>
+        <span class="rt-tool">Acoustic Holography</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="rt-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+    <div class="rt-content">
+      <h3>Signal &amp; Image Processing</h3>
+      <div class="rt-tools">
+        <span class="rt-tool">SVD Filtering</span>
+        <span class="rt-tool">Strain Imaging</span>
+        <span class="rt-tool">Elastography</span>
+        <span class="rt-tool">DIC</span>
+        <span class="rt-tool">FxLMS</span>
+        <span class="rt-tool">Delay-and-Sum</span>
+        <span class="rt-tool">Angular Spectrum</span>
+        <span class="rt-tool">CT Reconstruction</span>
+        <span class="rt-tool">Image Registration</span>
+        <span class="rt-tool">Adaptive Filtering</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="rt-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+    <div class="rt-content">
+      <h3>Vibroacoustics &amp; NVH</h3>
+      <div class="rt-tools">
+        <span class="rt-tool">Modal Analysis</span>
+        <span class="rt-tool">Laser Vibrometry</span>
+        <span class="rt-tool">ODS</span>
+        <span class="rt-tool">Transfer Path Analysis</span>
+        <span class="rt-tool">Psychoacoustic Tuning</span>
+        <span class="rt-tool">Structure-Borne Noise</span>
+        <span class="rt-tool">Pass-by-Noise</span>
+        <span class="rt-tool">Active Noise Control</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="rt-card">
+    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+    <div class="rt-content">
+      <h3>Neuromodulation &amp; Biophysics</h3>
+      <div class="rt-tools">
+        <span class="rt-tool">Ultrafast Acquisition</span>
+        <span class="rt-tool">Neural Circuit Control</span>
+        <span class="rt-tool">Parametric Arrays</span>
+        <span class="rt-tool">Nonlinear Acoustics</span>
+        <span class="rt-tool">Westervelt Equation</span>
+        <span class="rt-tool">KZK Equation</span>
+        <span class="rt-tool">Cavitation Mapping</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
