@@ -120,51 +120,62 @@ redirect_from:
   letter-spacing: 0.01em;
 }
 
-/* ── Professional Competencies ── */
+/* ── Professional Competencies (compact: icon + title + tags) ── */
 .pc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.75rem;
   margin: 1rem 0 2rem;
 }
 .pc-card {
   display: flex;
-  gap: 0.9rem;
   align-items: flex-start;
+  gap: 0.7rem;
   background: #f4f6f9;
   border: 1px solid #dce1e8;
   border-radius: 6px;
-  padding: 1rem 1.2rem;
-  transition: box-shadow 0.25s, transform 0.2s;
+  padding: 0.65rem 1rem;
+  transition: box-shadow 0.25s;
 }
 .pc-card:hover {
-  box-shadow: 0 4px 16px rgba(15,42,74,0.10);
-  transform: translateY(-2px);
+  box-shadow: 0 3px 12px rgba(15,42,74,0.08);
 }
 .pc-icon {
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(27, 58, 92, 0.08);
-  border-radius: 8px;
+  border-radius: 7px;
   color: #1b3a5c;
-  margin-top: 2px;
+  margin-top: 1px;
+}
+.pc-content {
+  flex: 1;
+  min-width: 0;
 }
 .pc-content h3 {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #1b3a5c;
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.35rem;
 }
-.pc-content p {
-  font-size: 0.82rem;
+.pc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.pc-tool {
+  font-size: 0.7rem;
+  font-weight: 500;
   color: #4a5568;
-  margin: 0;
-  line-height: 1.55;
+  background: #edf0f4;
+  border: 1px solid #d8dde5;
+  border-radius: 10px;
+  padding: 1px 8px;
 }
 
 /* ── Philosophy ── */
@@ -220,9 +231,11 @@ redirect_from:
 <!-- ═══ ABOUT ═══ -->
 <h1 style="margin-top: 0;">About Me</h1>
 <p class="about-intro">
-I am a Mechanical Engineer with a Ph.D. from Georgia Tech and over a decade of R&D experience across academia and industry. My work focuses on ultrasound system development, spanning multi-element phased array design, beamforming optimization, GPU-accelerated wave propagation simulations, and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs, I developed wearable ultrasound sensors for AR and robotics using compact transducer arrays, Doppler-based motion rejection, and SVD-based filtering pipelines. My doctoral research centered on transcranial focused ultrasound therapy, where I designed acoustic holograms, implemented aberration correction through the skull, and built passive acoustic mapping tools for non-invasive brain monitoring. Across all efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical solutions.</p>
+I am a Mechanical Engineer with a Ph.D. from the Georgia Institute of Technology and over a decade of R&amp;D experience spanning academia and industry. My research focuses on ultrasound system development — from multi-element phased array design and beamforming optimization to GPU-accelerated wave propagation simulation and real-time signal processing. Most recently, as a Research Scientist Intern at Meta Reality Labs Research, I developed wearable ultrasound sensing technologies for augmented reality and robotics platforms, including compact transducer arrays, Doppler-based motion rejection algorithms, and SVD-based signal filtering pipelines. My doctoral work at Georgia Tech centered on transcranial focused ultrasound therapy, where I designed acoustic hologram systems, implemented aberration correction through heterogeneous skull bone, and built passive acoustic mapping tools for non-invasive brain treatment monitoring. Across all of these efforts, I combine rigorous computational modeling with hands-on hardware prototyping to translate complex acoustics challenges into practical engineering solutions.
+</p>
 
 <!-- ═══ AFFILIATION LOGOS ═══ -->
+<p style="font-size: 0.9rem; color: #718096; margin-bottom: 0.3rem; text-align: center;">Organizations I have worked with</p>
 <div class="affil-strip">
   <a href="https://about.meta.com/" target="_blank"><img src="/images/logos/meta-logo.jpeg" alt="Meta"></a>
   <a href="https://www.gatech.edu/" target="_blank"><img src="/images/logos/gatech-logo.png" alt="Georgia Tech"></a>
@@ -236,7 +249,7 @@ I am a Mechanical Engineer with a Ph.D. from Georgia Tech and over a decade of R
 
 <!-- ═══ RESEARCH PHILOSOPHY ═══ -->
 <h1>Research Philosophy</h1>
-<div class="philosophy-box">My research philosophy is rooted in connecting fundamental scientific understanding with meaningful real-world impact. I approach problems by integrating insights from wave physics, solid mechanics, and vibroacoustics, using both careful experimentation and modeling to understand complex systems at a deep level. Rather than focusing on isolated components, I think in terms of complete solutions—considering how ideas evolve from initial concepts to validated, practical outcomes. My work emphasizes clarity of mechanism, thoughtful design, and iterative refinement, allowing me to navigate challenges that span multiple domains. I’m particularly drawn to problems that sit at the boundaries between disciplines, where new perspectives can unlock progress. </div>
+<div class="philosophy-box">My research philosophy is rooted in connecting fundamental scientific understanding with meaningful real-world impact. I approach problems by integrating insights from wave physics, solid mechanics, and vibroacoustics, using both careful experimentation and modeling to understand complex systems at a deep level. Rather than focusing on isolated components, I think in terms of complete solutions—considering how ideas evolve from initial concepts to validated, practical outcomes. My work emphasizes clarity of mechanism, thoughtful design, and iterative refinement, allowing me to navigate challenges that span multiple domains. I'm particularly drawn to problems that sit at the boundaries between disciplines, where new perspectives can unlock progress.</div>
 
 
 <!-- ═══ RESEARCH AREAS & EXPERTISE ═══ -->
