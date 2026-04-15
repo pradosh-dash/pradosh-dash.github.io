@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Home"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Pradosh P. Dash"
 description              : &description "Pradosh P. Dash - PhD, Georgia Tech | Soft Wearables, Acoustic Sensing, Ultrasound Neuromodulation"
