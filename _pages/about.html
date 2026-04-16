@@ -45,6 +45,79 @@ redirect_from:
   margin-bottom: 2rem;
 }
 
+/* ── Horizontal Timeline ── */
+.h-timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1.5rem 0 1.5rem;
+  padding: 0 0.5rem;
+  overflow-x: auto;
+}
+.h-timeline::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #c4cdd8;
+  z-index: 0;
+}
+.tl-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  min-width: 80px;
+  flex: 1;
+}
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1b3a5c;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #c4cdd8;
+  margin-bottom: 0.4rem;
+}
+.tl-item.tl-current .tl-dot {
+  background: #c9a227;
+  box-shadow: 0 0 0 2px #c9a227;
+}
+.tl-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #dce1e8;
+  padding: 2px;
+  margin-bottom: 0.3rem;
+}
+.tl-role {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #0f2a4a;
+  text-align: center;
+  line-height: 1.25;
+  max-width: 100px;
+}
+.tl-org {
+  font-size: 0.65rem;
+  color: #8a94a2;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 1px;
+}
+.tl-year {
+  font-size: 0.62rem;
+  color: #a0aec0;
+  margin-top: 2px;
+}
+
 /* ── Affiliation Logo Strip ── */
 .affil-strip {
   display: flex;
@@ -120,64 +193,6 @@ redirect_from:
   letter-spacing: 0.01em;
 }
 
-/* ── Professional Competencies (compact: icon + title + tags) ── */
-.pc-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 0.75rem;
-  margin: 1rem 0 2rem;
-}
-.pc-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.7rem;
-  background: #f4f6f9;
-  border: 1px solid #dce1e8;
-  border-radius: 6px;
-  padding: 0.65rem 1rem;
-  transition: box-shadow 0.25s;
-}
-.pc-card:hover {
-  box-shadow: 0 3px 12px rgba(15,42,74,0.08);
-}
-.pc-icon {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(27, 58, 92, 0.08);
-  border-radius: 7px;
-  color: #1b3a5c;
-  margin-top: 1px;
-}
-.pc-content {
-  flex: 1;
-  min-width: 0;
-}
-.pc-content h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #1b3a5c;
-  margin: 0 0 0.35rem;
-}
-.pc-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-.pc-tool {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #4a5568;
-  background: #edf0f4;
-  border: 1px solid #d8dde5;
-  border-radius: 10px;
-  padding: 1px 8px;
-}
-
 /* ── Philosophy ── */
 .philosophy-box {
   background: linear-gradient(135deg, #f4f6f9 0%, #eaeff5 100%);
@@ -220,9 +235,12 @@ redirect_from:
 }
 
 @media (max-width: 600px) {
-  .ra-grid, .pc-grid { grid-template-columns: 1fr; }
+  .ra-grid { grid-template-columns: 1fr; }
   .affil-strip { gap: 1.2rem; }
   .affil-strip img { height: 48px; }
+  .h-timeline { gap: 0.3rem; }
+  .tl-role { font-size: 0.6rem; max-width: 70px; }
+  .tl-org { font-size: 0.55rem; }
 }
 </style>
 
@@ -230,24 +248,65 @@ redirect_from:
 
 <!-- ═══ ABOUT ═══ -->
 <h1 style="margin-top: 0;">About Me</h1>
-<p class="about-intro">
 <p style="text-align: justify;">I am a Mechanical Engineer with a Ph.D. from Georgia Tech, combining over a decade of experience in acoustics, vibrations, transducer engineering, and hardware validation across industry and academic research. I started my career in the automotive industry, where I spent three years leading powertrain NVH optimization: designing active noise control systems on embedded DSP platforms, tuning exhaust psychoacoustics, quantifying noise and vibration transfer paths, and taking products from prototype through mass production.</p>
 
 <p style="text-align: justify;">That foundation in acoustic system design led me to graduate research, first at Virginia Tech studying tire vibroacoustic and structure-borne noise prediction, then at Georgia Tech developing acoustic hologram-based transducer systems including Multiphysics simulation in COMSOL, skull aberration correction, and passive acoustic mapping. Most recently at Meta Reality Labs Research, I built compact wearable ultrasound sensing for AR/VR, designing transducer arrays, beamforming pipelines, and real-time DSP systems integrated into high-volume consumer electronics under strict spatial and cost constraints.</p>
 
 <p style="text-align: justify;">Across these roles, I bridge computational acoustic modeling with hands-on hardware prototyping to deliver systems that perform in the real world. My work spans the full development cycle from simulation and bench characterization through production validation, with a consistent focus on performance, integrity, and manufacturability.</p>
-</p>
 
-<!-- ═══ AFFILIATION LOGOS ═══ -->
-<p style="font-size: 0.9rem; color: #718096; margin-bottom: 0.3rem; text-align: center;">Organizations I have worked at</p>
-<div class="affil-strip">
-  <a href="https://about.meta.com/" target="_blank"><img src="/images/logos/meta-logo.jpeg" alt="Meta"></a>
-  <a href="https://www.gatech.edu/" target="_blank"><img src="/images/logos/gatech-logo.png" alt="Georgia Tech"></a>
-  <a href="https://www.vt.edu/" target="_blank"><img src="/images/logos/vt-logo.png" alt="Virginia Tech"></a>
-  <a href="https://www.maxxis.com/" target="_blank"><img src="/images/logos/maxxis-logo.jpeg" alt="Maxxis International"></a>
-  <a href="https://www.bajajauto.com/" target="_blank"><img src="/images/logos/bajaj-logo.png" alt="Bajaj Auto"></a>
-  <a href="https://www.ovgu.de/" target="_blank"><img src="/images/logos/ovgu-logo.jpeg" alt="OvGU Magdeburg"></a>
-  <a href="https://www.nitrkl.ac.in/" target="_blank"><img src="/images/logos/nitr-logo.jpeg" alt="NIT Rourkela"></a>
+
+<!-- ═══ CAREER TIMELINE ═══ -->
+<h1 style="border-bottom: none; text-align: center;">Career Timeline</h1>
+<div class="h-timeline">
+  <div class="tl-item tl-current">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/meta-logo.jpeg" alt="Meta">
+    <div class="tl-role">Research Scientist</div>
+    <div class="tl-org">Meta Reality Labs</div>
+    <div class="tl-year">2025</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/gatech-logo.png" alt="Georgia Tech">
+    <div class="tl-role">Ph.D.</div>
+    <div class="tl-org">Georgia Tech</div>
+    <div class="tl-year">2020 – 25</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/maxxis-logo.jpeg" alt="Maxxis">
+    <div class="tl-role">Intern</div>
+    <div class="tl-org">Maxxis Int'l</div>
+    <div class="tl-year">2019</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/vt-logo.png" alt="Virginia Tech">
+    <div class="tl-role">M.S.</div>
+    <div class="tl-org">Virginia Tech</div>
+    <div class="tl-year">2018 – 20</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/bajaj-logo.png" alt="Bajaj Auto">
+    <div class="tl-role">Design Engr → Asst. Mgr</div>
+    <div class="tl-org">Bajaj Auto</div>
+    <div class="tl-year">2015 – 18</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/ovgu-logo.jpeg" alt="OvGU Magdeburg">
+    <div class="tl-role">DAAD Intern</div>
+    <div class="tl-org">OvGU Magdeburg</div>
+    <div class="tl-year">2014</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot"></div>
+    <img class="tl-logo" src="/images/logos/nitr-logo.jpeg" alt="NIT Rourkela">
+    <div class="tl-role">B.Tech</div>
+    <div class="tl-org">NIT Rourkela</div>
+    <div class="tl-year">2011 – 15</div>
+  </div>
 </div>
 
 
@@ -349,18 +408,7 @@ redirect_from:
 
 </div>
 
-<!-- ═══ VISITOR MAP ═══ 
-<div style="text-align: center; margin: 2rem 0 1rem;">
-  <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=bcbcbc&w=590&t=m&d=gfoZ0_--Hhmj6oY7YWFrCcmo8yMI06xhoawDsEbshC8&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
-</div>
- 
-</div>
--->
-
-
 <!-- ═══ VISITOR MAP ═══ -->
 <div style="text-align: center; margin: 2rem 0 1rem; pointer-events: none;">
   <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=bcbcbc&w=700&t=m&d=gfoZ0_--Hhmj6oY7YWFrCcmo8yMI06xhoawDsEbshC8&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
-</div>
- 
 </div>
