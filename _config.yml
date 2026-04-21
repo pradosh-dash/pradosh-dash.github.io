@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Pradosh P. Dash, PhD"
+  name             : "Pradosh P. Dash"
   pronouns         :  "he/him"  
   bio              : #"Research Scientist Intern (Meta Reality Labs Research) & Ph.D. candidate (Georgia Tech) advancing soft wearables, acoustic sensing, and ultrasound neuromodulation."
   location         : "Atlanta, GA"
