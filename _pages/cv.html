@@ -37,7 +37,6 @@ author_profile: false
   border-bottom-color: #1b3a5c;
 }
 
-/* ── Download button ── */
 .cv-download {
   display: inline-flex;
   align-items: center;
@@ -60,253 +59,53 @@ author_profile: false
   color: #fff;
 }
 
-/* ══════════════════════════════════════════
-   Education Timeline (LinkedIn-style)
-   ══════════════════════════════════════════ */
-.edu-section {
-  margin: 1rem 0 2.5rem;
-}
-.edu-entry {
-  display: flex;
-  gap: 1rem;
-  position: relative;
-  padding-bottom: 2rem;
-}
+.edu-section { margin: 1rem 0 2.5rem; }
+.edu-entry { display: flex; gap: 1rem; position: relative; padding-bottom: 2rem; }
 .edu-entry:last-child { padding-bottom: 0; }
-
-.edu-logo-col {
-  flex-shrink: 0;
-  width: 52px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.edu-logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 6px;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid #dce1e8;
-  padding: 4px;
-  position: relative;
-  z-index: 2;
-}
-.edu-logo-col::after {
-  content: '';
-  flex: 1;
-  width: 2px;
-  background: #c4cdd8;
-  margin-top: 6px;
-}
+.edu-logo-col { flex-shrink: 0; width: 52px; display: flex; flex-direction: column; align-items: center; }
+.edu-logo { width: 48px; height: 48px; border-radius: 6px; object-fit: contain; background: #fff; border: 1px solid #dce1e8; padding: 4px; position: relative; z-index: 2; }
+.edu-logo-col::after { content: ''; flex: 1; width: 2px; background: #c4cdd8; margin-top: 6px; }
 .edu-entry:last-child .edu-logo-col::after { display: none; }
-
-.edu-body {
-  flex: 1;
-  min-width: 0;
-}
-.edu-body h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #0f2a4a;
-  margin: 0 0 1px;
-  line-height: 1.3;
-}
-.edu-body .edu-degree {
-  font-size: 0.92rem;
-  color: #4a5568;
-  margin: 0 0 2px;
-}
-.edu-body .edu-meta {
-  font-size: 0.82rem;
-  color: #8a94a2;
-  margin: 0 0 0.4rem;
-}
+.edu-body { flex: 1; min-width: 0; }
+.edu-body h3 { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; color: #0f2a4a; margin: 0 0 1px; line-height: 1.3; }
+.edu-body .edu-degree { font-size: 0.92rem; color: #4a5568; margin: 0 0 2px; }
+.edu-body .edu-meta { font-size: 0.82rem; color: #8a94a2; margin: 0 0 0.4rem; }
 .edu-body .edu-meta span + span::before { content: ' · '; }
-.edu-body .edu-detail {
-  font-size: 0.88rem;
-  color: #4a5568;
-  margin: 0.15rem 0;
-  line-height: 1.55;
-}
-.edu-body .edu-detail strong {
-  color: #2d3748;
-}
-.edu-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0.5rem;
-}
-.edu-skill-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: #8b6914;
-  background: rgba(202, 163, 45, 0.12);
-  border: 1px solid rgba(202, 163, 45, 0.35);
-  border-radius: 14px;
-  padding: 2px 10px;
-  letter-spacing: 0.01em;
-}
+.edu-body .edu-detail { font-size: 0.88rem; color: #4a5568; margin: 0.15rem 0; line-height: 1.55; }
+.edu-body .edu-detail strong { color: #2d3748; }
+.edu-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.5rem; }
+.edu-skill-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; color: #8b6914; background: rgba(202,163,45,0.12); border: 1px solid rgba(202,163,45,0.35); border-radius: 14px; padding: 2px 10px; }
 
-/* ══════════════════════════════════════════
-   Experience Timeline (LinkedIn-style)
-   ══════════════════════════════════════════ */
-.exp-section {
-  margin: 1rem 0 2.5rem;
-}
-.exp-entry {
-  display: flex;
-  gap: 1rem;
-  position: relative;
-  padding-bottom: 2rem;
-}
+.exp-section { margin: 1rem 0 2.5rem; }
+.exp-entry { display: flex; gap: 1rem; position: relative; padding-bottom: 2rem; }
 .exp-entry:last-child { padding-bottom: 0; }
-
-.exp-logo-col {
-  flex-shrink: 0;
-  width: 52px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.exp-logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 6px;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid #dce1e8;
-  padding: 4px;
-  position: relative;
-  z-index: 2;
-}
-.exp-logo-col::after {
-  content: '';
-  flex: 1;
-  width: 2px;
-  background: #c4cdd8;
-  margin-top: 6px;
-}
+.exp-logo-col { flex-shrink: 0; width: 52px; display: flex; flex-direction: column; align-items: center; }
+.exp-logo { width: 48px; height: 48px; border-radius: 6px; object-fit: contain; background: #fff; border: 1px solid #dce1e8; padding: 4px; position: relative; z-index: 2; }
+.exp-logo-col::after { content: ''; flex: 1; width: 2px; background: #c4cdd8; margin-top: 6px; }
 .exp-entry:last-child .exp-logo-col::after { display: none; }
-
-.exp-body {
-  flex: 1;
-  min-width: 0;
-}
-.exp-body h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #0f2a4a;
-  margin: 0 0 1px;
-  line-height: 1.3;
-}
-.exp-body .exp-company {
-  font-size: 0.92rem;
-  color: #4a5568;
-  margin: 0 0 2px;
-}
-.exp-body .exp-meta {
-  font-size: 0.82rem;
-  color: #8a94a2;
-  margin: 0 0 0.5rem;
-}
+.exp-body { flex: 1; min-width: 0; }
+.exp-body h3 { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; color: #0f2a4a; margin: 0 0 1px; line-height: 1.3; }
+.exp-body .exp-company { font-size: 0.92rem; color: #4a5568; margin: 0 0 2px; }
+.exp-body .exp-meta { font-size: 0.82rem; color: #8a94a2; margin: 0 0 0.5rem; }
 .exp-body .exp-meta span + span::before { content: ' · '; }
-.exp-body .exp-desc {
-  font-size: 0.9rem;
-  color: #4a5568;
-  margin: 0.3rem 0 0;
-  line-height: 1.6;
-  font-style: italic;
-}
-.exp-body ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-}
-.exp-body ul li {
-  font-size: 0.88rem;
-  color: #4a5568;
-  line-height: 1.55;
-  margin-bottom: 0.25rem;
-}
-.exp-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0.5rem;
-}
-.exp-skill-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: #8b6914;
-  background: rgba(202, 163, 45, 0.12);
-  border: 1px solid rgba(202, 163, 45, 0.35);
-  border-radius: 14px;
-  padding: 2px 10px;
-  letter-spacing: 0.01em;
-}
+.exp-body .exp-desc { font-size: 0.9rem; color: #4a5568; margin: 0.3rem 0 0; line-height: 1.6; font-style: italic; }
+.exp-body ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.exp-body ul li { font-size: 0.88rem; color: #4a5568; line-height: 1.55; margin-bottom: 0.25rem; }
+.exp-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.5rem; }
+.exp-skill-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; color: #8b6914; background: rgba(202,163,45,0.12); border: 1px solid rgba(202,163,45,0.35); border-radius: 14px; padding: 2px 10px; }
 
-/* ── Grouped entries (multiple roles at same company) ── */
-.exp-group {
-  position: relative;
-  padding-bottom: 2rem;
-}
+.exp-group { position: relative; padding-bottom: 2rem; }
 .exp-group:last-child { padding-bottom: 0; }
-.exp-group-header {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-bottom: 0.2rem;
-}
-.exp-group-body {
-  padding-left: calc(52px + 1rem);
-  border-left: 2px solid #c4cdd8;
-  margin-left: 25px;
-}
-.exp-group-body .exp-sub {
-  padding: 0.75rem 0 0.75rem 1rem;
-  position: relative;
-}
-.exp-group-body .exp-sub::before {
-  content: '';
-  position: absolute;
-  left: -7px;
-  top: 1.15rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #1b3a5c;
-  border: 2px solid #fff;
-}
+.exp-group-header { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 0.2rem; }
+.exp-group-body { padding-left: calc(52px + 1rem); border-left: 2px solid #c4cdd8; margin-left: 25px; }
+.exp-group-body .exp-sub { padding: 0.75rem 0 0.75rem 1rem; position: relative; }
+.exp-group-body .exp-sub::before { content: ''; position: absolute; left: -7px; top: 1.15rem; width: 10px; height: 10px; border-radius: 50%; background: #1b3a5c; border: 2px solid #fff; }
 .exp-group-body .exp-sub:last-child { padding-bottom: 0; }
-.exp-sub h4 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.93rem;
-  font-weight: 600;
-  color: #0f2a4a;
-  margin: 0 0 1px;
-}
-.exp-sub .exp-meta {
-  font-size: 0.82rem;
-  color: #8a94a2;
-  margin: 0 0 0.35rem;
-}
-.exp-sub ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-}
-.exp-sub ul li {
-  font-size: 0.88rem;
-  color: #4a5568;
-  line-height: 1.55;
-  margin-bottom: 0.25rem;
-}
+.exp-sub h4 { font-family: 'DM Sans', sans-serif; font-size: 0.93rem; font-weight: 600; color: #0f2a4a; margin: 0 0 1px; }
+.exp-sub .exp-meta { font-size: 0.82rem; color: #8a94a2; margin: 0 0 0.35rem; }
+.exp-sub ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.exp-sub ul li { font-size: 0.88rem; color: #4a5568; line-height: 1.55; margin-bottom: 0.25rem; }
 
-/* ── Responsive ── */
 @media (max-width: 600px) {
   .exp-logo, .edu-logo { width: 40px; height: 40px; }
   .exp-logo-col, .edu-logo-col { width: 44px; }
@@ -316,27 +115,11 @@ author_profile: false
 
 <div class="cv-page">
 
-<!-- ═══ CV HEADER ═══
-<h1 style="margin-top: 0;">Curriculum Vitae</h1>
-<a class="cv-download" href="/files/Pradosh_P_Dash_v08242025.pdf" target="_blank">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  Download PDF
-</a>
--->
-<!--
-<h1 style="margin-top: 0;">Curriculum Vitae</h1>
-
-<a class="cv-download" href="/files/Pradosh_P_Dash_v08242025.pdf" target="_blank" style="background-color: lightgray; color: #333333; padding: 8px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  Download PDF
-</a>
--->
 <!-- ═══ EDUCATION ═══ -->
 <h1>Education</h1>
 
 <div class="edu-section">
 
-  <!-- Georgia Tech -->
   <div class="edu-entry">
     <div class="edu-logo-col">
       <img class="edu-logo" src="/images/logos/gatech-logo.png" alt="Georgia Tech">
@@ -344,7 +127,7 @@ author_profile: false
     <div class="edu-body">
       <h3>Georgia Institute of Technology</h3>
       <p class="edu-degree">Doctor of Philosophy — Ph.D., Mechanical Engineering</p>
-      <p class="edu-meta"><span>2020 – 2025</span><span>Atlanta, GA</span></p>
+      <p class="edu-meta"><span>2020 – 2026</span><span>Atlanta, GA</span></p>
       <p class="edu-detail"><strong>Grade:</strong> 4.0/4.0</p>
       <p class="edu-detail"><strong>Thesis:</strong> Transcranial Focused Ultrasound Therapy and Monitoring Using Nonlinear Acoustics</p>
       <p class="edu-detail"><strong>Advisor:</strong> Costas D. Arvanitis</p>
@@ -358,7 +141,6 @@ author_profile: false
     </div>
   </div>
 
-  <!-- Virginia Tech -->
   <div class="edu-entry">
     <div class="edu-logo-col">
       <img class="edu-logo" src="/images/logos/vt-logo.png" alt="Virginia Tech">
@@ -378,7 +160,6 @@ author_profile: false
     </div>
   </div>
 
-  <!-- NIT Rourkela -->
   <div class="edu-entry">
     <div class="edu-logo-col">
       <img class="edu-logo" src="/images/logos/nitr-logo.jpeg" alt="NIT Rourkela">
@@ -397,13 +178,37 @@ author_profile: false
     </div>
   </div>
 
-</div><!-- end edu-section -->
+</div>
 
 
 <!-- ═══ PROFESSIONAL JOURNEY ═══ -->
 <h1>Professional Journey</h1>
 
 <div class="exp-section">
+
+  <!-- ── Matic Robots ── -->
+  <div class="exp-entry">
+    <div class="exp-logo-col">
+      <img class="exp-logo" src="/images/logos/matic-logo.png" alt="Matic Robots">
+    </div>
+    <div class="exp-body">
+      <h3>NVH Research Engineer</h3>
+      <p class="exp-company">Matic Robots</p>
+      <p class="exp-meta"><span>Jun 2026 – Present</span><span>Menlo Park, CA</span><span>Full-time</span></p>
+      <ul>
+        <li>Lead acoustic and vibration performance optimization across the robot platform to sustain best-in-class ultra-quiet operation as a core product differentiator.</li>
+        <li>Apply signal processing and modal/structural-acoustic analysis to identify and mitigate airborne and structure-borne noise sources, from component bench testing through full-system validation.</li>
+        <li>Develop measurement and simulation methods to root-cause NVH issues early in the design cycle, partnering with mechanical, electrical, and software teams to embed acoustic targets into design decisions at production scale.</li>
+      </ul>
+      <div class="exp-skills">
+        <span class="exp-skill-tag">NVH</span>
+        <span class="exp-skill-tag">Structural Acoustics</span>
+        <span class="exp-skill-tag">Modal Analysis</span>
+        <span class="exp-skill-tag">Signal Processing</span>
+        <span class="exp-skill-tag">Robotics</span>
+      </div>
+    </div>
+  </div>
 
   <!-- ── Meta ── -->
   <div class="exp-entry">
@@ -440,7 +245,7 @@ author_profile: false
     <div class="exp-body">
       <h3>Graduate Research Assistant</h3>
       <p class="exp-company">Georgia Institute of Technology · Ultrasound Biophysics &amp; Bioengineering Lab</p>
-      <p class="exp-meta"><span>Aug 2020 – May 2025</span><span>Atlanta, GA</span><span>4 yrs 10 mos</span></p>
+      <p class="exp-meta"><span>Aug 2020 – May 2026</span><span>Atlanta, GA</span><span>5 yrs 10 mos</span></p>
       <ul>
         <li><strong>Transcranial Ultrasound Imaging &amp; Therapy:</strong> Developed and experimentally validated fast aberration correction algorithms using differentiable acoustic propagators and multi-channel transducer arrays (Verasonics). Implemented GPU-accelerated nonlinear wave propagation simulations for heterogeneous skull bone. Designed beamforming sequences and optimized acoustic hologram topologies for trans-skull focused ultrasound.</li>
         <li><strong>Signal &amp; Image Processing:</strong> Applied SVD-based spatiotemporal filtering, strain imaging techniques, and advanced beamforming (delay-and-sum, angular spectrum) for transcranial passive acoustic mapping and volumetric image reconstruction.</li>
@@ -590,6 +395,6 @@ author_profile: false
     </div>
   </div>
 
-</div><!-- end exp-section -->
+</div>
 
-</div><!-- end cv-page -->
+</div>
