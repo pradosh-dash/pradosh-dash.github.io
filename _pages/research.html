@@ -18,7 +18,7 @@ author_profile: false
   --line: rgba(27, 58, 92, 0.35);
   font-family: 'DM Sans', sans-serif;
   color: var(--global-text-color);
-  line-height: 1.6;
+  line-height: 1.7;
   max-width: 900px;
 }
 html[data-theme="dark"] .rs {
@@ -32,11 +32,11 @@ html[data-theme="dark"] .rs {
 .rs a { text-decoration: none; }
 
 /* Intro */
-.rs-hero h1 { font-size: 2rem; margin: 0 0 0.6rem; border: 0; }
-.rs-lede { font-size: 1.08rem; line-height: 1.65; margin: 0 0 1.6rem; max-width: 46em; }
+.rs .rs-hero h1 { font-size: 1.75rem; margin: 0 0 1.2rem; padding-bottom: 0.4rem; border-bottom: 1.5px solid var(--global-border-color); }
+.rs-lede { font-size: 1.05rem; line-height: 1.8; margin: 0 0 2rem; }
 
 /* Section labels */
-.rs-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--global-text-color-light); margin: 3rem 0 1rem; }
+.rs .rs-label { font-family: 'Source Serif 4', serif; font-size: 1.75rem; font-weight: 700; line-height: 1.25; color: var(--ink); margin: 2.4rem 0 1.2rem; padding-bottom: 0.4rem; border-bottom: 1.5px solid var(--global-border-color); }
 
 /* Research arc */
 .rs-arc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
@@ -49,6 +49,7 @@ html[data-theme="dark"] .rs {
 
 /* Themes */
 .rs-theme { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; padding: 2.2rem 0; border-top: 1px solid var(--global-border-color); }
+.rs-label + .rs-theme { border-top: 0; padding-top: 0.6rem; }
 .rs-theme.flip { grid-template-columns: 1fr 200px; }
 .rs-theme.flip .rs-art { order: 2; }
 .rs-art { color: var(--accent); background: var(--soft); border-radius: 12px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
@@ -74,7 +75,7 @@ html[data-theme="dark"] .rs {
 .rs-quote blockquote { margin: 0; padding: 0 0 0 1.1rem; border-left: 3px solid var(--accent); font-family: 'Source Serif 4', serif; font-style: italic; font-size: 1.3rem; line-height: 1.45; color: var(--ink); }
 .rs-toggle { border-top: 1px solid var(--global-border-color); }
 .rs-toggle:last-of-type { border-bottom: 1px solid var(--global-border-color); }
-.rs-toggle summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
+.rs-toggle summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; font-family: 'Source Serif 4', serif; font-size: 1.15rem; font-weight: 600; color: var(--ink); }
 .rs-toggle summary::-webkit-details-marker { display: none; }
 .rs-toggle summary::after { content: '+'; font-size: 1.2rem; font-weight: 400; letter-spacing: 0; color: var(--accent); }
 .rs-toggle[open] summary::after { content: '\2212'; }
@@ -143,7 +144,7 @@ html[data-theme="dark"] .rs {
 </details>
 
 <!-- ═══ RESEARCH ARC ═══ -->
-<div class="rs-label">Research arc</div>
+<h1 class="rs-label">Research Arc</h1>
 <ol class="rs-arc">
   <li><span class="yr">2015</span><span class="org">Bajaj Auto</span><span class="what">Powertrain NVH &amp; active noise control</span></li>
   <li><span class="yr">2018</span><span class="org">Virginia Tech</span><span class="what">Tire vibroacoustics &amp; modal analysis</span></li>
@@ -153,7 +154,7 @@ html[data-theme="dark"] .rs {
 </ol>
 
 <!-- ═══ THEMES ═══ -->
-<div class="rs-label">Research themes</div>
+<h1 class="rs-label">Research Themes</h1>
 
 <section class="rs-theme" id="transcranial-ultrasound">
   <div class="rs-art" aria-hidden="true">
