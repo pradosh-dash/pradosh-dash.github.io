@@ -1,0 +1,177 @@
+% CV PDF source. Mirrors the content of _pages/cv.html.
+% Build: tectonic _cv/Pradosh_P_Dash_CV.tex --outdir files
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.7in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage[default]{sourcesanspro}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{HTML}{0F2A4A}
+\definecolor{accent}{HTML}{1B3A5C}
+\definecolor{muted}{HTML}{5A6472}
+\definecolor{rule}{HTML}{C4CDD8}
+
+\hypersetup{pdftitle={Pradosh P. Dash - CV}, pdfauthor={Pradosh P. Dash}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.08}
+
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\color{rule}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.1em, itemsep=1.5pt, topsep=2pt, parsep=0pt, label={\color{accent}\textbullet}}
+
+% \entry{title}{right}{subtitle}{right2}
+\newcommand{\entry}[4]{%
+  {\textbf{\color{navy}#1}\hfill{\color{muted}\small #2}\par}%
+  {{\color{accent}#3}\hfill{\color{muted}\small #4}\par}\vspace{2pt}}
+\hyphenpenalty=2000
+\exhyphenpenalty=2000
+\newcommand{\subrole}[2]{\vspace{4pt}{\textbf{#1}}\hfill{\color{muted}\small #2}\par}
+\newcommand{\detail}[1]{{\small #1}\par}
+\newcommand{\gap}{\vspace{7pt}}
+\newcommand{\skillrow}[2]{\textbf{\color{navy}#1} & #2 \\[3pt]}
+
+\begin{document}
+
+% ---------------- Header ----------------
+{\centering
+  {\fontsize{24}{28}\selectfont\bfseries\color{navy} Pradosh P. Dash}\par\vspace{3pt}
+  {\color{accent} NVH Research Engineer \,|\, Ph.D., Mechanical Engineering}\par\vspace{5pt}
+  {\small\color{muted}
+    \faEnvelope\ \href{mailto:ppdash@gatech.edu}{ppdash@gatech.edu} \quad
+    \faGlobe\ \href{https://pradosh-dash.github.io}{pradosh-dash.github.io} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/ppdash}{in/ppdash} \quad
+    \faGithub\ \href{https://github.com/pradosh-dash}{pradosh-dash} \quad
+    \faGraduationCap\ \href{https://scholar.google.com/citations?user=us9GO_wAAAAJ}{Google Scholar}}\par
+}
+
+% ---------------- Education ----------------
+\section{Education}
+
+\entry{Georgia Institute of Technology}{2020 -- 2026}{Ph.D., Mechanical Engineering}{Atlanta, GA}
+\detail{GPA 4.0/4.0. \textbf{Thesis:} Transcranial Focused Ultrasound Therapy and Monitoring Using Nonlinear Acoustics. \textbf{Advisor:} Costas D. Arvanitis}
+\detail{\color{muted}Coursework: Acoustics I \& II, Nonlinear Acoustics, Acoustic Transducers and Signal Analysis, Dynamics, Quantitative Neuroscience, Medical Imaging, Imaging with Data-driven Models, Finite Element Methods, Vibration of Mechanical Systems, Machine Vision, Optimization Techniques in Engineering}
+\gap
+
+\entry{Virginia Tech}{2018 -- 2020}{M.S., Mechanical Engineering}{Blacksburg, VA}
+\detail{GPA 4.0/4.0. \textbf{Thesis:} Operational Modal Analysis of Rolling Tire: A Tire Cavity Accelerometer Mediated Approach for Structure Borne Noise Prediction. \textbf{Advisors:} Ricardo Burdisso \& Pablo Tarazaga}
+\detail{\color{muted}Coursework: Finite Element Methods, Modelling and Simulation of Multi-body Dynamics, Vibration of Mechanical Systems, Model Order Reduction, Advanced Engineering Acoustics, Optimization Techniques in Engineering, Applied Linear Systems}
+\gap
+
+\entry{National Institute of Technology Rourkela}{2011 -- 2015}{B.Tech., Mechanical Engineering}{Rourkela, India}
+\detail{CGPA 9.7/10 (Valedictorian). University Gold Medalist; felicitated by the President of India. \textbf{Thesis:} Design of Piezoresistive MEMS Accelerometer With Optimized Device Dimensions. \textbf{Advisor:} Subrata Panda}
+
+% ---------------- Experience ----------------
+\section{Professional Experience}
+
+\entry{NVH Research Engineer}{Jun 2026 -- Present}{Matic Robots}{Menlo Park, CA}
+\begin{itemize}
+  \item Lead acoustic and vibration performance optimization across the robot platform to sustain best-in-class ultra-quiet operation as a core product differentiator.
+  \item Apply signal processing and modal/structural-acoustic analysis to identify and mitigate airborne and structure-borne noise sources, from component bench testing through full-system validation.
+  \item Develop measurement and simulation methods to root-cause NVH issues early in the design cycle, partnering with mechanical, electrical, and software teams to embed acoustic targets into design decisions at production scale.
+\end{itemize}
+\gap
+
+\entry{Research Scientist Intern}{May 2025 -- Nov 2025}{Meta Platforms Inc., Reality Labs Research}{Pasadena, CA}
+\detail{\itshape\color{muted}Confidential R\&D project (details under NDA)}
+\begin{itemize}
+  \item Engineered high-performance ultrasonic sensors and signal processing algorithms for wearables and robotic sensing, leveraging expertise in acoustics, sensor physics, system optimization, and real-time analysis.
+  \item Led sensor characterization and algorithm development, driving performance gains through rapid iteration and creating custom imaging tools for system validation.
+  \item Developed Doppler-based motion rejection algorithms to suppress motion artifacts in dynamic wearable environments.
+  \item Collaborated with cross-functional teams in an agile environment to solve complex sensing challenges, advancing projects from initial concept to validated prototype.
+\end{itemize}
+\gap
+
+\entry{Graduate Research Assistant}{Aug 2020 -- May 2026}{Georgia Institute of Technology, Ultrasound Biophysics \& Bioengineering Lab}{Atlanta, GA}
+\begin{itemize}
+  \item \textbf{Transcranial ultrasound imaging \& therapy:} Developed and experimentally validated fast aberration correction algorithms using differentiable acoustic propagators and multi-channel transducer arrays (Verasonics). Implemented GPU-accelerated nonlinear wave propagation simulations for heterogeneous skull bone. Designed beamforming sequences and optimized acoustic hologram topologies for trans-skull focused ultrasound.
+  \item \textbf{Signal \& image processing:} Applied SVD-based spatiotemporal filtering, strain imaging techniques, and advanced beamforming (delay-and-sum, angular spectrum) for transcranial passive acoustic mapping and volumetric image reconstruction.
+  \item \textbf{Neuromodulation biophysics:} Explored biophysical mechanisms of ultrasound neuromodulation using ultrafast acquisition to capture transient neural responses. Developed novel tools to control neuronal circuits.
+\end{itemize}
+\gap
+
+\entry{Graduate Research Assistant}{Aug 2019 -- Jul 2020}{Virginia Tech, Center for Tire Research (CenTiRe) / Vibration \& Acoustics Lab}{Blacksburg, VA}
+\begin{itemize}
+  \item Developed experimental and numerical procedures for vibro-acoustic measurement of rolling tires and data-driven modeling for structure-borne noise prediction.
+  \item Experimental modal analysis using laser vibrometry and tire cavity accelerometer arrays under realistic speeds, loads, and excitations.
+  \item Designed a semi-active tuned absorber to reduce rest tremors in Parkinson's patients.
+\end{itemize}
+\gap
+
+\entry{Summer Intern}{May 2019 -- Aug 2019}{Maxxis International-US, Tire NVH/Dynamics Group}{Suwanee, GA}
+\begin{itemize}
+  \item Improved the Maxxis modal analysis procedure and validation; conducted repeatability trials with different boundary conditions.
+  \item Identified complex, coupled tire mode shapes and characterized modal parameters for structure-borne noise identification.
+\end{itemize}
+\gap
+
+\entry{Bajaj Auto Ltd.}{Jul 2015 -- Jul 2018}{Research \& Development, Noise and Vibration}{Pune, India}
+\subrole{Assistant Manager (R\&D), Noise \& Vibration}{Jan 2018 -- Jul 2018}
+\begin{itemize}
+  \item Designed engine--chassis layouts ensuring NVH compliance and seamless powertrain integration for commuter bikes.
+  \item Conducted end-to-end testing and validation from prototype to production; authored SOPs and validation protocols.
+  \item Tuned exhaust psychoacoustic parameters to balance sound quality, performance, and Pass-by-Noise (PBN) regulations.
+  \item Applied DRBFM failure-mode analysis to resolve field issues and enhance product reliability.
+\end{itemize}
+\subrole{Senior Design Engineer, Powertrain NVH}{Jul 2016 -- Dec 2017}
+\begin{itemize}
+  \item Led NVH optimization of powertrain subsystems to improve acoustic performance, durability, and regulatory compliance.
+  \item Developed vibration modeling libraries and applied predictive analytics to refine NVH designs with cross-functional teams.
+  \item Performance and durability testing and validation for prototype-to-production batches.
+  \item Resolved design-related field failures using Design Review Based on Failure Mode (DRBFM) analysis.
+  \item Cost reduction in design, manufacturing, and assembly through Value Analysis/Value Engineering (VAVE) proposals.
+\end{itemize}
+\subrole{Graduate Trainee, Active Noise Control \& NVH}{Jul 2015 -- Jun 2016}
+\begin{itemize}
+  \item Designed and implemented a feed-forward Active Noise Cancellation (ANC) system on a TMS320 DSP platform to abate intake roar in the 0--200\,Hz range.
+  \item Developed FxLMS adaptive filtering algorithms achieving 10\,dB attenuation in 2nd-order noise during steady-state and transient conditions.
+  \item Conducted end-to-end ANC prototype testing, managing signal acquisition (ADC/DAC) and optimizing loop performance for vehicle integration.
+  \item Identified critical structural modes and implemented design modifications to reduce structure-borne noise from combustion and transmission loads.
+\end{itemize}
+\gap
+
+\entry{Summer Research Assistant}{May 2014 -- Jul 2014}{Otto-von-Guericke University Magdeburg, DAAD WISE Fellowship}{Magdeburg, Germany}
+\begin{itemize}
+  \item Contributed to development and validation of the international standard IEC 62714, ``Engineering data exchange format for use in industrial automation systems engineering'' (AutomationML).
+  \item Worked on modularization methodologies for production systems and behavior modelling of production system components.
+  \item XML-based system description and component-based library design.
+\end{itemize}
+
+% ---------------- Teaching ----------------
+\section{Teaching}
+
+\entry{ME 6452: Wave Propagation in Solids}{Spring 2025}{Teaching Practicum, Georgia Institute of Technology}{}
+\detail{Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. Assisted with lectures and guided complex mathematical derivations and simulations.}
+\gap
+
+\entry{ME 6760: Acoustics I}{Fall 2022 \& Fall 2024}{Graduate Teaching Assistant, Georgia Institute of Technology}{}
+\detail{Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.}
+\gap
+
+\entry{PHY 2216: Physics Laboratory}{Spring 2019}{Graduate Teaching Assistant, Virginia Tech}{}
+\detail{Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. Instructed 90 sophomores in experimental design, data collection, and scientific report writing.}
+\gap
+
+\entry{ME 4006: Mechanical Engineering Lab}{Fall 2018}{Graduate Teaching Assistant, Virginia Tech}{}
+\detail{Experimental methods in mechanical engineering including vibration analysis, heat transfer, and fluid mechanics measurements. Instructed 100 seniors on structural health monitoring and wind-induced vibration modeling of tall structures with experimental validation.}
+
+% ---------------- Skills ----------------
+\section{Skills}
+
+{\small
+\begin{tabularx}{\textwidth}{@{}p{1.65in} X@{}}
+  \skillrow{Analysis \& Simulation}{COMSOL Multiphysics \& FEM, Ansys, HyperMesh, MSC Adams, ME'Scope, k-Wave, GPU-accelerated simulation}
+  \skillrow{Design \& CAD}{SolidWorks, Siemens NX, AutoCAD, 3D printing, transducer array \& hologram topology design}
+  \skillrow{Hardware \& Measurement}{Laser vibrometry, accelerometer arrays \& hydrophones, TMS320 DSP \& sensor prototyping, ADC/DAC, impedance analyzer, oscilloscope, function generator}
+  \skillrow{Programming}{Python, C/C++, MATLAB, NumPy, SciPy, PyTorch, CUDA, Simulink, Git, \LaTeX}
+\end{tabularx}}
+
+\end{document}
