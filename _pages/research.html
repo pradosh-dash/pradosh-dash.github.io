@@ -6,11 +6,6 @@ author_profile: false
 ---
 
 {% assign pubs = site.data.publications %}
-{% assign n_patent = pubs | where: "type", "patent" | size %}
-{% assign n_journal = pubs | where: "type", "journal" | size %}
-{% assign n_conf = pubs | where: "type", "conference" | size %}
-{% assign n_abs = pubs | where: "type", "abstract" | size %}
-{% assign n_talks = n_conf | plus: n_abs %}
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
@@ -39,11 +34,6 @@ html[data-theme="dark"] .rs {
 /* Intro */
 .rs-hero h1 { font-size: 2rem; margin: 0 0 0.6rem; border: 0; }
 .rs-lede { font-size: 1.08rem; line-height: 1.65; margin: 0 0 1.6rem; max-width: 46em; }
-.rs-stats { display: flex; flex-wrap: wrap; border-top: 1px solid var(--global-border-color); border-bottom: 1px solid var(--global-border-color); }
-.rs-stat { flex: 1 1 140px; padding: 0.9rem 1rem 0.8rem 0; }
-.rs-stat + .rs-stat { padding-left: 1rem; border-left: 1px solid var(--global-border-color); }
-.rs-stat b { display: block; font-family: 'Source Serif 4', serif; font-size: 1.9rem; line-height: 1.1; color: var(--ink); }
-.rs-stat span { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--global-text-color-light); }
 
 /* Section labels */
 .rs-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--global-text-color-light); margin: 3rem 0 1rem; }
@@ -80,13 +70,18 @@ html[data-theme="dark"] .rs {
 .rs-more:hover { text-decoration: underline; }
 .rs-note { font-size: 0.85rem; font-style: italic; color: var(--global-text-color-light); }
 
-/* Philosophy */
-.rs-quote { margin: 3rem 0 0; padding: 1.6rem 0 0; border-top: 1px solid var(--global-border-color); }
-.rs-quote blockquote { margin: 0; padding: 0; border: 0; font-family: 'Source Serif 4', serif; font-style: italic; font-size: 1.35rem; line-height: 1.45; color: var(--ink); }
-.rs-quote blockquote::before { content: '\201C'; color: var(--accent); font-size: 2.6rem; line-height: 0; vertical-align: -0.4em; margin-right: 0.1em; }
-.rs-quote details { margin-top: 0.8rem; font-size: 0.9rem; color: var(--global-text-color-light); }
-.rs-quote summary { cursor: pointer; font-weight: 600; font-size: 0.82rem; color: var(--accent); }
-.rs-quote details p { margin: 0.6rem 0 0; line-height: 1.7; }
+/* Philosophy & tools */
+.rs-quote { margin: 0 0 1.4rem; }
+.rs-quote blockquote { margin: 0; padding: 0 0 0 1.1rem; border-left: 3px solid var(--accent); font-family: 'Source Serif 4', serif; font-style: italic; font-size: 1.3rem; line-height: 1.45; color: var(--ink); }
+.rs-toggle { border-top: 1px solid var(--global-border-color); }
+.rs-toggle:last-of-type { border-bottom: 1px solid var(--global-border-color); }
+.rs-toggle summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
+.rs-toggle summary::-webkit-details-marker { display: none; }
+.rs-toggle summary::after { content: '+'; font-size: 1.2rem; font-weight: 400; letter-spacing: 0; color: var(--accent); }
+.rs-toggle[open] summary::after { content: '2'; }
+.rs-toggle summary:hover { color: var(--accent); }
+.rs-toggle-body { padding: 0 0 1.2rem; }
+.rs-toggle-body > p { margin: 0; font-size: 0.93rem; line-height: 1.7; color: var(--global-text-color-light); }
 
 /* Methods & tools */
 .rs-tools { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem 2.4rem; }
@@ -114,13 +109,39 @@ html[data-theme="dark"] .rs {
 <div class="rs-hero">
   <h1>Research</h1>
   <p class="rs-lede">I work on acoustic systems that have to perform through difficult media: the human skull, the skin, and the structure of a machine. My work connects wave physics, signal processing, and hardware, from transcranial focused ultrasound therapy to wearable sensing and product NVH.</p>
-  <div class="rs-stats">
-    <div class="rs-stat"><b>{{ n_patent }}</b><span>Patents filed</span></div>
-    <div class="rs-stat"><b>{{ n_journal }}</b><span>Journal articles</span></div>
-    <div class="rs-stat"><b>{{ n_talks }}</b><span>Conference papers &amp; talks</span></div>
-    <div class="rs-stat"><b>10+</b><span>Years in acoustics</span></div>
+</div>
+
+<!-- ═══ PHILOSOPHY & TOOLS ═══ -->
+<div class="rs-quote"><blockquote>I'm particularly drawn to problems that sit at the boundaries between disciplines, where new perspectives can unlock progress.</blockquote></div>
+
+<details class="rs-toggle">
+  <summary>Research philosophy</summary>
+  <div class="rs-toggle-body"><p>My research philosophy is rooted in connecting fundamental scientific understanding with meaningful real-world impact. I approach problems by integrating insights from wave physics, solid mechanics, and vibroacoustics, using both careful experimentation and modeling to understand complex systems at a deep level. Rather than focusing on isolated components, I think in terms of complete solutions, considering how ideas evolve from initial concepts to validated, practical outcomes. My work emphasizes clarity of mechanism, thoughtful design, and iterative refinement, allowing me to navigate challenges that span multiple domains.</p></div>
+</details>
+
+<details class="rs-toggle" id="methods-tools">
+  <summary>Methods &amp; tools</summary>
+  <div class="rs-toggle-body">
+<div class="rs-tools">
+  <div>
+    <h3>Ultrasound systems</h3>
+    <ul><li>Verasonics Vantage</li><li>Beamforming &amp; sequence design</li><li>Transducer characterization</li><li>Aberration correction</li><li>Photoacoustic microscopy (PAM)</li><li>Ultrafast imaging &amp; Doppler processing</li><li>Acoustic holography</li></ul>
+  </div>
+  <div>
+    <h3>Signal &amp; image processing</h3>
+    <ul><li>DSP &amp; signal acquisition</li><li>FFT, spectrogram &amp; time-series analysis</li><li>SVD filtering</li><li>Strain imaging &amp; elastography</li><li>Digital image correlation (DIC)</li><li>FxLMS &amp; adaptive filtering</li><li>Delay-and-sum &amp; angular spectrum</li><li>CT reconstruction &amp; image registration</li></ul>
+  </div>
+  <div>
+    <h3>Simulation &amp; scientific ML</h3>
+    <ul><li>GPU-accelerated nonlinear wave propagation</li><li>Differentiable simulators &amp; autodiff</li><li>Data-driven modeling &amp; optimization</li><li>Model order reduction</li><li>Machine vision</li></ul>
+  </div>
+  <div>
+    <h3>Vibroacoustics &amp; NVH</h3>
+    <ul><li>Aeroacoustics &amp; fan noise testing</li><li>Active noise control (ANC)</li><li>Modal analysis &amp; testing</li><li>Transfer path analysis (TPA)</li><li>Pass-by noise (PBN)</li><li>Structure-borne noise &amp; psychoacoustic tuning</li><li>Operational deflection shapes (ODS)</li><li>Acoustic modeling</li></ul>
   </div>
 </div>
+  </div>
+</details>
 
 <!-- ═══ RESEARCH ARC ═══ -->
 <div class="rs-label">Research arc</div>
@@ -213,34 +234,6 @@ html[data-theme="dark"] .rs {
   </div>
 </section>
 
-<!-- ═══ PHILOSOPHY ═══ -->
-<div class="rs-quote">
-  <blockquote>I'm particularly drawn to problems that sit at the boundaries between disciplines, where new perspectives can unlock progress.</blockquote>
-  <details>
-    <summary>Research philosophy</summary>
-    <p>My research philosophy is rooted in connecting fundamental scientific understanding with meaningful real-world impact. I approach problems by integrating insights from wave physics, solid mechanics, and vibroacoustics, using both careful experimentation and modeling to understand complex systems at a deep level. Rather than focusing on isolated components, I think in terms of complete solutions, considering how ideas evolve from initial concepts to validated, practical outcomes. My work emphasizes clarity of mechanism, thoughtful design, and iterative refinement, allowing me to navigate challenges that span multiple domains.</p>
-  </details>
-</div>
 
-<!-- ═══ METHODS & TOOLS ═══ -->
-<div class="rs-label" id="methods-tools">Methods &amp; tools</div>
-<div class="rs-tools">
-  <div>
-    <h3>Ultrasound systems</h3>
-    <ul><li>Verasonics Vantage</li><li>Beamforming &amp; sequence design</li><li>Transducer characterization</li><li>Aberration correction</li><li>Photoacoustic microscopy (PAM)</li><li>Ultrafast imaging &amp; Doppler processing</li><li>Acoustic holography</li></ul>
-  </div>
-  <div>
-    <h3>Signal &amp; image processing</h3>
-    <ul><li>DSP &amp; signal acquisition</li><li>FFT, spectrogram &amp; time-series analysis</li><li>SVD filtering</li><li>Strain imaging &amp; elastography</li><li>Digital image correlation (DIC)</li><li>FxLMS &amp; adaptive filtering</li><li>Delay-and-sum &amp; angular spectrum</li><li>CT reconstruction &amp; image registration</li></ul>
-  </div>
-  <div>
-    <h3>Simulation &amp; scientific ML</h3>
-    <ul><li>GPU-accelerated nonlinear wave propagation</li><li>Differentiable simulators &amp; autodiff</li><li>Data-driven modeling &amp; optimization</li><li>Model order reduction</li><li>Machine vision</li></ul>
-  </div>
-  <div>
-    <h3>Vibroacoustics &amp; NVH</h3>
-    <ul><li>Aeroacoustics &amp; fan noise testing</li><li>Active noise control (ANC)</li><li>Modal analysis &amp; testing</li><li>Transfer path analysis (TPA)</li><li>Pass-by noise (PBN)</li><li>Structure-borne noise &amp; psychoacoustic tuning</li><li>Operational deflection shapes (ODS)</li><li>Acoustic modeling</li></ul>
-  </div>
-</div>
 
 </div>
