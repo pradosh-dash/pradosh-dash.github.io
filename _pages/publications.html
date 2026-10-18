@@ -8,34 +8,18 @@ author_profile: false
 {% include base_path %}
 
 <style>
-/* Typeset publication list; neutrals come from the site theme, accents switch with the dark toggle */
+/* Typeset publication list; one navy accent on the site's neutrals (matches the CV and Research pages) */
 .pubs {
     max-width: 860px;
     color: var(--global-text-color);
-    --c-patent: #6b46c1;
-    --c-journal: #0e7c86;
-    --c-conference: #2b5fc0;
-    --c-abstract: #2e7d4f;
-    --c-thesis: #b4532a;
-    --c-prep: #a1620f;
-    --accent: var(--global-link-color);
+    --accent: #1b3a5c;
+    --c-prep: var(--accent);
+    --c-conference: var(--accent);
 }
 
 html[data-theme="dark"] .pubs {
-    --c-patent: #b59cf5;
-    --c-journal: #5cc8d2;
-    --c-conference: #8db0ff;
-    --c-abstract: #6fcf97;
-    --c-thesis: #f0996b;
-    --c-prep: #f2c063;
+    --accent: #9db8d9;
 }
-
-/* One accent per section: heading, nav entry, year column and links */
-#patents, .pub-patent, .pubs-nav a[href="#patents"] { --accent: var(--c-patent); }
-#journal-articles, .pub-journal, .pubs-nav a[href="#journal-articles"] { --accent: var(--c-journal); }
-#conference-proceedings, .pub-conference, .pubs-nav a[href="#conference-proceedings"] { --accent: var(--c-conference); }
-#conference-abstracts-talks, .pub-abstract, .pubs-nav a[href="#conference-abstracts-talks"] { --accent: var(--c-abstract); }
-#theses, .pub-thesis, .pubs-nav a[href="#theses"] { --accent: var(--c-thesis); }
 
 .pubs-toolbar {
     display: flex;
