@@ -15,36 +15,22 @@ author_profile: false
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
 
-/* Neutrals follow the site theme; theme accents match the Publications page */
+/* One navy accent on the site's neutrals (matches the CV page) */
 .rs {
-  --c-tfus: #0e7c86;
-  --c-wear: #6b46c1;
-  --c-nvh: #b4532a;
-  --c-neuro: #2e7d4f;
-  --c-patent: #6b46c1;
-  --c-journal: #0e7c86;
-  --c-conference: #2b5fc0;
-  --c-abstract: #2e7d4f;
-  --c-thesis: #b4532a;
+  --accent: #1b3a5c;
   --ink: #0f2a4a;
-  --soft: rgba(15, 42, 74, 0.05);
+  --soft: rgba(27, 58, 92, 0.06);
+  --line: rgba(27, 58, 92, 0.35);
   font-family: 'DM Sans', sans-serif;
   color: var(--global-text-color);
   line-height: 1.6;
   max-width: 900px;
 }
 html[data-theme="dark"] .rs {
-  --c-tfus: #5cc8d2;
-  --c-wear: #b59cf5;
-  --c-nvh: #f0996b;
-  --c-neuro: #6fcf97;
-  --c-patent: #b59cf5;
-  --c-journal: #5cc8d2;
-  --c-conference: #8db0ff;
-  --c-abstract: #6fcf97;
-  --c-thesis: #f0996b;
+  --accent: #9db8d9;
   --ink: #f0f0f0;
-  --soft: rgba(255, 255, 255, 0.04);
+  --soft: rgba(157, 184, 217, 0.08);
+  --line: rgba(157, 184, 217, 0.4);
 }
 
 .rs h1, .rs h2 { font-family: 'Source Serif 4', serif; color: var(--ink); }
@@ -64,10 +50,10 @@ html[data-theme="dark"] .rs {
 
 /* Research arc */
 .rs-arc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
-.rs-arc::before { content: ''; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: linear-gradient(90deg, var(--c-nvh), var(--c-nvh) 30%, var(--c-tfus) 50%, var(--c-wear) 75%, var(--c-nvh)); opacity: 0.55; }
+.rs-arc::before { content: ''; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--line); }
 .rs-arc li { position: relative; padding: 1.6rem 0.8rem 0 0; margin: 0; }
-.rs-arc li::before { content: ''; position: absolute; top: 0; left: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--global-bg-color); border: 3px solid var(--dot); box-sizing: border-box; }
-.rs-arc .yr { font-weight: 700; font-size: 0.85rem; color: var(--dot); font-variant-numeric: tabular-nums; }
+.rs-arc li::before { content: ''; position: absolute; top: 0; left: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--global-bg-color); border: 3px solid var(--accent); box-sizing: border-box; }
+.rs-arc .yr { font-weight: 700; font-size: 0.85rem; color: var(--accent); font-variant-numeric: tabular-nums; }
 .rs-arc .org { display: block; font-weight: 700; font-size: 0.9rem; color: var(--ink); line-height: 1.3; margin-top: 0.15rem; }
 .rs-arc .what { display: block; font-size: 0.8rem; color: var(--global-text-color-light); line-height: 1.4; margin-top: 0.2rem; }
 
@@ -81,31 +67,25 @@ html[data-theme="dark"] .rs {
 .rs-theme h2 { font-size: 1.45rem; margin: 0.2rem 0 0.5rem; border: 0; padding: 0; }
 .rs-theme p { font-size: 0.95rem; margin: 0 0 0.8rem; }
 .rs-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
-.rs-chip { font-size: 0.72rem; font-weight: 600; color: var(--accent); border: 1px solid currentColor; border-radius: 999px; padding: 1px 10px; }
+.rs-chip { font-size: 0.72rem; font-weight: 600; color: var(--global-text-color-light); border: 1px solid var(--global-border-color); border-radius: 999px; padding: 1px 10px; }
 
 .rs-works { border-left: 2px solid var(--accent); padding-left: 0.9rem; }
 .rs-works-h { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--global-text-color-light); margin-bottom: 0.35rem; }
 .rs-work { display: grid; grid-template-columns: 2.6em 6.8em 1fr; gap: 0 0.5rem; font-size: 0.85rem; line-height: 1.4; padding: 0.22rem 0; }
 .rs-work .y { color: var(--global-text-color-light); font-variant-numeric: tabular-nums; }
-.rs-work .t { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--type); padding-top: 0.12rem; }
+.rs-work .t { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); padding-top: 0.12rem; }
 .rs-work a, .rs-work .ti { color: var(--global-text-color); }
 .rs-work a:hover { color: var(--accent); text-decoration: underline; }
 .rs-more { display: inline-block; margin-top: 0.4rem; font-size: 0.8rem; font-weight: 600; color: var(--accent); }
 .rs-more:hover { text-decoration: underline; }
 .rs-note { font-size: 0.85rem; font-style: italic; color: var(--global-text-color-light); }
 
-.w-patent { --type: var(--c-patent); }
-.w-journal { --type: var(--c-journal); }
-.w-conference { --type: var(--c-conference); }
-.w-abstract { --type: var(--c-abstract); }
-.w-thesis { --type: var(--c-thesis); }
-
 /* Philosophy */
 .rs-quote { margin: 3rem 0 0; padding: 1.6rem 0 0; border-top: 1px solid var(--global-border-color); }
 .rs-quote blockquote { margin: 0; padding: 0; border: 0; font-family: 'Source Serif 4', serif; font-style: italic; font-size: 1.35rem; line-height: 1.45; color: var(--ink); }
-.rs-quote blockquote::before { content: '\201C'; color: var(--c-tfus); font-size: 2.6rem; line-height: 0; vertical-align: -0.4em; margin-right: 0.1em; }
+.rs-quote blockquote::before { content: '\201C'; color: var(--accent); font-size: 2.6rem; line-height: 0; vertical-align: -0.4em; margin-right: 0.1em; }
 .rs-quote details { margin-top: 0.8rem; font-size: 0.9rem; color: var(--global-text-color-light); }
-.rs-quote summary { cursor: pointer; font-weight: 600; font-size: 0.82rem; color: var(--c-tfus); }
+.rs-quote summary { cursor: pointer; font-weight: 600; font-size: 0.82rem; color: var(--accent); }
 .rs-quote details p { margin: 0.6rem 0 0; line-height: 1.7; }
 
 /* Methods & tools */
@@ -120,7 +100,7 @@ html[data-theme="dark"] .rs {
   .rs-theme.flip .rs-art { order: 0; }
   .rs-art { max-width: 160px; }
   .rs-arc { grid-template-columns: 1fr; }
-  .rs-arc::before { left: 7px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; background: linear-gradient(180deg, var(--c-nvh), var(--c-tfus) 50%, var(--c-wear) 75%, var(--c-nvh)); }
+  .rs-arc::before { left: 7px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; }
   .rs-arc li { padding: 0 0 1.1rem 1.8rem; }
   .rs-tools { grid-template-columns: 1fr; }
   .rs-work { grid-template-columns: 2.6em 1fr; }
@@ -145,17 +125,17 @@ html[data-theme="dark"] .rs {
 <!-- ═══ RESEARCH ARC ═══ -->
 <div class="rs-label">Research arc</div>
 <ol class="rs-arc">
-  <li style="--dot: var(--c-nvh)"><span class="yr">2015</span><span class="org">Bajaj Auto</span><span class="what">Powertrain NVH &amp; active noise control</span></li>
-  <li style="--dot: var(--c-nvh)"><span class="yr">2018</span><span class="org">Virginia Tech</span><span class="what">Tire vibroacoustics &amp; modal analysis</span></li>
-  <li style="--dot: var(--c-tfus)"><span class="yr">2020</span><span class="org">Georgia Tech</span><span class="what">Transcranial focused ultrasound</span></li>
-  <li style="--dot: var(--c-wear)"><span class="yr">2025</span><span class="org">Meta Reality Labs</span><span class="what">Wearable ultrasound sensing</span></li>
-  <li style="--dot: var(--c-nvh)"><span class="yr">2026</span><span class="org">Matic Robots</span><span class="what">Robot NVH at production scale</span></li>
+  <li><span class="yr">2015</span><span class="org">Bajaj Auto</span><span class="what">Powertrain NVH &amp; active noise control</span></li>
+  <li><span class="yr">2018</span><span class="org">Virginia Tech</span><span class="what">Tire vibroacoustics &amp; modal analysis</span></li>
+  <li><span class="yr">2020</span><span class="org">Georgia Tech</span><span class="what">Transcranial focused ultrasound</span></li>
+  <li><span class="yr">2025</span><span class="org">Meta Reality Labs</span><span class="what">Wearable ultrasound sensing</span></li>
+  <li><span class="yr">2026</span><span class="org">Matic Robots</span><span class="what">Robot NVH at production scale</span></li>
 </ol>
 
 <!-- ═══ THEMES ═══ -->
 <div class="rs-label">Research themes</div>
 
-<section class="rs-theme" id="transcranial-ultrasound" style="--accent: var(--c-tfus)">
+<section class="rs-theme" id="transcranial-ultrasound">
   <div class="rs-art" aria-hidden="true">
     <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
       <path d="M18 30 Q60 6 102 30" stroke-width="5" opacity="0.9"/>
@@ -176,7 +156,7 @@ html[data-theme="dark"] .rs {
   </div>
 </section>
 
-<section class="rs-theme flip" id="wearable-ultrasound" style="--accent: var(--c-wear)">
+<section class="rs-theme flip" id="wearable-ultrasound">
   <div class="rs-art" aria-hidden="true">
     <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
       <rect x="22" y="70" width="76" height="22" rx="11" stroke-width="3"/>
@@ -196,7 +176,7 @@ html[data-theme="dark"] .rs {
   </div>
 </section>
 
-<section class="rs-theme" id="vibroacoustics-nvh" style="--accent: var(--c-nvh)">
+<section class="rs-theme" id="vibroacoustics-nvh">
   <div class="rs-art" aria-hidden="true">
     <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
       <circle cx="60" cy="50" r="30" opacity="0.3" stroke-dasharray="3 4"/>
@@ -214,7 +194,7 @@ html[data-theme="dark"] .rs {
   </div>
 </section>
 
-<section class="rs-theme flip" id="neuromodulation" style="--accent: var(--c-neuro)">
+<section class="rs-theme flip" id="neuromodulation">
   <div class="rs-art" aria-hidden="true">
     <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
       <circle cx="66" cy="62" r="11" fill="currentColor" opacity="0.85" stroke="none"/>
