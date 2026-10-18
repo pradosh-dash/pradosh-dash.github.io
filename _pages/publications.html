@@ -8,11 +8,34 @@ author_profile: false
 {% include base_path %}
 
 <style>
-/* Typeset publication list; colors come from the site theme so dark mode follows the toggle */
+/* Typeset publication list; neutrals come from the site theme, accents switch with the dark toggle */
 .pubs {
     max-width: 860px;
     color: var(--global-text-color);
+    --c-patent: #6b46c1;
+    --c-journal: #0e7c86;
+    --c-conference: #2b5fc0;
+    --c-abstract: #2e7d4f;
+    --c-thesis: #b4532a;
+    --c-prep: #a1620f;
+    --accent: var(--global-link-color);
 }
+
+html[data-theme="dark"] .pubs {
+    --c-patent: #b59cf5;
+    --c-journal: #5cc8d2;
+    --c-conference: #8db0ff;
+    --c-abstract: #6fcf97;
+    --c-thesis: #f0996b;
+    --c-prep: #f2c063;
+}
+
+/* One accent per section: heading, nav entry, year column and links */
+#patents, .pub-patent, .pubs-nav a[href="#patents"] { --accent: var(--c-patent); }
+#journal-articles, .pub-journal, .pubs-nav a[href="#journal-articles"] { --accent: var(--c-journal); }
+#conference-proceedings, .pub-conference, .pubs-nav a[href="#conference-proceedings"] { --accent: var(--c-conference); }
+#conference-abstracts-talks, .pub-abstract, .pubs-nav a[href="#conference-abstracts-talks"] { --accent: var(--c-abstract); }
+#theses, .pub-thesis, .pubs-nav a[href="#theses"] { --accent: var(--c-thesis); }
 
 .pubs-toolbar {
     display: flex;
@@ -39,7 +62,11 @@ author_profile: false
     color: var(--global-border-color);
 }
 
-.pubs-nav a:hover,
+.pubs-nav a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
 .pubs-scholar:hover {
     color: var(--global-link-color);
     text-decoration: none;
@@ -47,7 +74,8 @@ author_profile: false
 
 .pubs-nav .count {
     font-variant-numeric: tabular-nums;
-    opacity: 0.7;
+    font-weight: 600;
+    color: var(--accent);
 }
 
 .pubs-scholar {
@@ -61,10 +89,11 @@ author_profile: false
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--global-text-color-light);
+    color: var(--accent);
     margin: 40px 0 4px 0;
-    padding: 0;
+    padding: 0 0 8px 0;
     border: 0;
+    border-bottom: 2px solid var(--accent);
     scroll-margin-top: 90px;
 }
 
@@ -83,7 +112,8 @@ author_profile: false
 .pub-date {
     font-size: 0.85em;
     font-variant-numeric: tabular-nums;
-    color: var(--global-text-color-light);
+    font-weight: 600;
+    color: var(--accent);
     padding-top: 1px;
 }
 
@@ -117,7 +147,11 @@ author_profile: false
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--global-text-color-light);
+    color: var(--c-prep);
+}
+
+.pub-status.review {
+    color: var(--c-conference);
 }
 
 .pub-status::before {
@@ -134,7 +168,7 @@ author_profile: false
 }
 
 .pub-links a {
-    color: var(--global-link-color);
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -243,7 +277,7 @@ author_profile: false
         <div class="pub-body">
             <div class="pub-title">Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback</div>
             <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">Journal article <span class="pub-status">Under Review</span></div>
+            <div class="pub-venue">Journal article <span class="pub-status review">Under Review</span></div>
             <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2508.07103" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2508.07103" target="_blank" rel="noopener">PDF</a></div>
         </div>
     </div>
