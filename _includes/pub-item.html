@@ -1,0 +1,10 @@
+{% assign p = include.pub %}
+<div class="pub-item pub-{{ p.type }}">
+    <div class="pub-date">{{ p.year }}</div>
+    <div class="pub-body">
+        <div class="pub-title">{{ p.title }}</div>
+        <div class="pub-authors">{{ p.authors }}</div>
+        <div class="pub-venue">{{ p.venue }}{% if p.status %} <span class="pub-status{% if p.status == 'Under Review' %} review{% endif %}">{{ p.status }}</span>{% endif %}</div>
+        {% if p.links %}<div class="pub-links">{% for l in p.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}</div>{% endif %}
+    </div>
+</div>

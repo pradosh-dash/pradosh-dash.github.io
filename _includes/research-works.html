@@ -1,0 +1,23 @@
+{% comment %}Related outputs for a research theme, pulled from _data/publications.yml.
+Usage: {% include research-works.html theme="tfus" limit=6 %}{% endcomment %}
+{% assign themed = site.data.publications | where_exp: "p", "p.themes contains include.theme" %}
+{% assign works = "" | split: "" %}
+{% assign type_order = "journal,conference,thesis,patent,abstract" | split: "," %}
+{% for t in type_order %}
+  {% assign of_type = themed | where: "type", t %}
+  {% assign works = works | concat: of_type %}
+{% endfor %}
+{% assign total = works | size %}
+{% if total > 0 %}
+<div class="rs-works">
+  <div class="rs-works-h">Related work · {{ total }}</div>
+  {% for p in works limit: include.limit %}
+  <div class="rs-work w-{{ p.type }}">
+    <span class="y">{{ p.year }}</span>
+    <span class="t">{% case p.type %}{% when "patent" %}Patent{% when "journal" %}Journal{% when "conference" %}Proceedings{% when "abstract" %}Abstract{% when "thesis" %}Thesis{% endcase %}</span>
+    {% if p.links %}<a href="{{ p.links[0].url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}<span class="ti">{{ p.title }}</span>{% endif %}
+  </div>
+  {% endfor %}
+  {% if total > include.limit %}<a class="rs-more" href="{{ '/publications/' | relative_url }}">See all {{ total }} on the Publications page &rarr;</a>{% endif %}
+</div>
+{% endif %}

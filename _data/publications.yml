@@ -1,0 +1,175 @@
+# Single source for the Publications and Research pages.
+# type: patent | journal | conference | abstract | thesis
+# themes: tfus (transcranial ultrasound) | wearable | nvh | neuro
+
+- type: patent
+  year: 2026
+  title: "Heterogeneous Angular Spectrum Parametric Array (HASPA) Framework for Ultrasound Brain Therapy"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Patent Application 63/929,300, Georgia Tech Research Corp"
+  themes: [tfus]
+
+- type: patent
+  year: 2025
+  title: "System And Method For Automated Acoustic Lens Topology Optimization For Transcranial Wave Focusing"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Patent Application 63/806,773, Georgia Tech Research Corp"
+  themes: [tfus]
+
+- type: patent
+  year: 2025
+  title: "Transcranial Ultrasound Detection and Monitoring of Hydrocephalus"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Patent Application 63/806,223, Georgia Tech Research Corp"
+  themes: [tfus]
+
+- type: patent
+  year: 2025
+  title: "Nonlinear Layer to Augment Nonlinear Sound Propagation and Imaging"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Patent Application 63/806,113, Georgia Tech Research Corp"
+  themes: [tfus]
+
+- type: patent
+  year: 2024
+  title: "Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Patent Application 18/638,465, Georgia Tech Research Corp"
+  links:
+    - label: "Google Patents"
+      url: "https://patents.google.com/patent/US20240342511A1/en"
+    - label: "PDF"
+      url: "https://patentimages.storage.googleapis.com/bb/c5/20/6d5d962bd389b4/US20240342511A1.pdf"
+  themes: [tfus]
+
+- type: journal
+  year: 2026
+  title: "Breaking the Skull Barrier: Parametric Array Enable Non-Invasive Monitoring of Transcranial Focused Ultrasound"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "Journal article"
+  status: "In Preparation"
+  links:
+    - label: "Press Release"
+      url: "https://acoustics.org/breaking-the-skull-barrier-listening-to-ultrasound-therapy-inside-the-brain/"
+  themes: [tfus]
+
+- type: journal
+  year: 2025
+  title: "Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "Journal article"
+  status: "Under Review"
+  links:
+    - label: "arXiv"
+      url: "https://doi.org/10.48550/arXiv.2508.07103"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2508.07103"
+  themes: [tfus]
+
+- type: journal
+  year: 2022
+  title: "Experimental demonstration of trans-skull volumetric passive acoustic mapping"
+  authors: "Schoen, S., <strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control"
+  links:
+    - label: "DOI"
+      url: "https://doi.org/10.1109/TUFFC.2021.3125670"
+  themes: [tfus]
+
+- type: conference
+  year: 2024
+  title: "Acoustic Hologram Assisted Fast Aberration Correction in Transcranial FUS Therapy"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "2024 IEEE International Ultrasonics Symposium (IUS)"
+  themes: [tfus]
+
+- type: conference
+  year: 2021
+  title: "3D Transcranial Passive Acoustic Mapping with the Heterogeneous Angular Spectrum Approach"
+  authors: "<strong>Dash, P. P.</strong>, Schoen, S. & Arvanitis, C. D."
+  venue: "2021 IEEE International Ultrasonics Symposium (IUS)"
+  themes: [tfus]
+
+- type: conference
+  year: 2021
+  title: "High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles"
+  authors: "Jing, B., Lee, H., <strong>Dash, P. P.</strong>, Arvanitis, C. D. & Lindsey, B. D."
+  venue: "2021 IEEE International Ultrasonics Symposium (IUS), pp. 1-4"
+  themes: [neuro]
+
+- type: conference
+  year: 2013
+  title: "Biomechanical stress analysis of human femur bone"
+  authors: "<strong>Dash, P. P.</strong>, Kishor, K. & Panda, S. K."
+  venue: "International Conference on CAD/CAE, IIT Madras"
+  themes: []
+
+- type: abstract
+  year: 2025
+  title: "Breaking the Skull Barrier: Parametric Array Enable Non-Invasive Monitoring of Transcranial Focused Ultrasound"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "The Journal of the Acoustical Society of America, 158(6)"
+  themes: [tfus]
+
+- type: abstract
+  year: 2025
+  title: "Leveraging the Parametric Array Effect for Transcranial Focused Ultrasound Interventions"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "The Journal of the Acoustical Society of America, 157(4)"
+  themes: [tfus]
+
+- type: abstract
+  year: 2024
+  title: "Efficient Design and Registration of Hologram-Assisted Transcranial FUS Therapy"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "23rd Annual Symposium on Therapeutic Ultrasound (ISTU), Taiwan"
+  themes: [tfus]
+
+- type: abstract
+  year: 2023
+  title: "Heterogeneous Angular Spectrum Approach-based Holograms for Trans-skull Focused Ultrasound Therapy"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "The Journal of the Acoustical Society of America"
+  themes: [tfus]
+
+- type: abstract
+  year: 2023
+  title: "Ultrasound mediated control of neurons and immune cells"
+  authors: "Arvanitis, C. D., <strong>Dash, P. P.</strong> & Kim, C."
+  venue: "The Journal of the Acoustical Society of America, 153(3 Suppl.), A31"
+  themes: [neuro]
+
+- type: abstract
+  year: 2021
+  title: "Non-linearities under highly focused high-intensity ultrasound fields"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "The Journal of the Acoustical Society of America, 150(4), A125"
+  themes: [tfus]
+
+- type: thesis
+  year: 2026
+  title: "Transcranial Focused Ultrasound Therapy and Monitoring Using Nonlinear Acoustics"
+  authors: "<strong>Dash, P. P.</strong> · Advisor: Arvanitis, C. D."
+  venue: "Ph.D. Dissertation, Mechanical Engineering, Georgia Institute of Technology"
+  links:
+    - label: "GT Repository"
+      url: "https://hdl.handle.net/1853/81728"
+  themes: [tfus]
+
+- type: thesis
+  year: 2020
+  title: "Operational Modal Analysis of Rolling Tire: A Tire Cavity Accelerometer Mediated Approach"
+  authors: "<strong>Dash, P. P.</strong> · Advisors: Burdisso, R. & Tarazaga, P."
+  venue: "M.S. Thesis, Mechanical Engineering, Virginia Tech"
+  links:
+    - label: "VTechWorks"
+      url: "https://vtechworks.lib.vt.edu/handle/10919/107874"
+  themes: [nvh]
+# Hidden draft (was commented out on the old page):
+# - type: journal
+#   year: 2025
+#   title: "In-vitro modulation of DRG Neurons with contrast-enhanced Acoustic Radiation Force"
+#   authors: "<strong>Dash, P. P.</strong>, Yeseul N., Han L. & Arvanitis, C. D."
+#   venue: "Journal article"
+#   status: "In Preparation"
+#   themes: [neuro]

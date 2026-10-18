@@ -207,10 +207,20 @@ html[data-theme="dark"] .pubs {
 }
 </style>
 
+{% comment %}Entries live in _data/publications.yml (shared with the Research page).{% endcomment %}
+{% assign pubs = site.data.publications %}
+{% assign sections = "patent:Patents:patents|journal:Journal Articles:journal-articles|conference:Conference Proceedings:conference-proceedings|abstract:Conference Abstracts &amp; Talks:conference-abstracts-talks|thesis:Theses:theses" | split: "|" %}
+
 <div class="pubs">
 
 <div class="pubs-toolbar">
-    <nav class="pubs-nav"><a href="#patents">Patents <span class="count">5</span></a><a href="#journal-articles">Journal Articles <span class="count">3</span></a><a href="#conference-proceedings">Conference Proceedings <span class="count">4</span></a><a href="#conference-abstracts-talks">Conference Abstracts &amp; Talks <span class="count">6</span></a><a href="#theses">Theses <span class="count">2</span></a></nav>
+    <nav class="pubs-nav">
+    {%- for s in sections -%}
+        {%- assign parts = s | split: ":" -%}
+        {%- assign items = pubs | where: "type", parts[0] -%}
+        <a href="#{{ parts[2] }}">{{ parts[1] }} <span class="count">{{ items | size }}</span></a>
+    {%- endfor -%}
+    </nav>
     {% if site.author.googlescholar %}
     <a href="{{ site.author.googlescholar }}" class="pubs-scholar" target="_blank" rel="noopener">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.5V20h5v-6h7v6h5V9.5H24z" fill="currentColor"/></svg>
@@ -219,188 +229,11 @@ html[data-theme="dark"] .pubs {
     {% endif %}
 </div>
 
-    <h2 class="pub-section-title" id="patents">Patents</h2>
-    <div class="pub-item pub-patent">
-        <div class="pub-date">2026</div>
-        <div class="pub-body">
-            <div class="pub-title">Heterogeneous Angular Spectrum Parametric Array (HASPA) Framework for Ultrasound Brain Therapy</div>
-            <div class="pub-authors">Arvanitis, C. D. & <strong>Dash, P. P.</strong></div>
-            <div class="pub-venue">U.S. Patent Application 63/929,300, Georgia Tech Research Corp</div>
-        </div>
-    </div>
-    <div class="pub-item pub-patent">
-        <div class="pub-date">2025</div>
-        <div class="pub-body">
-            <div class="pub-title">System And Method For Automated Acoustic Lens Topology Optimization For Transcranial Wave Focusing</div>
-            <div class="pub-authors">Arvanitis, C. D. & <strong>Dash, P. P.</strong></div>
-            <div class="pub-venue">U.S. Patent Application 63/806,773, Georgia Tech Research Corp</div>
-        </div>
-    </div>
-    <div class="pub-item pub-patent">
-        <div class="pub-date">2025</div>
-        <div class="pub-body">
-            <div class="pub-title">Transcranial Ultrasound Detection and Monitoring of Hydrocephalus</div>
-            <div class="pub-authors">Arvanitis, C. D. & <strong>Dash, P. P.</strong></div>
-            <div class="pub-venue">U.S. Patent Application 63/806,223, Georgia Tech Research Corp</div>
-        </div>
-    </div>
-    <div class="pub-item pub-patent">
-        <div class="pub-date">2025</div>
-        <div class="pub-body">
-            <div class="pub-title">Nonlinear Layer to Augment Nonlinear Sound Propagation and Imaging</div>
-            <div class="pub-authors">Arvanitis, C. D. & <strong>Dash, P. P.</strong></div>
-            <div class="pub-venue">U.S. Patent Application 63/806,113, Georgia Tech Research Corp</div>
-        </div>
-    </div>
-    <div class="pub-item pub-patent">
-        <div class="pub-date">2024</div>
-        <div class="pub-body">
-            <div class="pub-title">Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration</div>
-            <div class="pub-authors">Arvanitis, C. D. & <strong>Dash, P. P.</strong></div>
-            <div class="pub-venue">U.S. Patent Application 18/638,465, Georgia Tech Research Corp</div>
-            <div class="pub-links"><a href="https://patents.google.com/patent/US20240342511A1/en" target="_blank" rel="noopener">Google Patents</a><a href="https://patentimages.storage.googleapis.com/bb/c5/20/6d5d962bd389b4/US20240342511A1.pdf" target="_blank" rel="noopener">PDF</a></div>
-        </div>
-    </div>
-
-    <h2 class="pub-section-title" id="journal-articles">Journal Articles</h2>
-    <div class="pub-item pub-journal">
-        <div class="pub-date">2026</div>
-        <div class="pub-body">
-            <div class="pub-title">Breaking the Skull Barrier: Parametric Array Enable Non-Invasive Monitoring of Transcranial Focused Ultrasound</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">Journal article <span class="pub-status">In Preparation</span></div>
-            <div class="pub-links"><a href="https://acoustics.org/breaking-the-skull-barrier-listening-to-ultrasound-therapy-inside-the-brain/" target="_blank" rel="noopener">Press Release</a></div>
-        </div>
-    </div>
-    <div class="pub-item pub-journal">
-        <div class="pub-date">2025</div>
-        <div class="pub-body">
-            <div class="pub-title">Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">Journal article <span class="pub-status review">Under Review</span></div>
-            <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2508.07103" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2508.07103" target="_blank" rel="noopener">PDF</a></div>
-        </div>
-    </div>
-
-    <!--
-    <div class="pub-item pub-journal">
-        <div class="pub-title">In-vitro modulation of DRG Neurons with contrast-enhanced Acoustic Radiation Force</div>
-        <div class="pub-authors"><strong>Dash, P. P.</strong>, Yeseul N., Han L. & Arvanitis, C. D.</div>
-        <div class="pub-venue">Journal Article <span class="pub-status">In Preparation</span>, <span class="pub-year">2025</span></div>
-    </div>
-    -->
-    <div class="pub-item pub-journal">
-        <div class="pub-date">2022</div>
-        <div class="pub-body">
-            <div class="pub-title">Experimental demonstration of trans-skull volumetric passive acoustic mapping</div>
-            <div class="pub-authors">Schoen, S., <strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control</div>
-            <div class="pub-links"><a href="https://doi.org/10.1109/TUFFC.2021.3125670" target="_blank" rel="noopener">DOI</a></div>
-        </div>
-    </div>
-
-    <h2 class="pub-section-title" id="conference-proceedings">Conference Proceedings</h2>
-    <div class="pub-item pub-conference">
-        <div class="pub-date">2024</div>
-        <div class="pub-body">
-            <div class="pub-title">Acoustic Hologram Assisted Fast Aberration Correction in Transcranial FUS Therapy</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">2024 IEEE International Ultrasonics Symposium (IUS)</div>
-        </div>
-    </div>
-    <div class="pub-item pub-conference">
-        <div class="pub-date">2021</div>
-        <div class="pub-body">
-            <div class="pub-title">3D Transcranial Passive Acoustic Mapping with the Heterogeneous Angular Spectrum Approach</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong>, Schoen, S. & Arvanitis, C. D.</div>
-            <div class="pub-venue">2021 IEEE International Ultrasonics Symposium (IUS)</div>
-        </div>
-    </div>
-    <div class="pub-item pub-conference">
-        <div class="pub-date">2021</div>
-        <div class="pub-body">
-            <div class="pub-title">High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles</div>
-            <div class="pub-authors">Jing, B., Lee, H., <strong>Dash, P. P.</strong>, Arvanitis, C. D. & Lindsey, B. D.</div>
-            <div class="pub-venue">2021 IEEE International Ultrasonics Symposium (IUS), pp. 1-4</div>
-        </div>
-    </div>
-    <div class="pub-item pub-conference">
-        <div class="pub-date">2013</div>
-        <div class="pub-body">
-            <div class="pub-title">Biomechanical stress analysis of human femur bone</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong>, Kishor, K. & Panda, S. K.</div>
-            <div class="pub-venue">International Conference on CAD/CAE, IIT Madras</div>
-        </div>
-    </div>
-
-    <h2 class="pub-section-title" id="conference-abstracts-talks">Conference Abstracts &amp; Talks</h2>
-    <div class="pub-item pub-abstract">
-        <div class="pub-date">2025</div>
-        <div class="pub-body">
-            <div class="pub-title">Breaking the Skull Barrier: Parametric Array Enable Non-Invasive Monitoring of Transcranial Focused Ultrasound</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">The Journal of the Acoustical Society of America, 158(6)</div>
-        </div>
-    </div>
-    <div class="pub-item pub-abstract">
-        <div class="pub-date">2025</div>
-        <div class="pub-body">
-            <div class="pub-title">Leveraging the Parametric Array Effect for Transcranial Focused Ultrasound Interventions</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">The Journal of the Acoustical Society of America, 157(4)</div>
-        </div>
-    </div>
-    <div class="pub-item pub-abstract">
-        <div class="pub-date">2024</div>
-        <div class="pub-body">
-            <div class="pub-title">Efficient Design and Registration of Hologram-Assisted Transcranial FUS Therapy</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">23rd Annual Symposium on Therapeutic Ultrasound (ISTU), Taiwan</div>
-        </div>
-    </div>
-    <div class="pub-item pub-abstract">
-        <div class="pub-date">2023</div>
-        <div class="pub-body">
-            <div class="pub-title">Heterogeneous Angular Spectrum Approach-based Holograms for Trans-skull Focused Ultrasound Therapy</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">The Journal of the Acoustical Society of America</div>
-        </div>
-    </div>
-    <div class="pub-item pub-abstract">
-        <div class="pub-date">2023</div>
-        <div class="pub-body">
-            <div class="pub-title">Ultrasound mediated control of neurons and immune cells</div>
-            <div class="pub-authors">Arvanitis, C. D., <strong>Dash, P. P.</strong> & Kim, C.</div>
-            <div class="pub-venue">The Journal of the Acoustical Society of America, 153(3 Suppl.), A31</div>
-        </div>
-    </div>
-    <div class="pub-item pub-abstract">
-        <div class="pub-date">2021</div>
-        <div class="pub-body">
-            <div class="pub-title">Non-linearities under highly focused high-intensity ultrasound fields</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> & Arvanitis, C. D.</div>
-            <div class="pub-venue">The Journal of the Acoustical Society of America, 150(4), A125</div>
-        </div>
-    </div>
-
-    <h2 class="pub-section-title" id="theses">Theses</h2>
-    <div class="pub-item pub-thesis">
-        <div class="pub-date">2026</div>
-        <div class="pub-body">
-            <div class="pub-title">Transcranial Focused Ultrasound Therapy and Monitoring Using Nonlinear Acoustics</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> · Advisor: Arvanitis, C. D.</div>
-            <div class="pub-venue">Ph.D. Dissertation, Mechanical Engineering, Georgia Institute of Technology</div>
-            <div class="pub-links"><a href="https://hdl.handle.net/1853/81728" target="_blank" rel="noopener">GT Repository</a></div>
-        </div>
-    </div>
-    <div class="pub-item pub-thesis">
-        <div class="pub-date">2020</div>
-        <div class="pub-body">
-            <div class="pub-title">Operational Modal Analysis of Rolling Tire: A Tire Cavity Accelerometer Mediated Approach</div>
-            <div class="pub-authors"><strong>Dash, P. P.</strong> · Advisors: Burdisso, R. & Tarazaga, P.</div>
-            <div class="pub-venue">M.S. Thesis, Mechanical Engineering, Virginia Tech</div>
-            <div class="pub-links"><a href="https://vtechworks.lib.vt.edu/handle/10919/107874" target="_blank" rel="noopener">VTechWorks</a></div>
-        </div>
-    </div>
+{% for s in sections %}
+    {% assign parts = s | split: ":" %}
+    {% assign items = pubs | where: "type", parts[0] %}
+    <h2 class="pub-section-title" id="{{ parts[2] }}">{{ parts[1] }}</h2>
+    {% for p in items %}{% include pub-item.html pub=p %}{% endfor %}
+{% endfor %}
 
 </div>
