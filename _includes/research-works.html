@@ -9,8 +9,9 @@ Usage: {% include research-works.html theme="tfus" limit=6 %}{% endcomment %}
 {% endfor %}
 {% assign total = works | size %}
 {% if total > 0 %}
-<div class="rs-works">
-  <div class="rs-works-h">Related work · {{ total }}</div>
+<details class="rs-toggle">
+<summary>Related work · {{ total }}</summary>
+<div class="rs-toggle-body rs-works">
   {% for p in works limit: include.limit %}
   <div class="rs-work w-{{ p.type }}">
     <span class="y">{{ p.year }}</span>
@@ -20,4 +21,5 @@ Usage: {% include research-works.html theme="tfus" limit=6 %}{% endcomment %}
   {% endfor %}
   {% if total > include.limit %}<a class="rs-more" href="{{ '/publications/' | relative_url }}">See all {{ total }} on the Publications page &rarr;</a>{% endif %}
 </div>
+</details>
 {% endif %}
