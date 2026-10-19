@@ -75,10 +75,10 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 .rs-philosophy { margin: 0 0 1.8rem; padding-left: 1.1rem; border-left: 3px solid var(--accent); font-size: 1rem; line-height: 1.8; }
 .rs-toggle { border-top: 1px solid var(--global-border-color); }
 .rs-toggle:last-of-type { border-bottom: 1px solid var(--global-border-color); }
-.rs-toggle summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; font-family: 'Source Serif 4', serif; font-size: 1.15rem; font-weight: 600; color: var(--ink); }
+.rs-toggle summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 0.65rem; padding: 0.85rem 0; font-family: 'Source Serif 4', serif; font-size: 1.15rem; font-weight: 600; color: var(--ink); }
 .rs-toggle summary::-webkit-details-marker { display: none; }
-.rs-toggle summary::after { content: '+'; font-size: 1.2rem; font-weight: 400; letter-spacing: 0; color: var(--accent); }
-.rs-toggle[open] summary::after { content: '\2212'; }
+.rs-toggle summary::before { content: ''; flex-shrink: 0; width: 0; height: 0; border-left: 7px solid var(--accent); border-top: 5px solid transparent; border-bottom: 5px solid transparent; transition: transform 0.2s ease; }
+.rs-toggle[open] summary::before { transform: rotate(90deg); }
 .rs-toggle summary:hover { color: var(--accent); }
 .rs-toggle-body { padding: 0 0 1.2rem; }
 .rs-toggle-body > p { margin: 0; font-size: 0.93rem; line-height: 1.7; color: var(--global-text-color-light); }
