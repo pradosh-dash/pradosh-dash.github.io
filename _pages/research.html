@@ -52,8 +52,8 @@ html[data-theme="dark"] .rs {
 .rs-label + .rs-theme { border-top: 0; padding-top: 0.6rem; }
 .rs-theme.flip { grid-template-columns: 1fr 200px; }
 .rs-theme.flip .rs-art { order: 2; }
-.rs-art { color: var(--accent); background: var(--soft); border-radius: 12px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
-.rs-art svg { width: 78%; height: auto; }
+.rs-art { background: #0f2a4a; border-radius: 10px; aspect-ratio: 1; overflow: hidden; box-shadow: 0 1px 3px rgba(15,42,74,0.18); }
+.rs-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .rs-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
 .rs-theme h2 { font-size: 1.45rem; margin: 0.2rem 0 0.5rem; border: 0; padding: 0; }
 .rs-theme p { font-size: 0.95rem; margin: 0 0 0.8rem; }
@@ -151,16 +151,7 @@ html[data-theme="dark"] .rs {
 <h1 class="rs-label">Research Areas</h1>
 
 <section class="rs-theme" id="transcranial-ultrasound">
-  <div class="rs-art" aria-hidden="true">
-    <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-      <path d="M18 30 Q60 6 102 30" stroke-width="5" opacity="0.9"/>
-      <path d="M14 58 Q60 38 106 58" stroke-width="7" opacity="0.25"/>
-      <path d="M14 58 Q60 38 106 58" stroke-dasharray="3 5"/>
-      <path d="M26 30 L60 92 M44 22 L60 92 M60 19 L60 92 M76 22 L60 92 M94 30 L60 92" opacity="0.55"/>
-      <circle cx="60" cy="92" r="4" fill="currentColor"/>
-      <circle cx="60" cy="92" r="10" opacity="0.5"/>
-      <circle cx="60" cy="92" r="17" opacity="0.25"/>
-    </svg>
+  <div class="rs-art"><img src="{{ '/images/research/tfus.png' | relative_url }}" alt="Simulated pressure field of a curved array focusing through a skull layer" loading="lazy" width="600" height="600">
   </div>
   <div>
     <div class="rs-eyebrow">Ph.D. research · Georgia Tech</div>
@@ -172,15 +163,7 @@ html[data-theme="dark"] .rs {
 </section>
 
 <section class="rs-theme flip" id="wearable-ultrasound">
-  <div class="rs-art" aria-hidden="true">
-    <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-      <rect x="22" y="70" width="76" height="22" rx="11" stroke-width="3"/>
-      <rect x="38" y="64" width="44" height="10" rx="3" fill="currentColor" opacity="0.85" stroke="none"/>
-      <path d="M44 58 Q60 50 76 58" opacity="0.8"/>
-      <path d="M38 48 Q60 36 82 48" opacity="0.55"/>
-      <path d="M32 38 Q60 22 88 38" opacity="0.3"/>
-      <path d="M26 104 h8 l4 -6 l5 12 l4 -6 h47" stroke-width="1.6" opacity="0.6"/>
-    </svg>
+  <div class="rs-art"><img src="{{ '/images/research/wearable.png' | relative_url }}" alt="Simulated beam from a linear array steered onto a vessel below the skin" loading="lazy" width="600" height="600">
   </div>
   <div>
     <div class="rs-eyebrow">Industry research · Meta Reality Labs</div>
@@ -192,13 +175,7 @@ html[data-theme="dark"] .rs {
 </section>
 
 <section class="rs-theme" id="vibroacoustics-nvh">
-  <div class="rs-art" aria-hidden="true">
-    <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-      <circle cx="60" cy="50" r="30" opacity="0.3" stroke-dasharray="3 4"/>
-      <path d="M90 50 C90 62 84 72 76 76 C66 82 54 80 46 78 C36 74 30 64 30 52 C30 40 34 30 44 24 C54 18 66 20 74 24 C84 30 90 40 90 50 Z" stroke-width="3"/>
-      <circle cx="60" cy="50" r="11" stroke-width="2.5"/>
-      <path d="M16 106 L30 106 L34 92 L38 106 L52 106 L56 98 L60 106 L72 106 L76 86 L80 106 L104 106" stroke-width="1.8" opacity="0.75"/>
-    </svg>
+  <div class="rs-art"><img src="{{ '/images/research/nvh.png' | relative_url }}" alt="Ring mode shape of a tire with deformed and undeformed outlines" loading="lazy" width="600" height="600">
   </div>
   <div>
     <div class="rs-eyebrow">Industry &amp; M.S. research · Bajaj Auto, Virginia Tech, Matic Robots</div>
@@ -210,14 +187,7 @@ html[data-theme="dark"] .rs {
 </section>
 
 <section class="rs-theme flip" id="neuromodulation">
-  <div class="rs-art" aria-hidden="true">
-    <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-      <circle cx="66" cy="62" r="11" fill="currentColor" opacity="0.85" stroke="none"/>
-      <path d="M66 51 L62 32 M62 32 L54 22 M62 32 L70 20 M76 56 L94 44 M94 44 L104 46 M94 44 L98 32 M74 72 L88 90 M58 70 L48 86 M48 86 L38 90 M48 86 L50 100 M77 62 L106 64" stroke-width="2.2"/>
-      <path d="M14 40 Q20 62 14 84" opacity="0.8"/>
-      <path d="M24 44 Q30 62 24 80" opacity="0.55"/>
-      <path d="M34 48 Q39 62 34 76" opacity="0.3"/>
-    </svg>
+  <div class="rs-art"><img src="{{ '/images/research/neuro.png' | relative_url }}" alt="Focal intensity map with cells inside the focus responding" loading="lazy" width="600" height="600">
   </div>
   <div>
     <div class="rs-eyebrow">Ph.D. research · Georgia Tech</div>
