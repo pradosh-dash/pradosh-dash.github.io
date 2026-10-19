@@ -115,145 +115,14 @@ author_profile: false
   .exp-group-body { margin-left: 21px; padding-left: calc(44px + 0.5rem); }
 }
 
-/* Teaching (moved from /teaching/) */
-/* Institution header */
-.cv-page .teach-inst {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin: 1.4rem 0 0.5rem;
-}
-.cv-page .teach-inst:first-of-type { margin-top: 0.5rem; }
-.cv-page .teach-inst-logo {
-  width: 32px; height: 32px;
-  border-radius: 5px;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid #dce1e8;
-  padding: 2px;
-}
-.cv-page .teach-inst-name {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #0f2a4a;
-  margin: 0;
-}
+/* Teaching reuses the experience timeline; course descriptions match the bullet text */
+.exp-sub .exp-text { font-size: 0.88rem; color: #4a5568; line-height: 1.55; margin: 0.3rem 0 0; }
 
-/* Course row */
-.cv-page .teach-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  border-left: 3px solid #1b3a5c;
-  background: #f4f6f9;
-  border-radius: 0 5px 5px 0;
-  padding: 0.45rem 0.8rem;
-  margin-bottom: 0.35rem;
-  flex-wrap: wrap;
-}
-.cv-page .teach-row * { margin: 0 !important; padding: 0; }
-
-.cv-page .teach-code {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #1b3a5c;
-  white-space: nowrap;
-}
-.cv-page .teach-name {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #2d3748;
-}
-.cv-page .teach-role-inline {
-  font-size: 0.78rem;
-  color: #8a94a2;
-  font-style: italic;
-  margin-left: auto !important;
-  white-space: nowrap;
-}
-.cv-page .teach-sem {
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: #7a5c10;
-  background: rgba(202,163,45,0.13);
-  border: 1px solid rgba(186,150,40,0.30);
-  border-radius: 10px;
-  padding: 1px 8px !important;
-  white-space: nowrap;
-}
-.cv-page .teach-desc {
-  width: 100%;
-  font-size: 0.82rem;
-  color: #4a5568;
-  line-height: 1.45;
-  margin-top: 0.2rem !important;
-}
-@media (max-width: 600px) {
-  .cv-page .teach-row { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
-  .cv-page .teach-role-inline { margin-left: 0 !important; }
-}
-
-/* Skills (moved from /skillset/) */
-.pc-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 0.75rem;
-  margin: 1rem 0 2rem;
-}
-.pc-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.7rem;
-  background: #f4f6f9;
-  border: 1px solid #dce1e8;
-  border-radius: 6px;
-  padding: 0.65rem 1rem;
-  transition: box-shadow 0.25s;
-}
-.pc-card:hover {
-  box-shadow: 0 3px 12px rgba(15,42,74,0.08);
-}
-.pc-icon {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(27, 58, 92, 0.08);
-  border-radius: 7px;
-  color: #1b3a5c;
-  margin-top: 1px;
-}
-.pc-content {
-  flex: 1;
-  min-width: 0;
-}
-.pc-content h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #1b3a5c;
-  margin: 0 0 0.35rem;
-}
-.pc-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-.pc-tool {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #4a5568;
-  background: #edf0f4;
-  border: 1px solid #d8dde5;
-  border-radius: 10px;
-  padding: 1px 8px;
-}
-@media (max-width: 600px) {
-  .pc-grid { grid-template-columns: 1fr; }
-}
+/* Skills */
+.skill-list { margin: 1rem 0 2rem; }
+.skill-row { padding: 0.9rem 0; border-top: 1px solid #e3e7ed; }
+.skill-row:first-child { border-top: 0; padding-top: 0; }
+.skill-row h3 { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; color: #0f2a4a; margin: 0 0 0.1rem; line-height: 1.3; }
 </style>
 
 <div class="cv-page">
@@ -552,116 +421,116 @@ author_profile: false
 <h1 id="teaching">Teaching</h1>
 <p>I have served as a Teaching Assistant and Instructor across graduate and undergraduate courses in acoustics, wave mechanics, vibrations, and experimental physics at Georgia Tech and Virginia Tech.</p>
 
-<!-- Georgia Tech -->
-<div class="teach-inst">
-  <img class="teach-inst-logo" src="/images/logos/gatech-logo.png" alt="GT">
-  <h2 class="teach-inst-name">Georgia Institute of Technology</h2>
-</div>
+<div class="exp-section">
 
-<div class="teach-row">
-  <span class="teach-code">ME 6452</span>
-  <span class="teach-name">— Wave Propagation in Solids</span>
-  <span class="teach-role-inline">Teaching Practicum</span>
-  <span class="teach-sem">Spring 2025</span>
-  <p class="teach-desc">Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. Assisted with lectures and guided complex mathematical derivations and simulations.</p>
-</div>
+  <div class="exp-group">
+    <div class="exp-group-header">
+      <div class="exp-logo-col">
+        <img class="exp-logo" src="/images/logos/gatech-logo.png" alt="GT">
+      </div>
+      <div class="exp-body">
+        <h3>Georgia Institute of Technology</h3>
+      </div>
+    </div>
+    <div class="exp-group-body">
 
-<div class="teach-row">
-  <span class="teach-code">ME 6760</span>
-  <span class="teach-name">— Acoustics I</span>
-  <span class="teach-role-inline">Graduate TA</span>
-  <span class="teach-sem">Fall 2022 &amp; 2024</span>
-  <p class="teach-desc">Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.</p>
-</div>
+      <div class="exp-sub">
+        <h4>ME 6452: Wave Propagation in Solids</h4>
+        <p class="exp-meta"><span>Teaching Practicum</span><span>Spring 2025</span></p>
+        <p class="exp-text">Advanced graduate course covering elastic wave propagation, dispersion relations, and wave mechanics in solid media. Assisted with lectures and guided complex mathematical derivations and simulations.</p>
+      </div>
 
-<!-- Virginia Tech -->
-<div class="teach-inst">
-  <img class="teach-inst-logo" src="/images/logos/vt-logo.png" alt="VT">
-  <h2 class="teach-inst-name">Virginia Tech</h2>
-</div>
+      <div class="exp-sub">
+        <h4>ME 6760: Acoustics I</h4>
+        <p class="exp-meta"><span>Graduate TA</span><span>Fall 2022 &amp; 2024</span></p>
+        <p class="exp-text">Fundamental principles of acoustics including sound wave propagation, acoustic impedance, and room acoustics. Led recitation sessions, assisted students with MATLAB projects, and helped with experimental acoustic measurements.</p>
+      </div>
 
-<div class="teach-row">
-  <span class="teach-code">PHY 2216</span>
-  <span class="teach-name">— Physics Laboratory</span>
-  <span class="teach-role-inline">Graduate TA</span>
-  <span class="teach-sem">Spring 2019</span>
-  <p class="teach-desc">Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. Instructed an undergraduate batch of 90 sophomores in experimental design, data collection, and scientific report writing.</p>
-</div>
-  
-<div class="teach-row">
-  <span class="teach-code">ME 4006</span>
-  <span class="teach-name">— Mechanical Engineering Lab</span>
-  <span class="teach-role-inline">Graduate TA</span>
-  <span class="teach-sem">Fall 2018</span>
-  <p class="teach-desc">Hands-on laboratory course covering experimental methods in mechanical engineering including vibration analysis, heat transfer experiments, and fluid mechanics measurements. Instructed a batch of 100 seniors on structural health monitoring and wind-induced vibration modeling of tall structures and experimental validation.</p>
+    </div>
+  </div>
+
+  <div class="exp-group">
+    <div class="exp-group-header">
+      <div class="exp-logo-col">
+        <img class="exp-logo" src="/images/logos/vt-logo.png" alt="VT">
+      </div>
+      <div class="exp-body">
+        <h3>Virginia Tech</h3>
+      </div>
+    </div>
+    <div class="exp-group-body">
+
+      <div class="exp-sub">
+        <h4>PHY 2216: Physics Laboratory</h4>
+        <p class="exp-meta"><span>Graduate TA</span><span>Spring 2019</span></p>
+        <p class="exp-text">Introductory physics laboratory covering mechanics, thermodynamics, and wave phenomena. Instructed an undergraduate batch of 90 sophomores in experimental design, data collection, and scientific report writing.</p>
+      </div>
+
+      <div class="exp-sub">
+        <h4>ME 4006: Mechanical Engineering Lab</h4>
+        <p class="exp-meta"><span>Graduate TA</span><span>Fall 2018</span></p>
+        <p class="exp-text">Hands-on laboratory course covering experimental methods in mechanical engineering including vibration analysis, heat transfer experiments, and fluid mechanics measurements. Instructed a batch of 100 seniors on structural health monitoring and wind-induced vibration modeling of tall structures and experimental validation.</p>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <!-- ═══ SKILLS ═══ -->
 <h1 id="skills">Skills</h1>
-<div class="pc-grid">
+<div class="skill-list">
 
-  <div class="pc-card">
-    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-    <div class="pc-content">
-      <h3>Analysis &amp; Simulation</h3>
-      <div class="pc-tools">
-        <span class="pc-tool">COMSOL Multiphysics &amp; FEM</span>
-        <span class="pc-tool">Ansys</span>
-        <span class="pc-tool">HyperMesh</span>
-        <span class="pc-tool">MSC Adams</span>
-        <span class="pc-tool">ME'Scope</span>
-        <span class="pc-tool">k-Wave (Acoustic Toolbox)</span>
-        <span class="pc-tool">GPU-Accelerated Simulation</span>
-      </div>
+  <div class="skill-row">
+    <h3>Analysis &amp; Simulation</h3>
+    <div class="exp-skills">
+      <span class="exp-skill-tag">COMSOL Multiphysics &amp; FEM</span>
+      <span class="exp-skill-tag">Ansys</span>
+      <span class="exp-skill-tag">HyperMesh</span>
+      <span class="exp-skill-tag">MSC Adams</span>
+      <span class="exp-skill-tag">ME'Scope</span>
+      <span class="exp-skill-tag">k-Wave (Acoustic Toolbox)</span>
+      <span class="exp-skill-tag">GPU-Accelerated Simulation</span>
     </div>
   </div>
 
-  <div class="pc-card">
-    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-    <div class="pc-content">
-      <h3>Design &amp; CAD</h3>
-      <div class="pc-tools">
-        <span class="pc-tool">SolidWorks</span>
-        <span class="pc-tool">Siemens NX</span>
-        <span class="pc-tool">AutoCAD</span>
-        <span class="pc-tool">3D Printing</span>
-        <span class="pc-tool">Transducer Array &amp; Hologram Topology Design</span>
-      </div>
+  <div class="skill-row">
+    <h3>Design &amp; CAD</h3>
+    <div class="exp-skills">
+      <span class="exp-skill-tag">SolidWorks</span>
+      <span class="exp-skill-tag">Siemens NX</span>
+      <span class="exp-skill-tag">AutoCAD</span>
+      <span class="exp-skill-tag">3D Printing</span>
+      <span class="exp-skill-tag">Transducer Array &amp; Hologram Topology Design</span>
     </div>
   </div>
 
-  <div class="pc-card">
-    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
-    <div class="pc-content">
-      <h3>Hardware, Measurement &amp; Prototyping</h3>
-      <div class="pc-tools">
-        <span class="pc-tool">Laser Vibrometry</span>
-        <span class="pc-tool">Accelerometer Arrays &amp; Hydrophones</span>
-        <span class="pc-tool">TMS320 DSP &amp; Sensor Prototyping</span>
-        <span class="pc-tool">ADC/DAC</span>
-        <span class="pc-tool">Impedance Analyzer</span>
-        <span class="pc-tool">Oscilloscope</span>
-        <span class="pc-tool">Function Generator</span>
-      </div>
+  <div class="skill-row">
+    <h3>Hardware, Measurement &amp; Prototyping</h3>
+    <div class="exp-skills">
+      <span class="exp-skill-tag">Laser Vibrometry</span>
+      <span class="exp-skill-tag">Accelerometer Arrays &amp; Hydrophones</span>
+      <span class="exp-skill-tag">TMS320 DSP &amp; Sensor Prototyping</span>
+      <span class="exp-skill-tag">ADC/DAC</span>
+      <span class="exp-skill-tag">Impedance Analyzer</span>
+      <span class="exp-skill-tag">Oscilloscope</span>
+      <span class="exp-skill-tag">Function Generator</span>
     </div>
   </div>
 
-  <div class="pc-card">
-    <div class="pc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-    <div class="pc-content">
-      <h3>Programming</h3>
-      <div class="pc-tools">
-        <span class="pc-tool">Python</span>
-        <span class="pc-tool">C/C++</span>
-        <span class="pc-tool">MATLAB</span>
-        <span class="pc-tool">NumPy</span>
-        <span class="pc-tool">SciPy</span>
-        <span class="pc-tool">PyTorch</span>
-        <span class="pc-tool">CUDA</span>
-        <span class="pc-tool">Simulink</span>
-        <span class="pc-tool">Git</span>
-        <span class="pc-tool">LaTeX</span>
-      </div>
+  <div class="skill-row">
+    <h3>Programming</h3>
+    <div class="exp-skills">
+      <span class="exp-skill-tag">Python</span>
+      <span class="exp-skill-tag">C/C++</span>
+      <span class="exp-skill-tag">MATLAB</span>
+      <span class="exp-skill-tag">NumPy</span>
+      <span class="exp-skill-tag">SciPy</span>
+      <span class="exp-skill-tag">PyTorch</span>
+      <span class="exp-skill-tag">CUDA</span>
+      <span class="exp-skill-tag">Simulink</span>
+      <span class="exp-skill-tag">Git</span>
+      <span class="exp-skill-tag">LaTeX</span>
     </div>
   </div>
 
