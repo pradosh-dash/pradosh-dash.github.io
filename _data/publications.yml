@@ -54,6 +54,19 @@
   themes: [tfus]
 
 - type: journal
+  year: 2026
+  title: "Virtual-Array Operational Modal Analysis of Rolling Tires Using a Single Tire Cavity Accelerometer"
+  authors: "<strong>Dash, P. P.</strong>, Burdisso, R. & Tarazaga, P. A."
+  venue: "arXiv preprint arXiv:2606.10437 [physics.app-ph]"
+  status: "Preprint"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2606.10437"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2606.10437"
+  themes: [nvh]
+
+- type: journal
   year: 2025
   title: "Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback"
   authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
