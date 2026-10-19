@@ -39,7 +39,7 @@ html[data-theme="dark"] .rs {
 .rs .rs-label { font-family: 'Source Serif 4', serif; font-size: 1.75rem; font-weight: 700; line-height: 1.25; color: var(--ink); margin: 2.4rem 0 1.2rem; padding-bottom: 0.4rem; border-bottom: 1.5px solid var(--global-border-color); }
 
 /* Research arc */
-.rs-arc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
+.rs-arc { list-style: none; margin: 2.4rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
 .rs-arc::before { content: ''; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--line); }
 .rs-arc li { position: relative; padding: 1.6rem 0.8rem 0 0; margin: 0; }
 .rs-arc li::before { content: ''; position: absolute; top: 0; left: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--global-bg-color); border: 3px solid var(--accent); box-sizing: border-box; }
@@ -48,12 +48,8 @@ html[data-theme="dark"] .rs {
 .rs-arc .what { display: block; font-size: 0.8rem; color: var(--global-text-color-light); line-height: 1.4; margin-top: 0.2rem; }
 
 /* Themes */
-.rs-theme { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; padding: 2.2rem 0; border-top: 1px solid var(--global-border-color); }
+.rs-theme { padding: 2.2rem 0; border-top: 1px solid var(--global-border-color); }
 .rs-label + .rs-theme { border-top: 0; padding-top: 0.6rem; }
-.rs-theme.flip { grid-template-columns: 1fr 200px; }
-.rs-theme.flip .rs-art { order: 2; }
-.rs-art { background: #0e1724; border-radius: 10px; aspect-ratio: 1; overflow: hidden; box-shadow: 0 1px 3px rgba(14,23,36,0.25); }
-.rs-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .rs-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
 .rs-theme h2 { font-size: 1.45rem; margin: 0.2rem 0 0.5rem; border: 0; padding: 0; }
 .rs-theme p { font-size: 0.95rem; margin: 0 0 0.8rem; }
@@ -90,9 +86,6 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 .rs-tools li + li::before { content: ' \00b7  '; color: var(--global-border-color); }
 
 @media (max-width: 720px) {
-  .rs-theme, .rs-theme.flip { grid-template-columns: 1fr; gap: 1rem; }
-  .rs-theme.flip .rs-art { order: 0; }
-  .rs-art { max-width: 160px; }
   .rs-arc { grid-template-columns: 1fr; }
   .rs-arc::before { left: 7px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; }
   .rs-arc li { padding: 0 0 1.1rem 1.8rem; }
@@ -137,7 +130,6 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 </details>
 
 <!-- ═══ RESEARCH ARC ═══ -->
-<h1 class="rs-label">Research Arc</h1>
 <ol class="rs-arc">
   <li><span class="yr">2015</span><span class="org">Bajaj Auto</span><span class="what">Powertrain NVH &amp; active noise control</span></li>
   <li><span class="yr">2018</span><span class="org">Virginia Tech</span><span class="what">Tire vibroacoustics &amp; modal analysis</span></li>
@@ -150,8 +142,6 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 <h1 class="rs-label">Research Areas</h1>
 
 <section class="rs-theme" id="transcranial-ultrasound">
-  <div class="rs-art"><img src="{{ '/images/research/tfus.png' | relative_url }}" alt="Simulated pressure field of a curved array focusing through a skull layer" loading="lazy" width="600" height="600">
-  </div>
   <div>
     <div class="rs-eyebrow">Ph.D. research · Georgia Tech</div>
     <h2>Transcranial Focused Ultrasound</h2>
@@ -162,8 +152,6 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 </section>
 
 <section class="rs-theme flip" id="wearable-ultrasound">
-  <div class="rs-art"><img src="{{ '/images/research/wearable.png' | relative_url }}" alt="Pulse-echo diagram: a transducer on the skin sends a pulse into layered tissue and a vessel, and the returning echoes appear on the A-line" loading="lazy" width="600" height="600">
-  </div>
   <div>
     <div class="rs-eyebrow">Industry research · Meta Reality Labs</div>
     <h2>Wearable Ultrasound Sensing</h2>
@@ -174,8 +162,6 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 </section>
 
 <section class="rs-theme" id="vibroacoustics-nvh">
-  <div class="rs-art"><img src="{{ '/images/research/nvh.png' | relative_url }}" alt="Tire vibration mode shape on an alloy wheel, measured by a laser vibrometer beam" loading="lazy" width="600" height="600">
-  </div>
   <div>
     <div class="rs-eyebrow">Industry &amp; M.S. research · Bajaj Auto, Virginia Tech, Matic Robots</div>
     <h2>Vibroacoustics &amp; NVH</h2>
@@ -186,8 +172,6 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 </section>
 
 <section class="rs-theme flip" id="neuromodulation">
-  <div class="rs-art"><img src="{{ '/images/research/neuro.png' | relative_url }}" alt="Focused ultrasound bursts on a neuron, each followed by an action potential on the membrane-potential trace" loading="lazy" width="600" height="600">
-  </div>
   <div>
     <div class="rs-eyebrow">Ph.D. research · Georgia Tech</div>
     <h2>Ultrasound Neuromodulation</h2>
