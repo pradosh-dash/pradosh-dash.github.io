@@ -14,4 +14,22 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Shared page colors; dark values follow the theme toggle (html[data-theme="dark"]) -->
+<style>
+:root {
+  --c-ink: #0f2a4a; --c-accent: #1b3a5c; --c-btn-bg: #1b3a5c;
+  --c-text: #2d3748; --c-body: #4a5568; --c-muted: #8a94a2; --c-faint: #a0aec0;
+  --c-line: #c4cdd8; --c-line-soft: #dce1e8; --c-line-faint: #e8ebf0;
+  --c-surface: #f4f6f9; --c-surface-2: #e8edf4; --c-field: #fff; --c-page: #fff;
+  --c-gold-text: #8b6914; --c-gold-bg: rgba(202,163,45,0.12); --c-gold-line: rgba(202,163,45,0.35);
+}
+html[data-theme="dark"] {
+  --c-ink: #f1f4f8; --c-accent: #a9c4e4; --c-btn-bg: #2b5687;
+  --c-text: #e8ebef; --c-body: #d3d8df; --c-muted: #aeb6c1; --c-faint: #9aa3ae;
+  --c-line: #6b7380; --c-line-soft: #5f6670; --c-line-faint: #575d66;
+  --c-surface: #525558; --c-surface-2: #5a5e62; --c-field: #3b3d40; --c-page: #474747;
+  --c-gold-text: #e6c25f; --c-gold-bg: rgba(202,163,45,0.16); --c-gold-line: rgba(202,163,45,0.45);
+}
+</style>
+
 <!-- end custom head snippets -->
