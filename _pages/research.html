@@ -58,7 +58,8 @@ html[data-theme="dark"] .rs {
 .rs-theme h2 { font-size: 1.45rem; margin: 0.2rem 0 0.5rem; border: 0; padding: 0; }
 .rs-theme p { font-size: 0.95rem; margin: 0 0 0.8rem; }
 .rs-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
-.rs-chip { font-size: 0.72rem; font-weight: 600; color: var(--global-text-color-light); border: 1px solid var(--global-border-color); border-radius: 999px; padding: 1px 10px; }
+.rs-chip { font-size: 0.72rem; font-weight: 600; color: #8b6914; background: rgba(202,163,45,0.12); border: 1px solid rgba(202,163,45,0.35); border-radius: 14px; padding: 2px 10px; }
+html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0.14); border-color: rgba(202,163,45,0.4); }
 
 .rs-works { border-left: 2px solid var(--accent); padding-left: 0.9rem; }
 .rs-work { display: grid; grid-template-columns: 2.6em 6.8em 1fr; gap: 0 0.5rem; font-size: 0.85rem; line-height: 1.4; padding: 0.22rem 0; }
@@ -163,7 +164,7 @@ html[data-theme="dark"] .rs {
 </section>
 
 <section class="rs-theme flip" id="wearable-ultrasound">
-  <div class="rs-art"><img src="{{ '/images/research/wearable.png' | relative_url }}" alt="Simulated beam from a linear array steered onto a vessel below the skin" loading="lazy" width="600" height="600">
+  <div class="rs-art"><img src="{{ '/images/research/wearable.png' | relative_url }}" alt="Pulse-echo diagram: a transducer on the skin sends a pulse into layered tissue and a vessel, and the returning echoes appear on the A-line" loading="lazy" width="600" height="600">
   </div>
   <div>
     <div class="rs-eyebrow">Industry research · Meta Reality Labs</div>
