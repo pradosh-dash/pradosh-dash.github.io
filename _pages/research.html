@@ -90,8 +90,8 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 .rs-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1.2rem; }
 .rs-proj { margin: 0; border: 1px solid var(--global-border-color); border-radius: 8px; overflow: hidden; background: var(--global-bg-color); }
 .rs-proj img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #f4f6f9; border-bottom: 1px solid var(--global-border-color); }
-.rs-proj figcaption { padding: 0.7rem 0.85rem 0.85rem; font-size: 0.84rem; line-height: 1.5; color: var(--global-text-color-light); }
-.rs-proj figcaption strong { display: block; font-size: 0.92rem; line-height: 1.35; color: var(--ink); margin-bottom: 0.25rem; }
+.rs .rs-proj figcaption { margin: 0; padding: 0.7rem 0.85rem 0.85rem; font-family: 'DM Sans', sans-serif; font-style: normal; text-align: left; font-size: 0.84rem; line-height: 1.5; color: var(--global-text-color); }
+.rs .rs-proj figcaption strong { font-family: 'Source Serif 4', serif; display: block; font-size: 0.92rem; line-height: 1.35; color: var(--ink); margin-bottom: 0.25rem; }
 html[data-theme="dark"] .rs-proj img { filter: brightness(0.9); }
 @media (max-width: 720px) { .rs-projects { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .rs-projects { grid-template-columns: 1fr; } }
