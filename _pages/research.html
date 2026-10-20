@@ -85,6 +85,17 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 .rs-tools li { display: inline; margin: 0; }
 .rs-tools li + li::before { content: ' \00b7  '; color: var(--global-border-color); }
 
+/* Project cards (concept illustrations only) */
+.rs-projects-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 1.4rem 0 0.7rem; }
+.rs-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1.2rem; }
+.rs-proj { margin: 0; border: 1px solid var(--global-border-color); border-radius: 8px; overflow: hidden; background: var(--global-bg-color); }
+.rs-proj img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #f4f6f9; border-bottom: 1px solid var(--global-border-color); }
+.rs-proj figcaption { padding: 0.7rem 0.85rem 0.85rem; font-size: 0.84rem; line-height: 1.5; color: var(--global-text-color-light); }
+.rs-proj figcaption strong { display: block; font-size: 0.92rem; line-height: 1.35; color: var(--ink); margin-bottom: 0.25rem; }
+html[data-theme="dark"] .rs-proj img { filter: brightness(0.9); }
+@media (max-width: 720px) { .rs-projects { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .rs-projects { grid-template-columns: 1fr; } }
+
 @media (max-width: 720px) {
   .rs-arc { grid-template-columns: 1fr; }
   .rs-arc::before { left: 7px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; }
@@ -147,6 +158,21 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
     <h2>Transcranial Focused Ultrasound</h2>
     <p>Focusing ultrasound through the skull for non-invasive brain therapy. I design acoustic holograms and lens topologies that correct skull aberration, built on a heterogeneous angular spectrum approach, and use the parametric array effect to listen to the therapy from outside the head.</p>
     <div class="rs-chips"><span class="rs-chip">Acoustic holography</span><span class="rs-chip">Aberration correction</span><span class="rs-chip">Nonlinear acoustics</span><span class="rs-chip">Passive acoustic mapping</span><span class="rs-chip">Verasonics</span></div>
+    <div class="rs-projects-label">Current projects</div>
+    <div class="rs-projects">
+      <figure class="rs-proj">
+        <img src="{{ '/images/research/proj_lens.svg' | relative_url }}" alt="Illustration: a transducer with a 3D-printed lens sends ultrasound through the skull to a single focal point in the brain" loading="lazy" width="800" height="600">
+        <figcaption><strong>Printed lenses that focus through the skull</strong>Turning a single ultrasound transducer into a device that projects a sharp, shaped focus inside the head, correcting for the skull along the way.</figcaption>
+      </figure>
+      <figure class="rs-proj">
+        <img src="{{ '/images/research/proj_align.svg' | relative_url }}" alt="Illustration: a transducer and lens being brought into alignment with the skull, with a confirmation mark" loading="lazy" width="800" height="600">
+        <figcaption><strong>Aligning skull-specific lenses without imaging</strong>A noninvasive check that a patient-specific lens sits correctly on the head, so the focus lands where it was planned.</figcaption>
+      </figure>
+      <figure class="rs-proj">
+        <img src="{{ '/images/research/proj_ventricle.svg' | relative_url }}" alt="Illustration: ultrasound crossing the head between two probes, with normal and enlarged ventricles drawn inside" loading="lazy" width="800" height="600">
+        <figcaption><strong>Tracking ventricle size through the skull</strong>A portable ultrasound readout of brain ventricle size, aimed at following hydrocephalus without repeated scans or invasive monitoring.</figcaption>
+      </figure>
+    </div>
     {% include research-works.html theme="tfus" limit=6 %}
   </div>
 </section>
@@ -167,6 +193,13 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
     <h2>Vibroacoustics &amp; NVH</h2>
     <p>Finding where noise and vibration come from and engineering them out. This thread runs from active noise control on embedded DSP and powertrain NVH at Bajaj Auto, through operational modal analysis of rolling tires at Virginia Tech, to robot NVH at Matic.</p>
     <div class="rs-chips"><span class="rs-chip">Modal analysis</span><span class="rs-chip">Transfer path analysis</span><span class="rs-chip">Laser vibrometry</span><span class="rs-chip">Active noise control</span><span class="rs-chip">Psychoacoustics</span></div>
+    <div class="rs-projects-label">Current projects</div>
+    <div class="rs-projects">
+      <figure class="rs-proj">
+        <img src="{{ '/images/research/proj_tire.svg' | relative_url }}" alt="Illustration: a rolling tire with a sensor on its inner liner and a wavy outline showing how the tire vibrates" loading="lazy" width="800" height="600">
+        <figcaption><strong>How a rolling tire vibrates, measured from inside</strong>Capturing the vibration of a rolling tire with a sensor that rides inside it, with no optical access to the tread.</figcaption>
+      </figure>
+    </div>
     {% include research-works.html theme="nvh" limit=6 %}
   </div>
 </section>
