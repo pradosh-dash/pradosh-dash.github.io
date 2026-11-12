@@ -92,6 +92,8 @@ html[data-theme="dark"] .rs-chip { color: #e2bd5a; background: rgba(202,163,45,0
 .rs-proj img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #f4f6f9; border-bottom: 1px solid var(--global-border-color); }
 .rs .rs-proj figcaption { margin: 0; padding: 0.7rem 0.85rem 0.85rem; font-family: 'DM Sans', sans-serif; font-style: normal; text-align: left; font-size: 0.84rem; line-height: 1.5; color: var(--global-text-color); }
 .rs .rs-proj figcaption strong { font-family: 'Source Serif 4', serif; display: block; font-size: 0.92rem; line-height: 1.35; color: var(--ink); margin-bottom: 0.25rem; }
+.rs .rs-proj .rs-proj-link { display: inline-block; margin-top: 0.45rem; font-size: 0.8rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+.rs .rs-proj .rs-proj-link:hover { text-decoration: underline; }
 html[data-theme="dark"] .rs-proj img { filter: brightness(0.9); }
 @media (max-width: 720px) { .rs-projects { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .rs-projects { grid-template-columns: 1fr; } }
@@ -162,7 +164,7 @@ html[data-theme="dark"] .rs-proj img { filter: brightness(0.9); }
     <div class="rs-projects">
       <figure class="rs-proj">
         <img src="{{ '/images/research/proj_lens.svg' | relative_url }}" alt="Illustration: a transducer with a 3D-printed lens sends ultrasound through the skull to a single focal point in the brain" loading="lazy" width="800" height="600">
-        <figcaption><strong>Printed lenses that focus through the skull</strong>Turning a single ultrasound transducer into a device that projects a sharp, shaped focus inside the head, correcting for the skull along the way.</figcaption>
+        <figcaption><strong>Printed lenses that focus through the skull</strong>Turning a single ultrasound transducer into a device that projects a sharp, shaped focus inside the head, correcting for the skull along the way.<a class="rs-proj-link" href="https://arxiv.org/abs/2611.04251" target="_blank" rel="noopener">Preprint on arXiv &rarr;</a></figcaption>
       </figure>
       <figure class="rs-proj">
         <img src="{{ '/images/research/proj_align.svg' | relative_url }}" alt="Illustration: a transducer and lens being brought into alignment with the skull, with a confirmation mark" loading="lazy" width="800" height="600">
