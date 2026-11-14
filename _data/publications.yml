@@ -44,6 +44,19 @@
 
 - type: journal
   year: 2026
+  title: "Subwavelength Registration of Skull-Compensating Acoustic Holograms via Nonlinear Parametric Array Feedback"
+  authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
+  venue: "arXiv preprint arXiv:2611.15730 [physics.med-ph]"
+  status: "Preprint"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2611.15730"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2611.15730"
+  themes: [tfus]
+
+- type: journal
+  year: 2026
   title: "Differentiable Topology Optimization for High-Fidelity Acoustic Holography Beyond the Thin-Element Approximation"
   authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
   venue: "arXiv preprint arXiv:2611.04251 [physics.app-ph]"
