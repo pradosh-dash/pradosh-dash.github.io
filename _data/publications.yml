@@ -120,6 +120,11 @@
   title: "Volumetric Topology Optimization for Arbitrary 3D Beam Shaping in Transcranial Acoustic Holography"
   authors: "<strong>Dash, P. P.</strong> & Arvanitis, C. D."
   venue: "2026 IEEE International Ultrasonics Symposium (IUS)"
+  links:
+    - label: "DOI"
+      url: "https://doi.org/10.1109/IUS62466.2026.11774114"
+    - label: "IEEE Xplore"
+      url: "https://ieeexplore.ieee.org/document/11774114"
   themes: [tfus]
 
 - type: conference
