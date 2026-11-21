@@ -146,6 +146,11 @@
   title: "High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles"
   authors: "Jing, B., Lee, H., <strong>Dash, P. P.</strong>, Arvanitis, C. D. & Lindsey, B. D."
   venue: "2021 IEEE International Ultrasonics Symposium (IUS), pp. 1-4"
+  links:
+    - label: "DOI"
+      url: "https://doi.org/10.1109/IUS52206.2021.9593427"
+    - label: "IEEE Xplore"
+      url: "https://ieeexplore.ieee.org/document/9593427"
   themes: [neuro]
 
 - type: conference
