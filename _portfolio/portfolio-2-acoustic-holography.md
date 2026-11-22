@@ -5,7 +5,7 @@ collection: portfolio
 order: 2
 tags:
   - Journal
-venue: "arXiv:2508.07103 — Under Revision, 2025"
+venue: "arXiv:2508.07103 — Under Review, 2025"
 ---
 
 ## Overview
@@ -27,8 +27,8 @@ Acoustic holograms offer a compact, cost-effective alternative to phased arrays 
 
 ## Related Patent
 
-> Arvanitis, C. and Dash, P. P., Georgia Tech Research Corp, 2024. *Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogeneous Angular Spectrum Approach, and Hologram Registration.* USPTO 18/638,465.
+> Arvanitis, C. and Dash, P. P., Georgia Tech Research Corp, 2025. *Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogeneous Angular Spectrum Approach, and Hologram Registration.* U.S. Patent 12,502,558 B2.
 
 ### Citation
 
-> Dash, P. P., & Arvanitis, C. D. (2025). Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback. *arXiv:2508.07103* (Under Revision).
+> Dash, P. P., & Arvanitis, C. D. (2025). Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback. *arXiv:2508.07103* (Under Review).

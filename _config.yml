@@ -188,6 +188,40 @@ exclude:
   - README
   - tmp
   - vendor
+  # Template leftovers and outdated files, kept in the repo but not published
+  - _posts
+  - _talks
+  - _publications
+  - _portfolio
+  - _pages/talks.html
+  - _pages/talkmap.html
+  - _pages/portfolio.html
+  - _pages/markdown.md
+  - _pages/cv-json.md
+  - _pages/archive-layout-with-content.md
+  - _pages/non-menu-page.md
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - _pages/collection-archive.html
+  - _pages/page-archive.html
+  - _pages/category-archive.html
+  - _pages/tag-archive.html
+  - _pages/sitemap.md
+  - _pages/about_old_version.md
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - markdown_generator
+  - files/paper1.pdf
+  - files/paper2.pdf
+  - files/paper3.pdf
+  - files/slides1.pdf
+  - files/slides2.pdf
+  - files/slides3.pdf
+  - files/bibtex1.bib
+  - files/Pradosh_P_Dash_CV.pdf
+  - files/Pradosh_P_Dash_v08242025.pdf
 keep_files:
   - .git
   - .svn

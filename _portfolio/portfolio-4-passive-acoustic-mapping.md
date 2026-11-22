@@ -29,4 +29,4 @@ Passive acoustic mapping (PAM) is a technique for localizing and quantifying aco
 
 ### Citation
 
-> Schoen, S., Dash, P. P., & Arvanitis, C. D. (2021). Experimental demonstration of trans-skull volumetric passive acoustic mapping. *IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control*.
+> Schoen, S., Dash, P. P., & Arvanitis, C. D. (2022). Experimental demonstration of trans-skull volumetric passive acoustic mapping. *IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control*.
