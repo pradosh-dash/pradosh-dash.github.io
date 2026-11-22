@@ -3,6 +3,17 @@
 # themes: tfus (transcranial ultrasound) | wearable | nvh | neuro
 
 - type: patent
+  year: 2025
+  title: "Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Patent 12,502,558 B2, issued Dec. 23, 2025, Georgia Tech Research Corp"
+  status: "Granted"
+  links:
+    - label: "Google Patents"
+      url: "https://patents.google.com/patent/US12502558B2/en"
+  themes: [tfus]
+
+- type: patent
   year: 2026
   title: "Heterogeneous Angular Spectrum Parametric Array (HASPA) Framework for Ultrasound Brain Therapy"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
@@ -28,17 +39,6 @@
   title: "Nonlinear Layer to Augment Nonlinear Sound Propagation and Imaging"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
   venue: "U.S. Patent Application 63/806,113, Georgia Tech Research Corp"
-  themes: [tfus]
-
-- type: patent
-  year: 2025
-  title: "Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration"
-  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent 12,502,558 B2, granted Dec. 23, 2025, Georgia Tech Research Corp"
-  status: "Granted"
-  links:
-    - label: "Google Patents"
-      url: "https://patents.google.com/patent/US12502558B2/en"
   themes: [tfus]
 
 - type: journal
