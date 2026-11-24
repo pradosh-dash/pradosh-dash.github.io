@@ -6,7 +6,7 @@
   year: 2025
   title: "Trans-Skull Focused Ultrasound Using Acoustic Hologram and Heterogenous Angular Spectrum Approach, and Hologram Registration"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent 12,502,558 B2, issued Dec. 23, 2025, Georgia Tech Research Corp"
+  venue: "U.S. Patent 12,502,558 B2, Georgia Tech, 2025"
   status: "Granted"
   links:
     - label: "Google Patents"
@@ -17,32 +17,28 @@
   year: 2026
   title: "System And Method For Automated Acoustic Lens Topology Optimization For Transcranial Wave Focusing"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 19/680,599, filed May 18, 2026, published Nov. 19, 2026, Georgia Tech Research Corp"
-  status: "Published Application"
+  venue: "U.S. Patent Application 19/680,599, Georgia Tech, 2026"
   themes: [tfus]
 
 - type: patent
   year: 2026
   title: "Transcranial Ultrasound Detection and Monitoring of Hydrocephalus"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 19/679,559, filed May 15, 2026, published Nov. 19, 2026, Georgia Tech Research Corp"
-  status: "Published Application"
+  venue: "U.S. Patent Application 19/679,559, Georgia Tech, 2026"
   themes: [tfus]
 
 - type: patent
   year: 2026
   title: "Nonlinear Layer to Augment Sound Propagation and Imaging"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 19/679,527, filed May 15, 2026, published Nov. 19, 2026, Georgia Tech Research Corp"
-  status: "Published Application"
+  venue: "U.S. Patent Application 19/679,527, Georgia Tech, 2026"
   themes: [tfus]
 
 - type: patent
   year: 2026
   title: "Heterogeneous Angular Spectrum Parametric Array (HASPA) Framework for Ultrasound Brain Therapy"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Provisional Patent Application 63/929,300, Georgia Tech Research Corp"
-  status: "Provisional"
+  venue: "U.S. Provisional Patent Application 63/929,300, Georgia Tech, 2026"
   themes: [tfus]
 
 - type: journal
