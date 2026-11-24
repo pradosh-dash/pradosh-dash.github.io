@@ -15,30 +15,34 @@
 
 - type: patent
   year: 2026
-  title: "Heterogeneous Angular Spectrum Parametric Array (HASPA) Framework for Ultrasound Brain Therapy"
-  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 63/929,300, Georgia Tech Research Corp"
-  themes: [tfus]
-
-- type: patent
-  year: 2025
   title: "System And Method For Automated Acoustic Lens Topology Optimization For Transcranial Wave Focusing"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 63/806,773, Georgia Tech Research Corp"
+  venue: "U.S. Patent Application 19/680,599, filed May 18, 2026, published Nov. 19, 2026, Georgia Tech Research Corp"
+  status: "Published Application"
   themes: [tfus]
 
 - type: patent
-  year: 2025
+  year: 2026
   title: "Transcranial Ultrasound Detection and Monitoring of Hydrocephalus"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 63/806,223, Georgia Tech Research Corp"
+  venue: "U.S. Patent Application 19/679,559, filed May 15, 2026, published Nov. 19, 2026, Georgia Tech Research Corp"
+  status: "Published Application"
   themes: [tfus]
 
 - type: patent
-  year: 2025
-  title: "Nonlinear Layer to Augment Nonlinear Sound Propagation and Imaging"
+  year: 2026
+  title: "Nonlinear Layer to Augment Sound Propagation and Imaging"
   authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
-  venue: "U.S. Patent Application 63/806,113, Georgia Tech Research Corp"
+  venue: "U.S. Patent Application 19/679,527, filed May 15, 2026, published Nov. 19, 2026, Georgia Tech Research Corp"
+  status: "Published Application"
+  themes: [tfus]
+
+- type: patent
+  year: 2026
+  title: "Heterogeneous Angular Spectrum Parametric Array (HASPA) Framework for Ultrasound Brain Therapy"
+  authors: "Arvanitis, C. D. & <strong>Dash, P. P.</strong>"
+  venue: "U.S. Provisional Patent Application 63/929,300, Georgia Tech Research Corp"
+  status: "Provisional"
   themes: [tfus]
 
 - type: journal
